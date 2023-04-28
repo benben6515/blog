@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.2">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://hackmd.io/_uploads/rkbO6LCfi.png">
 <meta property="article:published_time" content="2022-07-26T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-10-09T02:59:32.942Z">
+<meta property="article:modified_time" content="2023-03-24T05:50:04.000Z">
 <meta property="article:author" content="Benben">
 <meta property="article:tag" content="mit">
 <meta property="article:tag" content="algorithm">
@@ -201,7 +201,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2022-10-09 10:59:32" itemprop="dateModified" datetime="2022-10-09T10:59:32+08:00">2022-10-09</time>
+                <time title="修改時間：2023-03-24 13:50:04" itemprop="dateModified" datetime="2023-03-24T13:50:04+08:00">2023-03-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -236,7 +236,7 @@
 <span id="more"></span>
 
 <blockquote>
-<p>2022/07/24 done.</p>
+<p>2022&#x2F;07&#x2F;24 done.</p>
 </blockquote>
 <h2 id="Lecture-02-Models-of-Computation-Document-Distance"><a href="#Lecture-02-Models-of-Computation-Document-Distance" class="headerlink" title="Lecture 02: Models of Computation, Document Distance"></a>Lecture 02: Models of Computation, Document Distance</h2><ul>
 <li><p><strong>algorithm</strong> term from “al-Khwarizmi”</p>
@@ -272,12 +272,12 @@
 </ol>
 <ul>
 <li>dynamically allocated objects</li>
-<li>object has O(1) fields (# filed = word e.g. int or pointer)</li>
+<li>object has O(1) fields (# filed &#x3D; word e.g. int or pointer)</li>
 </ul>
 </li>
 <li><p>Python model:</p>
 <ul>
-<li><strong>list</strong> = array</li>
+<li><strong>list</strong> &#x3D; array</li>
 <li><strong>object</strong> with O(1) attributes</li>
 <li><strong>dict</strong> get value O(1)</li>
 <li><strong>long</strong> long int</li>
@@ -287,11 +287,11 @@
 <li><p>Document distance problem:</p>
 <ul>
 <li>Q: d(D1, D2) (like google, wiki)</li>
-<li>document = sequence of words</li>
-<li>word = string of alphanumeric characters</li>
+<li>document &#x3D; sequence of words</li>
+<li>word &#x3D; string of alphanumeric characters</li>
 <li><strong>idea</strong>: shared words</li>
-<li>think of document as a <strong>vector</strong>, D[w] = number of occurrent of w in D</li>
-<li>inner product, D1.D2 / |D1||D2|</li>
+<li>think of document as a <strong>vector</strong>, D[w] &#x3D; number of occurrent of w in D</li>
+<li>inner product, D1.D2 &#x2F; |D1||D2|</li>
 <li>Algorithm:<ol>
 <li>split doc. to words</li>
 <li>compute word frequencies</li>
@@ -302,7 +302,7 @@
 </li>
 </ul>
 <blockquote>
-<p>2022/07/27 done.</p>
+<p>2022&#x2F;07&#x2F;27 done.</p>
 </blockquote>
 <h2 id="Lecture-03-Insertion-Sort-Merge-Sort"><a href="#Lecture-03-Insertion-Sort-Merge-Sort" class="headerlink" title="Lecture 03: Insertion Sort, Merge Sort"></a>Lecture 03: Insertion Sort, Merge Sort</h2><ul>
 <li>why sorting?<ul>
@@ -320,7 +320,7 @@
 </ul>
 </li>
 <li>Insertion sort<ul>
-<li>For i = 1, 2, … n. Insert A[i] into sorted array A[0: i - 1]</li>
+<li>For i &#x3D; 1, 2, … n. Insert A[i] into sorted array A[0: i - 1]</li>
 <li>complexity: <strong>O(n^2)</strong></li>
 <li>Binary Search Insertion Sort</li>
 <li>complexity: <strong>O(n * log(n))</strong></li>
@@ -332,9 +332,9 @@
 <li>complexity: <strong>Theta(n * log(n))</strong>, Space: <strong>Theta(n)</strong></li>
 <li>In-place merge sort (good to read paper but beyond of MIT6.006)</li>
 <li>Implement in others language:<ul>
-<li>Merge sort in Python = 2.2 * n * log(n) ms</li>
-<li>Insertion sort in Python  = 0.2 * n^2 ms</li>
-<li>Merge sort in C = 0.0.1 * n * log(n) ms</li>
+<li>Merge sort in Python &#x3D; 2.2 * n * log(n) ms</li>
+<li>Insertion sort in Python  &#x3D; 0.2 * n^2 ms</li>
+<li>Merge sort in C &#x3D; 0.0.1 * n * log(n) ms</li>
 <li>so if n more than 4,000 then choose use Merge sort rather than Insertion sort</li>
 </ul>
 </li>
@@ -342,7 +342,7 @@
 </li>
 </ul>
 <blockquote>
-<p>2022/08/28 done.</p>
+<p>2022&#x2F;08&#x2F;28 done.</p>
 </blockquote>
 <h2 id="Lecture-04-Heaps-and-Heap-Sort"><a href="#Lecture-04-Heaps-and-Heap-Sort" class="headerlink" title="Lecture 04: Heaps and Heap Sort"></a>Lecture 04: Heaps and Heap Sort</h2><ul>
 <li><p>Heap</p>
@@ -356,15 +356,15 @@
 </li>
 <li><p>Heap is a Tree</p>
 <ul>
-<li>root of tree: first element (i = 1)</li>
-<li>parent(i) = i / 2</li>
-<li>left(i) = 2i</li>
-<li>right(i) = 2i + 1</li>
+<li>root of tree: first element (i &#x3D; 1)</li>
+<li>parent(i) &#x3D; i &#x2F; 2</li>
+<li>left(i) &#x3D; 2i</li>
+<li>right(i) &#x3D; 2i + 1</li>
 </ul>
 </li>
-<li><p>Max-Heap<br>The key of a node is &gt;= the keys of its children</p>
+<li><p>Max-Heap<br>The key of a node is &gt;&#x3D; the keys of its children</p>
 </li>
-<li><p>Min-Heap<br>The key of a node is &lt;= the keys of its children</p>
+<li><p>Min-Heap<br>The key of a node is &lt;&#x3D; the keys of its children</p>
 </li>
 <li><p>Heap operations</p>
 <ul>
@@ -376,7 +376,7 @@
 <ul>
 <li>Assume that the heap rooted at left(i) and right(j) are max heaps<br><img src="https://hackmd.io/_uploads/rkbO6LCfi.png" alt="heapify example"></li>
 <li>ex:<ul>
-<li>MAX_HEAPIFY(A, 2), heap-size(A) = 10</li>
+<li>MAX_HEAPIFY(A, 2), heap-size(A) &#x3D; 10</li>
 <li>exchange A[2] with A[4]</li>
 <li>call MAX_HEAPIFY(A, 4)</li>
 <li>exchange A[4] with A[8]</li>
@@ -391,10 +391,10 @@
 <ul>
 <li>Observe of Max_Heapify:<ul>
 <li>Max_Heapify taken O(1) for nodes that are one level above the leaves and in general O(<code>l</code>) time for nodes that are <code>l</code> level above the leaves.</li>
-<li>n/4 nodes with level 1, n/8 with level 2, … i node log(n) level</li>
+<li>n&#x2F;4 nodes with level 1, n&#x2F;8 with level 2, … i node log(n) level</li>
 <li>Total amt of work in the for loop</li>
-<li>n/4(1 c) + n/8(2 c) + n/16(3 c) +  … + 1(log(n) c)</li>
-<li>Set n/4 = 2^k</li>
+<li>n&#x2F;4(1 c) + n&#x2F;8(2 c) + n&#x2F;16(3 c) +  … + 1(log(n) c)</li>
+<li>Set n&#x2F;4 &#x3D; 2^k</li>
 </ul>
 </li>
 </ul>
@@ -410,13 +410,13 @@
 </li>
 </ul>
 <blockquote>
-<p>2022/10/08 done.</p>
+<p>2022&#x2F;10&#x2F;08 done.</p>
 </blockquote>
 <h2 id="Lecture-05-Binary-Search-Tree-BST-Sort"><a href="#Lecture-05-Binary-Search-Tree-BST-Sort" class="headerlink" title="Lecture 05: Binary Search Tree, BST Sort"></a>Lecture 05: Binary Search Tree, BST Sort</h2><ul>
 <li>Scheduling &amp; Binary Search Trees<ul>
 <li>Runway reservation system<ul>
 <li>Def n</li>
-<li>How to solve with arrays/lists</li>
+<li>How to solve with arrays&#x2F;lists</li>
 </ul>
 </li>
 <li>Binary Search Trees operations</li>
