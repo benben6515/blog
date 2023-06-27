@@ -2,9 +2,10 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.2">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -13,14 +14,13 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"benben.me","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-  <meta name="description" content="前言大約在 2022 的六月底的時候，參加了 前端引路人計劃，成員都算是一起學習的夥伴，想要轉職的自學者，我算是計劃中 Mentor ，一起分享學習，幫大家 Code Review 等。 這篇算是一個階段的結束，但也許也是另一個開始，為什麼會開始的計劃（當然這是免費的），可以參考上一篇：Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"benben.me","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="前言大約在 2022 的六月底的時候，參加了 前端引路人計劃，成員都算是一起學習的夥伴，想要轉職的自學者，我算是計劃中 Mentor ，一起分享學習，幫大家 Code Review 等。 這篇算是一個階段的結束，但也許也是另一個開始，為什麼會開始的計劃（當然這是免費的），可以參考上一篇：Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事">
 <meta property="og:url" content="https://benben.me/2022/11/06/code-mentor-program-01/index.html">
@@ -30,28 +30,25 @@
 <meta property="og:image" content="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg">
 <meta property="og:image" content="https://hackmd.io/_uploads/rJIUJ1NHi.jpg">
 <meta property="article:published_time" content="2022-11-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-03-24T05:50:04.000Z">
+<meta property="article:modified_time" content="2022-11-05T16:00:00.000Z">
 <meta property="article:author" content="Benben">
 <meta property="article:tag" content="front-end">
 <meta property="article:tag" content="mentor">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg">
 
+
 <link rel="canonical" href="https://benben.me/2022/11/06/code-mentor-program-01/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-TW'
-  };
-</script>
 
-  <title>微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事 | Benben 的小宇宙</title>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://benben.me/2022/11/06/code-mentor-program-01/","path":"2022/11/06/code-mentor-program-01/","title":"微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事 | Benben 的小宇宙</title>
   
+
+
 
 
 
@@ -59,161 +56,195 @@
 
 
   <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切換導航欄">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Benben 的小宇宙</h1>
-      <span class="logo-line-after"><i></i></span>
+      <i class="logo-line"></i>
+      <p class="site-title">Benben 的小宇宙</p>
+      <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">喜歡寫程式，也喜歡寫文字。</p>
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
     </div>
   </div>
 </div>
 
 
 
-
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
-
-  </li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">57</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">40</span></a></li>
   </ul>
 </nav>
 
 
 
 
-</div>
-    </header>
+</header>
+        
+  
+  <aside class="sidebar">
 
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%90%E5%93%A1%E7%B0%A1%E4%BB%8B"><span class="nav-text">成員簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%B5%81%E6%A1%88%E4%BE%8B"><span class="nav-text">交流案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%80%8B-Offer"><span class="nav-text">第一個 Offer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%84%E5%A5%94%E6%9D%B1%E8%A5%BF"><span class="nav-text">各奔東西</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mentor-%E5%BF%83%E5%BE%97"><span class="nav-text">Mentor 心得</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ref"><span class="nav-text">Ref</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Benben"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Benben</p>
+  <div class="site-description" itemprop="description">Always Be Coding.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">40</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">57</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/benben6515" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;benben6515" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:z2266109@gmail.com" title="E-Mail → mailto:z2266109@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/z2266109" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;z2266109" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/profile.php?id=100022467427793" title="Facebook → https:&#x2F;&#x2F;www.facebook.com&#x2F;profile.php?id&#x3D;100022467427793" rel="noopener me" target="_blank"><i class="fab fa-facebook fa-fw"></i>Facebook</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/benben_6515/?hl=zh-tw" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;benben_6515&#x2F;?hl&#x3D;zh-tw" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
   </div>
 
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
+        </div>
+      </div>
+    </div>
 
     
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://benben.me/2022/11/06/code-mentor-program-01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Benben">
-      <meta itemprop="description" content="Always Be Coding.">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Benben 的小宇宙">
+      <meta itemprop="description" content="Always Be Coding.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事 | Benben 的小宇宙">
+      <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2022-11-06 00:00:00" itemprop="dateCreated datePublished" datetime="2022-11-06T00:00:00+08:00">2022-11-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2023-03-24 13:50:04" itemprop="dateModified" datetime="2023-03-24T13:50:04+08:00">2023-03-24</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">程式筆記</span></a>
-                </span>
-            </span>
+      <time title="創建時間：2022-11-06 00:00:00" itemprop="dateCreated datePublished" datetime="2022-11-06T00:00:00+08:00">2022-11-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">程式筆記</span></a>
+        </span>
+    </span>
 
-          
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2022/11/06/code-mentor-program-01/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/11/06/code-mentor-program-01/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
 
         </div>
       </header>
@@ -221,10 +252,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg" alt="php meme"></p>
+    <div class="post-body" itemprop="articleBody"><p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg" alt="php meme"></p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大約在 2022 的六月底的時候，參加了 <code>前端引路人計劃</code>，成員都算是一起學習的夥伴，想要轉職的自學者，我算是計劃中 Mentor ，一起分享學習，幫大家 Code Review 等。</p>
 <p>這篇算是一個階段的結束，但也許也是另一個開始，為什麼會開始的計劃（當然這是免費的），可以參考上一篇：<a target="_blank" rel="noopener" href="https://blog.errorbaker.tw/posts/benben/07-could-i-be-a-mentor-enough/">Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？</a></p>
 <span id="more"></span>
@@ -274,7 +302,8 @@
 <p>嘿！K</p>
 <p>邊打這篇心得時，我終於買了你一直推薦的一本書： <a target="_blank" rel="noopener" href="https://www.books.com.tw/products/0010820110">垃圾場長大的自學人生</a></p>
 <p>之前一直說要買，在收到你的暫時休息的訊息後，我就買了，而且我買的是英文版（<del>希望我真的看得下去</del>）</p>
-<p><img src="https://hackmd.io/_uploads/rJIUJ1NHi.jpg" alt="book image"></p>
+<img alt="book image" src="https://hackmd.io/_uploads/rJIUJ1NHi.jpg" width=360 />
+
 <p>我想這本書會一直在我的身邊吧，看到它，我就會想到你們。</p>
 <p>也會成為我的動力來源之一，我大概就是靠這種方法維持動力的吧，我不知道。</p>
 <h2 id="Mentor-心得"><a href="#Mentor-心得" class="headerlink" title="Mentor 心得"></a>Mentor 心得</h2><p>至於我的心得嘛 …</p>
@@ -304,7 +333,7 @@
     
     
 
-      <footer class="post-footer">
+    <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/front-end/" rel="tag"># front-end</a>
               <a href="/tags/mentor/" rel="tag"># mentor</a>
@@ -312,147 +341,40 @@
 
         
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2022/10/16/error-baker-09-how-to-speed-up-typing/" rel="prev" title="如何提升打字速度 - 從初心者轉職超級初心者">
-      <i class="fa fa-chevron-left"></i> 如何提升打字速度 - 從初心者轉職超級初心者
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/11/11/english-after-work-01/" rel="next" title="After work notes">
-      After work notes <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/10/16/error-baker-09-how-to-speed-up-typing/" rel="prev" title="如何提升打字速度 - 從初心者轉職超級初心者">
+                  <i class="fa fa-chevron-left"></i> 如何提升打字速度 - 從初心者轉職超級初心者
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/11/11/english-after-work-01/" rel="next" title="After work notes">
+                  After work notes <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
           </div>
-          
+    </footer>
+  </article>
+</div>
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 
-        </div>
-          
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目錄
-        </li>
-        <li class="sidebar-nav-overview">
-          本站概要
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%90%E5%93%A1%E7%B0%A1%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">成員簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%B5%81%E6%A1%88%E4%BE%8B"><span class="nav-number">3.</span> <span class="nav-text">交流案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%80%8B-Offer"><span class="nav-number">4.</span> <span class="nav-text">第一個 Offer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%84%E5%A5%94%E6%9D%B1%E8%A5%BF"><span class="nav-number">5.</span> <span class="nav-text">各奔東西</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mentor-%E5%BF%83%E5%BE%97"><span class="nav-number">6.</span> <span class="nav-text">Mentor 心得</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ref"><span class="nav-number">7.</span> <span class="nav-text">Ref</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Benben"
-      src="/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">Benben</p>
-  <div class="site-description" itemprop="description">Always Be Coding.</div>
 </div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">40</span>
-          <span class="site-state-item-name">文章</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">分類</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">57</span>
-        <span class="site-state-item-name">標籤</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/benben6515" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;benben6515" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:z2266109@gmail.com" title="E-Mail → mailto:z2266109@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://twitter.com/z2266109" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;z2266109" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://www.facebook.com/profile.php?id=100022467427793" title="Facebook → https:&#x2F;&#x2F;www.facebook.com&#x2F;profile.php?id&#x3D;100022467427793" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>Facebook</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://www.instagram.com/benben_6515/?hl=zh-tw" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;benben_6515&#x2F;?hl&#x3D;zh-tw" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
-      </span>
-  </div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
 
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
 
 <div class="copyright">
-  
   &copy; 2020 – 
   <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
@@ -461,36 +383,24 @@
   <span class="author" itemprop="copyrightHolder">Benben</span>
 </div>
 
-        
+    </div>
+  </footer>
 
-
-
-
-
-
-
-
-      </div>
-    </footer>
+  
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
 
@@ -499,18 +409,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
   
 
-  
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"benben-me","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
 
 </body>
 </html>
