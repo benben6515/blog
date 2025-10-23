@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/benben-logo-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"benben.me","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12,"width":300},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="前言大約在 2022 的六月底的時候，參加了 前端引路人計劃，成員都算是一起學習的夥伴，想要轉職的自學者，我算是計劃中 Mentor ，一起分享學習，幫大家 Code Review 等。 這篇算是一個階段的結束，但也許也是另一個開始，為什麼會開始的計劃（當然這是免費的），可以參考上一篇：Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事">
+<meta property="og:url" content="https://benben.me/2022/11/06/code-mentor-program-01/index.html">
+<meta property="og:site_name" content="Benben 的小宇宙">
+<meta property="og:description" content="前言大約在 2022 的六月底的時候，參加了 前端引路人計劃，成員都算是一起學習的夥伴，想要轉職的自學者，我算是計劃中 Mentor ，一起分享學習，幫大家 Code Review 等。 這篇算是一個階段的結束，但也許也是另一個開始，為什麼會開始的計劃（當然這是免費的），可以參考上一篇：Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg">
+<meta property="og:image" content="https://hackmd.io/_uploads/rJIUJ1NHi.jpg">
+<meta property="article:published_time" content="2022-11-05T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-05T16:00:00.000Z">
+<meta property="article:author" content="Benben">
+<meta property="article:tag" content="front-end">
+<meta property="article:tag" content="mentor">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg">
+
+
+<link rel="canonical" href="https://benben.me/2022/11/06/code-mentor-program-01/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://benben.me/2022/11/06/code-mentor-program-01/","path":"2022/11/06/code-mentor-program-01/","title":"微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事 | Benben 的小宇宙</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Benben 的小宇宙</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">喜歡寫程式，也喜歡寫文字。</p>
+      <img class="custom-logo-image" src="/images/benben-logo-2.svg" alt="Benben 的小宇宙">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">63</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">47</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%90%E5%93%A1%E7%B0%A1%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">成員簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%B5%81%E6%A1%88%E4%BE%8B"><span class="nav-number">3.</span> <span class="nav-text">交流案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%80%8B-Offer"><span class="nav-number">4.</span> <span class="nav-text">第一個 Offer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%84%E5%A5%94%E6%9D%B1%E8%A5%BF"><span class="nav-number">5.</span> <span class="nav-text">各奔東西</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mentor-%E5%BF%83%E5%BE%97"><span class="nav-number">6.</span> <span class="nav-text">Mentor 心得</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ref"><span class="nav-number">7.</span> <span class="nav-text">Ref</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Benben"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Benben</p>
+  <div class="site-description" itemprop="description">Always Be Coding.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">47</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">63</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/benben6515" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;benben6515" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:z2266109@gmail.com" title="E-Mail → mailto:z2266109@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/benben_6515/?hl=zh-tw" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;benben_6515&#x2F;?hl&#x3D;zh-tw" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/profile.php?id=100022467427793" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;profile.php?id&#x3D;100022467427793" rel="noopener me" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://benben.me/2022/11/06/code-mentor-program-01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Benben">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Benben 的小宇宙">
+      <meta itemprop="description" content="Always Be Coding.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事 | Benben 的小宇宙">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-11-06 00:00:00" itemprop="dateCreated datePublished" datetime="2022-11-06T00:00:00+08:00">2022-11-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">程式筆記</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2022/11/06/code-mentor-program-01/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/11/06/code-mentor-program-01/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg" alt="php meme"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大約在 2022 的六月底的時候，參加了 <code>前端引路人計劃</code>，成員都算是一起學習的夥伴，想要轉職的自學者，我算是計劃中 Mentor ，一起分享學習，幫大家 Code Review 等。</p>
+<p>這篇算是一個階段的結束，但也許也是另一個開始，為什麼會開始的計劃（當然這是免費的），可以參考上一篇：<a target="_blank" rel="noopener" href="https://blog.errorbaker.tw/posts/benben/07-could-i-be-a-mentor-enough/">Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？</a></p>
+<span id="more"></span>
+
+<h2 id="成員簡介"><a href="#成員簡介" class="headerlink" title="成員簡介"></a>成員簡介</h2><p>成員在上一篇都有提到，這麼再提一下。</p>
+<p>成員有（這邊用簡寫代稱）：</p>
+<ul>
+<li><p>K，主揪，強而有力的自學者，目前在外商半導體產業，是寫 python 處理資料的，基本上他已經看到 react 了，看得差不多了，然後再刷一些 leetcode 了，我覺得根本就可以去轉職了 XD</p>
+</li>
+<li><p>S，目前還是學生，未來想往區塊鍊發展，在學 solidity 中，也用 next.js 寫了前台，但 react 的掌握度還算不高（？，她自己說的）但她主要也不是往前端發展，也可能往研究所前進。</p>
+</li>
+<li><p>A，目前在資策會上課，正在學習 PHP 後台中，也是估計今年完課完後，年底去求職，也有在看一些 PM 的課程，未來可能會往 PM 走也不一定。</p>
+</li>
+<li><p>我，廢物前端新手，看到大家都這麼認真，我真的是汗顏 QQ</p>
+</li>
+</ul>
+<p>當然隨著時間在走，也會越來越少人，怎麼說呢？我的旅程一路上也遇到了不少人，轉職路上有人成功也有人放棄，都是很正常的，這個從一開始參加前就知道了，因為人生嘛！總有更重要的事！例如：我轉職前也放棄了幾次，礙於現實、缺少自信等等，所以啊，能夠持續的自學自身就是一件不容易的事了，重點是你們都跨出第一步了，已經贏了很多人了。</p>
+<p>花開花落自有時，緣起緣減無窮盡。</p>
+<h2 id="交流案例"><a href="#交流案例" class="headerlink" title="交流案例"></a>交流案例</h2><p>跟其他的組員的交流都很棒，這邊提一個我覺得不錯的案例交流分享。</p>
+<p>以下是 A 的問題（詳細的網址並非真實網址）：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">👻 現在的狀況：</span><br><span class="line"></span><br><span class="line">1、有兩個api,第一個api之功能是將選擇的圖片以md5亂數命名的方式存到電腦本地的資料夾，另一個api是將表單裡面所有的資料傳送到db中。若您時間允許的話可參下面兩個文件~</span><br><span class="line">第一個（圖片）：https://github.com/a/xxx.php</span><br><span class="line">第二個（傳送到db）:</span><br><span class="line">https://github.com/a/ooo/.php</span><br><span class="line"></span><br><span class="line">👀 今天做的處理：</span><br><span class="line"></span><br><span class="line">1、原本有“圖片上傳”還有&quot;資料修改&quot;兩個鍵，發現兩個按鍵功能有重疊到，都會自動連到第二個api(將檔案上傳到db中的)後來把第一個“圖片上傳”的功能重新做調整，讓他不會再跟第二個api一起跑，就只剩下存檔案到資料庫裡面的功能，並且解決了調整中產生的各種bug(例如上次問的問題又發生，但是也解決了)。</span><br><span class="line"></span><br><span class="line">🧐 今天做的研究：</span><br><span class="line"></span><br><span class="line">1.回傳的値是存在第一個api response 中的 $filename 裡面，如果能使用這個 $filename 到第二個api中應該就能一起上傳。</span><br><span class="line"></span><br><span class="line">2.上網找到一些資料，有些是用jQuery的方式寫，或者是寫一些我看不懂的寫法，可能是關鍵字下錯。今天嘗試的關鍵字組合有 “AJAX api response ”、“AJAX 回傳 js html”、“fetch response ”、“圖檔名稱 檔案上傳 資料庫”等等。</span><br><span class="line"></span><br><span class="line">3、發現了可能有關聯的關鍵字如 .then() 、bindparam 但不清楚使用方式，也不知道能不能用。</span><br><span class="line"></span><br><span class="line">4.有找到其他的寫法可能能用，但是還沒研究裡面的邏輯，但是乍看之下也許可行 https://www.codexworld.com/store-retrieve-image-from-database-mysql-php/。</span><br><span class="line"></span><br><span class="line">😂 其他：</span><br><span class="line"></span><br><span class="line">1.目前最新版php我把他放在一個叫 bup-as<span class="emphasis">_tourist_</span>spots<span class="emphasis">_edit.php 的檔案中~鏈接github一樣是公開的，若您時間有空再看即可~</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">https://github.com/a/xox.php</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">感謝您花時間看這個落落長的文~~~QQ</span></span><br></pre></td></tr></table></figure>
+
+<p>我的回應：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">嗯嗯 我都看完了 ~</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 今天做的處理</span></span><br><span class="line"></span><br><span class="line">這邊很棒有嘗試自己處理！</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 今天做的研究</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 感覺是這樣沒錯</span><br><span class="line"><span class="bullet">2.</span> 因為這個專案主要還是寫 php ，或許可以試試 &quot;php upload img&quot; 之類的</span><br><span class="line"><span class="bullet">3.</span> .then() 是 Promise 的用法，Promise 也是一個 JS 很大的坑，或著應該是說 JS 非同步的問題都是坑，之後可以找時間補起來；blindparam 我就不確定了，但應該是 php 的用法 XD</span><br><span class="line"><span class="bullet">4.</span> 我有看完影片，蠻精華的，但感覺是妳要的功能，可以跟著他做看看，再拿去改成妳要的功能試試</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 其他</span></span><br><span class="line"></span><br><span class="line">這邊的 code 我也稍為看完了，但因為 php 是個世界最棒的程式語言（？）沒有啦，是我之前也沒有用到 php 圖片處理這一塊（圖片處理我是後來用 node.js 寫的），php 就只有寫留言版、簡易部落格這樣，可能也是很久沒碰 php 了啦 XD</span><br><span class="line"></span><br><span class="line">課程的用意應該是讓妳先體驗一下前、後端混再一起的寫法吧，這樣後面才會知道前、後端分離跟框架的好（對，我之前的課程也是這樣說）</span><br><span class="line">當然 php 還有 Laravel 等等的框架，但純 php 真的不好寫</span><br><span class="line"></span><br><span class="line">php meme：https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg</span><br><span class="line"></span><br><span class="line">（搜尋 &quot;php meme&quot; 也會看到很多的好笑的圖片，工程師笑話，不要太認真）</span><br></pre></td></tr></table></figure>
+
+<p>當然還有在很多在 Google Meet （我們主要的分享工具）上互動都很棒，S 也常主動對我提問，然當我也都很用心的回答。</p>
+<p>S 也說「很喜歡聽我分享」，聽到這句時，當下嘴角真的有微微上揚呢。</p>
+<p>每收到一個小小的感謝對我來說都是一個動力，對於我的工作都是一個肯定，原來我做的事是有價值的，也希望真的有幫助到你們。</p>
+<h2 id="第一個-Offer"><a href="#第一個-Offer" class="headerlink" title="第一個 Offer"></a>第一個 Offer</h2><p>拿到第一個 Offer 的是 A，非常替她開心。</p>
+<p>因為 A 本身就是在資策會學習中，所以也打算從資策會一畢業就馬上找工作，加上她想找得是 PM 的職缺，有工程師經驗的 PM 本來就是不可多得的 PM ，另外她的殺球就是：她是一個非常知道自己要什麼的人，能這麼快就拿到 Offer 也是很不意外的，我甚至還沒開始分享面試的經驗、技巧。</p>
+<p>這時候正值 2022 的八、九月吧，天氣正悶熱，可以感覺得出大家都有點浮燥，當然我也不意外，分享的內容比得稍為少一點。但人生嘛，總有更重要的事。這時候的 A 拿到 Offer 的好稍息有如即時雨，也確實幫大家提升不少士氣。</p>
+<p>當然這時候 A 因為上班比較忙，告知大家後，也變得比較少參加分享會，但還記得嗎？她是很知道自己在幹嘛的人，PM 的工作只有少部分跟工程師有相關，所以這個讀書會對她來說，可以說不是這麼重要。</p>
+<p>不過 K 也跟 A 說沒關係的，我們會繼續分享會，歡迎 A 隨時回來聊聊！</p>
+<p>後來分享會也繼續了一段時間，也考慮要找其他人進來之類的，我們跟說給 K 決定就好，但能找到程度差不多又合得來的人，本身也不容易，所以後來也沒有再特別找人 。</p>
+<p>不過這時候，也差不多換 S 跟 K 要求職了，我也陸續分享一些面試的技巧、注意事項之類的，能教給他們的，我想我都不會保留。</p>
+<p>也鼓厲 K 跟 S 不要只投想去的，多投幾間搞不好會有不一樣的想法，也許一開始想去的公司聊完後，就沒這麼想去了，沒這麼想去的公司聊完後，看到不一樣的東西就想去了，沒有最好的公司，只有適不適合你的公司。</p>
+<p>後來 S 也成功拿到 Offer 也順利的進到區塊鍵相關的工作，也替她開心。</p>
+<p>當然 K 也投了不少間，也陸續有在面試，隨著時間過去，也感覺出 K 的壓力很大，但我也沒有多說什麼，也不該多說什麼。因為這是一個過程，很多人也包含我都是這樣來的，慢慢看清現實、找到自己的動力，然後決定該往哪走。</p>
+<p>所以能做的只有多陪伴了，幫他打聽一些職缺、看一下履歷，並而相信他。</p>
+<p>也差不多在 2022 的十一月初，收到 K 在學習群組的稍息，大意是說他想先休息了，對於現狀他還拿不到理想中的前端 Offer ，甚至考慮是不是應該走後端，所以這個讀書會，應該也差不多到尾聲了，我想。</p>
+<h2 id="各奔東西"><a href="#各奔東西" class="headerlink" title="各奔東西"></a>各奔東西</h2><p>「成長總在夜深人靜的異鄉」。</p>
+<p>不知道什麼時候讀到的一段話，依稀記得是在當兵時，在中山室的圖書櫃中讀到的書之一，蠻喜歡的一句話，出自於 <a target="_blank" rel="noopener" href="https://www.books.com.tw/products/0010548551">有些事，這些年我才懂：小野的人生思考</a> ，不知道為什麼就想起這句來了。</p>
+<p>因為 K 的訊息是在平日的凌晨兩點半送出的，可想而知他一定思考了很久很久才做出這個決定，平常他就是下班後會繼續 Coding 到半夜三四點的那種人，我也很怕哪天他身體會吃不消的。</p>
+<p>K 的文未說了一句：「然後可以罵我🥲 但別安慰我👍🏻」</p>
+<p>好，我不會安慰你的，但我要罵你的話，我要罵什麼？你組織了整個讀書會，想了一些話題跟大家一起討論（如：Dream Job, Clean Code），上班很累、有點負面的時候依然參與讀書會。我沒有什麼可以罵的啊。</p>
+<p>你知道嗎？你已經很棒了，看看這個人的拖延症：<a target="_blank" rel="noopener" href="https://medium.com/hulis-blog/procrastination-ba12754ada49">致跟我一樣的拖延症患者：動力是需要刻意創造的 | Huli’s blog</a>，有哪個拖延症的人會有上百篇文章的產能？有哪個優秀的人會要別人罵他？這種要求我第一次聽到（<del>原來是抖 M 啊</del>）。</p>
+<p>嘿！K</p>
+<p>邊打這篇心得時，我終於買了你一直推薦的一本書： <a target="_blank" rel="noopener" href="https://www.books.com.tw/products/0010820110">垃圾場長大的自學人生</a></p>
+<p>之前一直說要買，在收到你的暫時休息的訊息後，我就買了，而且我買的是英文版（<del>希望我真的看得下去</del>）</p>
+<img alt="book image" src="https://hackmd.io/_uploads/rJIUJ1NHi.jpg" width=360 />
+
+<p>我想這本書會一直在我的身邊吧，看到它，我就會想到你們。</p>
+<p>也會成為我的動力來源之一，我大概就是靠這種方法維持動力的吧，我不知道。</p>
+<h2 id="Mentor-心得"><a href="#Mentor-心得" class="headerlink" title="Mentor 心得"></a>Mentor 心得</h2><p>至於我的心得嘛 …</p>
+<p>這是我成為工程師後第一次去執行這個 Mentor 計劃，算是有完成了對老師 Huli 的交代，<a target="_blank" rel="noopener" href="https://hulitw.medium.com/mentorship-program-350db93d5c9c">真正的 Mentorship program：前端引路人計畫</a> 之中的「<strong>薪火相傳</strong>」，我也心滿意足了。</p>
+<p>在最初階段的時候，老實說我也想過會不會這個讀書會一下就「倒了」畢竟，這是一個免費的活動，加上網路上什麼人都有，況且我之前的經驗也是，不管是大學有人被二一、轉職時有人被刷掉，可能就是我已經社會化了，習慣一開始就最壞的打算。但隨著時間，証明我是錯的，大家都堅持了這麼久。</p>
+<p>不知道你們相不相信緣份，但我真的很開心遇到你們，我也成長了不少，你們將來一定都要比我好！（但記得留口飯讓我混就好，不是）</p>
+<p>沒動力的時候，也可以休息一下或是出去走走，也可以看看我以前 <a target="_blank" rel="noopener" href="https://github.com/Lidemy/mentor-program-5th/issues/31">轉職的心得</a>。</p>
+<p>總之呢，我會在這一直陪伴你們的。</p>
+<p>也祝大家工作順利！</p>
+<hr>
+<p>$ to be continued (y&#x2F;n) ? …</p>
+<p>$ y</p>
+<p>$ .</p>
+<p>$ _</p>
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://blog.errorbaker.tw/posts/benben/07-could-i-be-a-mentor-enough/">Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？</a></li>
+<li><a target="_blank" rel="noopener" href="https://hulitw.medium.com/mentorship-program-350db93d5c9c">真正的 Mentorship program：前端引路人計畫 | Huli</a></li>
+<li><a target="_blank" rel="noopener" href="https://medium.com/hulis-blog/procrastination-ba12754ada49">致跟我一樣的拖延症患者：動力是需要刻意創造的 | Huli</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.books.com.tw/products/0010820110">博客來-垃圾場長大的自學人生：從社會邊緣到劍橋博士的震撼教育</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.books.com.tw/products/0010548551">博客來-有些事，這些年我才懂：小野的人生思考</a></li>
+<li>貼心提醒：注意 <strong>博客來重覆訂購</strong> 的詐騙電話手法</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Benben
+  </li>
+  <li class="post-copyright-link">
+      <strong>文章連結：</strong>
+      <a href="https://benben.me/2022/11/06/code-mentor-program-01/" title="微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事">https://benben.me/2022/11/06/code-mentor-program-01/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/front-end/" rel="tag"># front-end</a>
+              <a href="/tags/mentor/" rel="tag"># mentor</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/10/16/error-baker-09-how-to-speed-up-typing/" rel="prev" title="如何提升打字速度 - 從初心者轉職超級初心者">
+                  <i class="fa fa-angle-left"></i> 如何提升打字速度 - 從初心者轉職超級初心者
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/11/11/english-after-work-01/" rel="next" title="After work notes">
+                  After work notes <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Benben</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"benben","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js" defer></script>
+
+</body>
+</html>

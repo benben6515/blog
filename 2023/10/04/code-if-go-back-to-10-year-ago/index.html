@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/benben-logo-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"benben.me","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12,"width":300},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="回學校分享時，問學弟妹的題目  社畜如我，出社會一段時間了，高中畢業也 10 年了，但從來沒回高中看老師過，這個時間剛好搬回來台中，又有一小段假期，就心血來潮回去找高中班導一下。 前一天老師就突然問我說要不要跟高三的學弟妹分享一下啊～ 高中班導：「你可以分享有關數學、程式都行，或是其他想講什麼也都可以～」 我：「（呃）好啊！」">
+<meta property="og:type" content="article">
+<meta property="og:title" content="身為開發者，如果回到 10 年前，你想跟自己說什麼？">
+<meta property="og:url" content="https://benben.me/2023/10/04/code-if-go-back-to-10-year-ago/index.html">
+<meta property="og:site_name" content="Benben 的小宇宙">
+<meta property="og:description" content="回學校分享時，問學弟妹的題目  社畜如我，出社會一段時間了，高中畢業也 10 年了，但從來沒回高中看老師過，這個時間剛好搬回來台中，又有一小段假期，就心血來潮回去找高中班導一下。 前一天老師就突然問我說要不要跟高三的學弟妹分享一下啊～ 高中班導：「你可以分享有關數學、程式都行，或是其他想講什麼也都可以～」 我：「（呃）好啊！」">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://hackmd.io/_uploads/Byxl_znf6.png">
+<meta property="og:image" content="https://hackmd.io/_uploads/B15hOznfa.png">
+<meta property="article:published_time" content="2023-10-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-10-03T16:00:00.000Z">
+<meta property="article:author" content="Benben">
+<meta property="article:tag" content="數學">
+<meta property="article:tag" content="程式">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hackmd.io/_uploads/Byxl_znf6.png">
+
+
+<link rel="canonical" href="https://benben.me/2023/10/04/code-if-go-back-to-10-year-ago/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://benben.me/2023/10/04/code-if-go-back-to-10-year-ago/","path":"2023/10/04/code-if-go-back-to-10-year-ago/","title":"身為開發者，如果回到 10 年前，你想跟自己說什麼？"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>身為開發者，如果回到 10 年前，你想跟自己說什麼？ | Benben 的小宇宙</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Benben 的小宇宙</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">喜歡寫程式，也喜歡寫文字。</p>
+      <img class="custom-logo-image" src="/images/benben-logo-2.svg" alt="Benben 的小宇宙">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">63</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">47</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%9C%E6%96%BC%E6%88%91"><span class="nav-number">1.</span> <span class="nav-text">關於我</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%A6%E5%AD%B8%E5%BC%9F%E5%A6%B9%E7%9A%84%E8%A9%B1"><span class="nav-number">2.</span> <span class="nav-text">給學弟妹的話</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%8C%E8%A8%98"><span class="nav-number">3.</span> <span class="nav-text">後記</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Benben"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Benben</p>
+  <div class="site-description" itemprop="description">Always Be Coding.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">47</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">63</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/benben6515" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;benben6515" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:z2266109@gmail.com" title="E-Mail → mailto:z2266109@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/benben_6515/?hl=zh-tw" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;benben_6515&#x2F;?hl&#x3D;zh-tw" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/profile.php?id=100022467427793" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;profile.php?id&#x3D;100022467427793" rel="noopener me" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://benben.me/2023/10/04/code-if-go-back-to-10-year-ago/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Benben">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Benben 的小宇宙">
+      <meta itemprop="description" content="Always Be Coding.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="身為開發者，如果回到 10 年前，你想跟自己說什麼？ | Benben 的小宇宙">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          身為開發者，如果回到 10 年前，你想跟自己說什麼？
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2023-10-04 00:00:00" itemprop="dateCreated datePublished" datetime="2023-10-04T00:00:00+08:00">2023-10-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">程式筆記</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2023/10/04/code-if-go-back-to-10-year-ago/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2023/10/04/code-if-go-back-to-10-year-ago/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><img alt="math question" src="https://hackmd.io/_uploads/Byxl_znf6.png" width=480 />
+
+<blockquote>
+<p>回學校分享時，問學弟妹的題目</p>
+</blockquote>
+<p>社畜如我，出社會一段時間了，高中畢業也 10 年了，但從來沒回高中看老師過，這個時間剛好搬回來台中，又有一小段假期，就心血來潮回去找高中班導一下。</p>
+<p>前一天老師就突然問我說要不要跟高三的學弟妹分享一下啊～</p>
+<p>高中班導：「你可以分享有關數學、程式都行，或是其他想講什麼也都可以～」</p>
+<p>我：「（呃）好啊！」</p>
+<span id="more"></span>
+
+<p>然後我就睡前想了想有什麼可以分享的，然後就整理出如下的大崗：</p>
+<hr>
+<h2 id="關於我"><a href="#關於我" class="headerlink" title="關於我"></a>關於我</h2><ul>
+<li>出生：1995 年生（今年 28 歲），土生土長后里人，后綜讀了 6 年</li>
+<li>大學：中原大學 - 應用數學系</li>
+<li>現職為：軟體工程師約 2 ~ 3 年經驗</li>
+<li>更多關於我：benben.me</li>
+</ul>
+<h2 id="給學弟妹的話"><a href="#給學弟妹的話" class="headerlink" title="給學弟妹的話"></a>給學弟妹的話</h2><ol>
+<li>好好學英文，還有數學</li>
+<li>大量閱讀「工具書」，可以的話隨身帶著一本筆記本</li>
+<li>多結交有幫助的朋友，多嘗試新事物</li>
+<li>多善用這個時代的工具；同時小心這個代的陷阱</li>
+<li>未來盡量成為「T」型人才</li>
+<li>早點開始理財，不知道如何開始的話，推薦「通往財富自由之路」一書</li>
+<li>AMA （Ask Me Anything）</li>
+</ol>
+<hr>
+<p>差不多是這樣吧，但也想不出什麼更貼近現在小孩的內容了，就睡前傳給老師看一下，老師就說：「哇！果然是理工科的學生，都條列式的列出來。」</p>
+<p>到分享前一刻都還在緊張，對我來說，實體的分享經驗真的很少很少，我大多都在網路上分享，但實體的感覺又不一樣，所以真的是小緊張，前半段我感覺自己講太快，不確定學弟妹們有沒有跟上，後面就放慢就好很多了。</p>
+<p>來講一下，我為什要列這些</p>
+<h3 id="好好學英文，還有數學"><a href="#好好學英文，還有數學" class="headerlink" title="好好學英文，還有數學"></a>好好學英文，還有數學</h3><p>因為不管在哪個領域，最新的技術可以說是都是用英文呈現的，不管軟體、硬體，甚至美容、美髮到餐飲，以大部分台灣的技術來說，可能就慢了一到三年，在一些變化很快的產業差別就會很巨大，如果能夠獲取英文的資源就會好很多，能夠獲取英文資源並表答就夠用了，不需要到文學創作之類的。</p>
+<p>數學的話，因為我們班導是數學老師，所以你們懂得？對吧（？）好啦，沒有啦～數學不用到太厲害，但基本的一些邏輯就弄明白就好，之後職場上你會遇到很多人，通常那些言之有物、說之有理的，都是數學還不錯的人，不一定最是頂尖的，但都還不錯，能夠清楚的傳遞資訊，是當今變化很快的世界中很重要的技能。</p>
+<h3 id="大量閱讀「工具書」，可以的話隨身帶著一本筆記本"><a href="#大量閱讀「工具書」，可以的話隨身帶著一本筆記本" class="headerlink" title="大量閱讀「工具書」，可以的話隨身帶著一本筆記本"></a>大量閱讀「工具書」，可以的話隨身帶著一本筆記本</h3><p>大量閱讀，不管在哪個領域中，都可以讓你保持領先，但不要浪費時間去讀幫助不大的書，小說、漫畫之類的，我沒有說小說、漫畫不好，很多作品也很不錯，但不要花太多時間在上面，工具書雖然無聊一點，但那才是真正有幫助的內容。</p>
+<p>隨身帶著一本筆記本，寫下何任東西、任何想法，這在之後開會、面試都非常有幫助，甚至跟一些朋友聊天時，也可以寫下你覺得有幫助的內容，之後再找都找得到。</p>
+<p>十年前我也坐下面的課桌椅上課，有一位老師發給我們班所有人一份「青年百大讀閱書單」，我當時心想，課業都這麼重了，哪有美國時間去讀一百本課外閱物啊！？就這樣三年高中畢業時，我可能還沒讀到五本吧，我那時候沒有很認真閱讀，但這影響我後來的閱讀習慣很深很深，現在手邊一定會有一兩本正在讀的書，而那位老師就是我們的班導。</p>
+<h3 id="多結交有幫助的朋友，多嘗試新事物"><a href="#多結交有幫助的朋友，多嘗試新事物" class="headerlink" title="多結交有幫助的朋友，多嘗試新事物"></a>多結交有幫助的朋友，多嘗試新事物</h3><p>很多時候多一認識一個朋友就多認識一條路，雖然很像廢話，但這是真的，依我自己為例，我之前程式接案的來源都是朋友的介紹的，我完全沒有自己去找案子過，很神奇吧！不要小看現在身邊的任何人，未來很有可能都是大老闆或是呼風喚雨的人物。</p>
+<p>也許你現在不知道自己要做什麼，這都很正常，人生本來就沒有一定的方向，只能靠自己去嘗試，嘗試過了才知道自己要什麼，我也是大學畢業後才換了幾份工作才轉職的，所以不要害怕去思考未來想做什麼，越早開始思考越好，因為這是學校不會教的。</p>
+<h3 id="多善用這個時代的工具；同時小心這個代的陷阱"><a href="#多善用這個時代的工具；同時小心這個代的陷阱" class="headerlink" title="多善用這個時代的工具；同時小心這個代的陷阱"></a>多善用這個時代的工具；同時小心這個代的陷阱</h3><p>「我們活在最好、也是最壞的時代」，這句話感覺有講跟沒講一樣，套用在我們父母那個年代也通用，那時候經濟起飛，也有所謂的黃金十年、二十年的說法，但有人成功，那有沒有人失敗？我覺得當然也很多啦，每個年代都有自己的優勢與陷井，如果能夠善用優勢並避開陷井，大概率會過得比較順遂，我們這個年代有的是 <strong>很多很多的學習資源</strong>，基本上你想學的上網 Google 一下都會有 ，這是我們父母那個年代沒有的，我們羨慕父母的年代；同時父母也羨慕我們的年代，所以誰才是最好的年代？</p>
+<p>我們這個年代源資反而太多了，大多時候是資源太多了，不知道如何選擇，加上這個年代的孩子注意力越來越分散，太多的分心事物，手遊、社交媒體、同儕比較心理，這樣你還說這是最好的年代嗎？我不敢說，但這是開放的答案，可以好好思考一下～</p>
+<h3 id="未來盡量成為「T」型人才"><a href="#未來盡量成為「T」型人才" class="headerlink" title="未來盡量成為「T」型人才"></a>未來盡量成為「T」型人才</h3><p>所謂「T」型人才呢～就是專精你的領域，但同時其他領域也有一定水準。例如：以課業來說可能有人英文很好，就可以花點時間把一其他的也補起來一點，之後延用到工作技能上，就是你加分的密技，萬一你的專業不行了，你其他也不會太差。</p>
+<p>也可以問自己「拿掉你的專業，你剩什麼？」，這句是直銷、銷售經典問句，我通常都可以講到對方下巴掉下來，我的專業從打工就開始累積了，例如：我做過很多內場，到現在還會切生魚片，切得快又漂亮；我做過警衛員，會基本的防身術，會使用警棍、警盾，失火了我知道正確的流程以降低公司損害並保護人身安全。我想說的是 <strong>沒有白走的路</strong>，現在看來都是分散的點，在未來的某個時刻才會連成線，你才會覺得原來那些點是有義意的，這句是 Jobs 說的，我自己也蠻歡喜的分享一下。</p>
+<h3 id="早點開始理財，不知道如何開始的話，推薦「通往財富自由之路」一書"><a href="#早點開始理財，不知道如何開始的話，推薦「通往財富自由之路」一書" class="headerlink" title="早點開始理財，不知道如何開始的話，推薦「通往財富自由之路」一書"></a>早點開始理財，不知道如何開始的話，推薦「通往財富自由之路」一書</h3><p>大家這麼努力讀書、學習技術，不管什麼為了夢想之類的，除非你家有礦，不然一般人應該跟我一樣家境不好，八九不離十終點都是要「賺錢」，有些人是賺到錢了，但很可惜不會「理財」，也就沒什麼存到錢，這樣的人也不在少數，但原因也淺而易見，因為 <strong>學校沒有教</strong>，就算是學商學也不見得會教「理財」，也不要去問老師之後要做什麼，更不要問老師做什麼最賺錢，但如果你知道拜託你跟我說一下。</p>
+<p>也許學校不會教理財，但有蠻多很不錯的相關書籍，「財富自由」的定義很多人都說不清，更慘的是很多人誤解他的意思，以為不用工作就可以有錢了，照成很多人盲目追求，推薦上面一書入門，這一本書我第一次讀應該是四、五年前（約 2019）看的，到現在還是很推，因為講得非常清楚，能越早開始越好，就從存個幾十塊的零用錢開始，這也是一種理財，這個小小習慣之後會產生巨大的差異。</p>
+<ul>
+<li>AMA （Ask Me Anything）</li>
+</ul>
+<p>好像現在小孩都比較害羞，比較沒什麼問題，老師就請分享一下以前讀書心得、我怎麼考到滿級分之類的，就大概簡單分享一下。</p>
+<p>在我跟老師的影響下，好像有幾個學生對數學系比較有興趣了，她問了一個很可愛的問題「數學系真的都只有在上數學嗎？」，我說「可以說是，也可以說不是」，一般大學都會有很多通識選修課，很多確實還不錯，然後我是應用數學系的，之後還會在分三大類：純學組、統計組、資訊組，我應該是比較偏資訊組，所以應該不會只有那種很理論的數學課。</p>
+<p>後來分享一些數學、程式、大學的東西，然後現場考了一下大家一個數學問題「0.9 循環 &#x3D; 1 」（差點寫成 <code>===</code> ）對或錯，依舉手的人數來說差不多一半一半，這題是我當初在高中時沒搞懂的題目，即便問了班導也沒有得到滿意的答案，但我後來在大學找到答案了，這是我有辦法接受的答案，再後來大學時，也有一些問題是教授也沒辦法回答的，我問了： 「d(x) 是對 x 軸的速度；d^2(x) 是對 x 軸的加速度；d(y) 是對 y 軸的速度；d^2(y) 是對 y 軸的加速度；那 d(x)d(y) 是什麼呢」教授想了一下笑了笑說：「這沒有意義」，人生也是，總會有一些無解的難題，也會很多沒意義的事，但人生嘛！</p>
+<img alt="math question prove" src="https://hackmd.io/_uploads/B15hOznfa.png" width=480 />
+
+<blockquote>
+<p>直接在黑版上手寫的證明題，好險還寫得出來</p>
+</blockquote>
+<hr>
+<h2 id="後記"><a href="#後記" class="headerlink" title="後記"></a>後記</h2><ul>
+<li>原來現在高中一個班才 20 人左右，我們以前好像還有 30 多快 40 人吧，感覺教室的空間變好大；現在也沒有所謂「資優班」、「自然組」、「社會組」，好像只有一般的班級跟「特色班」我的理解是很像以前的「自然組」，就是數理比較好一點是個特色（？）。</li>
+<li>在教師辦公室跟其他老師聊天，好像素質越來越差，好像還是考學測（滿分 75 級分），老師說現在最好的學生還考不到 50 級分，我記得我以前考 53 級分吧，但不是最高的，但應該是前 5 還前 10 左右，說出這句的老師，在我印象中是非常有活力的老師，但在他的絲絲的白髮中也可以感受到他的無耐，學弟妹加油啊！</li>
+<li>後來也又回去國中部（我國中、高中剛好都在同一個地方），找國中班導跟另一位影響我很多的理化老師，很幸運他們還在，我是說十年欸！人生中有幾個十年，真的推薦時間允許的話，都回去看看老師，尤其是那些很讚的老師們！</li>
+<li>去找國中的班導聊天才知道，原來我們是他唯一帶的一屆導生，之後他就沒有帶了，真的很幸運，而且他竟然還記得我們，我的天啊！這次回去真的好幾次要哭出來了啦。</li>
+<li>完全有感受到少子化的影響，學生少了好多人，活力好像也比以前少了一些，但不變的是，很多老師還是用熱情在影響著學生，也有老師跟我分享他以前也是寫程式的，他現在在想怎麼要把程式的一些概念容入現在的教學中，地方國、高中資源真的超級少，但很多老師是願意主動付出的，不要浪費老師們的用心，也許現在成續不好，但未來都可以回來看看老師、聊聊天也都有不一樣的收獲。</li>
+</ul>
+<blockquote>
+<p>總之不管是誰，各位都要好好的～</p>
+</blockquote>
+<p>算是用一個半流水帳的方式把這個感動記下來，希望未來也還有足夠的光茫能當個大家黑夜中的小夜燈，也感謝身邊一些支持我的人、各種老師，在我低潮時也給我光茫，所以才有現在的我。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Benben
+  </li>
+  <li class="post-copyright-link">
+      <strong>文章連結：</strong>
+      <a href="https://benben.me/2023/10/04/code-if-go-back-to-10-year-ago/" title="身為開發者，如果回到 10 年前，你想跟自己說什麼？">https://benben.me/2023/10/04/code-if-go-back-to-10-year-ago/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag"># 程式</a>
+              <a href="/tags/%E6%95%B8%E5%AD%B8/" rel="tag"># 數學</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/08/31/error-baker-13-boshiamy/" rel="prev" title="什麼時代了還在學 | 嘸蝦米輸入法">
+                  <i class="fa fa-angle-left"></i> 什麼時代了還在學 | 嘸蝦米輸入法
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/12/30/error-baker-14-2023-wrapped/" rel="next" title="2023 年度回顧 | 目標、效率、平衡">
+                  2023 年度回顧 | 目標、效率、平衡 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Benben</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"benben","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js" defer></script>
+
+</body>
+</html>

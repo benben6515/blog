@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#afafff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#acf;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <defs>
+    <filter id="f3" width="64" height="64">
+      <feOffset in="SourceAlpha" dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="3" />
+      <feBlend in="SourceGraphic" in2="blurOut" />
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" rx="8" ry="8" width="64" height="64" fill="#eee" />
+  <rect x="8" y="8" rx="24" ry="24" width="48" height="48" fill="url(#grad1)" filter="url(#f3)">
+    <animateTransform
+      attributeName="transform"
+      begin="0s"
+      dur="1s"
+      type="rotate"
+      from="0 32 32"
+      to="360 32 32"
+      repeatCount="indefinite" />
+  </rect>
+
+
+  <line x1="20" y1="10" x2="20" y2="64" style="stroke:#222;stroke-width:2" />
+  <line x1="18" y1="10" x2="21" y2="64" style="stroke:#222;stroke-width:1" />
+
+  <line x1="10" y1="14" x2="40" y2="24" style="stroke:#222;stroke-width:1" />
+  <line x1="12" y1="14" x2="38" y2="24" style="stroke:#222;stroke-width:1" />
+
+  <line x1="8" y1="36" x2="40" y2="22" style="stroke:#222;stroke-width:1"  />
+
+
+  <line x1="13" y1="30" x2="48" y2="48" style="stroke:#222;stroke-width:1" />
+  <line x1="13" y1="31" x2="48" y2="47" style="stroke:#222;stroke-width:1" />
+
+  <line x1="10" y1="50" x2="50" y2="44" style="stroke:#222;stroke-width:1" />
+  <line x1="9" y1="51" x2="50" y2="44" style="stroke:#222;stroke-width:1"  />
+
+  Sorry, your browser does not support inline SVG. - design by Benben.
+</svg>

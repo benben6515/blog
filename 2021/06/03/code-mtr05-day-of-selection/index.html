@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/benben-logo-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"benben.me","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12,"width":300},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="時間很快到了第 8 周，也是 MTR05 的決擇之日。 12345678910方案選擇請確認你要選擇的方案：A 求職方案：每週需付出 50 小時以上，要有轉職意願，有淘汰制，兩週內每日進度報告累積缺交三次及淘汰。需要付保證金 5000 元，結業兩個月內有找到工作薪水為 12% 的年薪，沒找到工作學費全免B 買斷方案：適合想要學習但無法付出這麼多時間的人，無淘汰機制及學習期限，計畫結束後依然可以觀看">
+<meta property="og:type" content="article">
+<meta property="og:title" content="決擇之日">
+<meta property="og:url" content="https://benben.me/2021/06/03/code-mtr05-day-of-selection/index.html">
+<meta property="og:site_name" content="Benben 的小宇宙">
+<meta property="og:description" content="時間很快到了第 8 周，也是 MTR05 的決擇之日。 12345678910方案選擇請確認你要選擇的方案：A 求職方案：每週需付出 50 小時以上，要有轉職意願，有淘汰制，兩週內每日進度報告累積缺交三次及淘汰。需要付保證金 5000 元，結業兩個月內有找到工作薪水為 12% 的年薪，沒找到工作學費全免B 買斷方案：適合想要學習但無法付出這麼多時間的人，無淘汰機制及學習期限，計畫結束後依然可以觀看">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://img.youtube.com/vi/JfbwpUttpWs/0.jpg">
+<meta property="og:image" content="http://img.youtube.com/vi/djSEDGoqUzo/0.jpg">
+<meta property="article:published_time" content="2021-06-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-06-02T16:00:00.000Z">
+<meta property="article:author" content="Benben">
+<meta property="article:tag" content="MOR05">
+<meta property="article:tag" content="程式">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://img.youtube.com/vi/JfbwpUttpWs/0.jpg">
+
+
+<link rel="canonical" href="https://benben.me/2021/06/03/code-mtr05-day-of-selection/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://benben.me/2021/06/03/code-mtr05-day-of-selection/","path":"2021/06/03/code-mtr05-day-of-selection/","title":"決擇之日"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>決擇之日 | Benben 的小宇宙</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Benben 的小宇宙</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">喜歡寫程式，也喜歡寫文字。</p>
+      <img class="custom-logo-image" src="/images/benben-logo-2.svg" alt="Benben 的小宇宙">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">63</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">47</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8C%B6%E8%B1%AB"><span class="nav-number">1.</span> <span class="nav-text">猶豫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%9E%90"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B1%BA%E5%AE%9A"><span class="nav-number">3.</span> <span class="nav-text">決定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E5%BE%8C"><span class="nav-number">4.</span> <span class="nav-text">最後</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Benben"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Benben</p>
+  <div class="site-description" itemprop="description">Always Be Coding.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">47</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">63</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/benben6515" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;benben6515" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:z2266109@gmail.com" title="E-Mail → mailto:z2266109@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/benben_6515/?hl=zh-tw" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;benben_6515&#x2F;?hl&#x3D;zh-tw" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/profile.php?id=100022467427793" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;profile.php?id&#x3D;100022467427793" rel="noopener me" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://benben.me/2021/06/03/code-mtr05-day-of-selection/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Benben">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Benben 的小宇宙">
+      <meta itemprop="description" content="Always Be Coding.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="決擇之日 | Benben 的小宇宙">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          決擇之日
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2021-06-03 00:00:00" itemprop="dateCreated datePublished" datetime="2021-06-03T00:00:00+08:00">2021-06-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">程式筆記</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2021/06/03/code-mtr05-day-of-selection/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/06/03/code-mtr05-day-of-selection/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>時間很快到了第 8 周，也是 MTR05 的決擇之日。</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">方案選擇</span><br><span class="line">請確認你要選擇的方案：</span><br><span class="line"></span><br><span class="line">A 求職方案：每週需付出 50 小時以上，要有轉職意願，有淘汰制，兩週內每日進度報告累積缺交三次及淘汰。</span><br><span class="line">需要付保證金 5000 元，結業兩個月內有找到工作薪水為 12% 的年薪，沒找到工作學費全免</span><br><span class="line"></span><br><span class="line">B 買斷方案：適合想要學習但無法付出這麼多時間的人，無淘汰機制及學習期限，計畫結束後依然可以觀看課程</span><br><span class="line">需要付保證金 5000 元加上第一期學費 12500 元共 17500 元，之後每個月付 12500 元，學費總額是 55000 元</span><br><span class="line"></span><br><span class="line">更詳細方案的介紹請參考：課程資訊，有問題請私訊 @huli</span><br></pre></td></tr></table></figure>
+
+<p>看到訊息的時候，我還是猶豫了…</p>
+<span id="more"></span>
+
+<h2 id="猶豫"><a href="#猶豫" class="headerlink" title="猶豫"></a>猶豫</h2><p>該選什麼方案呢？其實在一開始就想好要選 A 方案了，但是還是猶豫了，畢竟兩個方案很可能會差到 10000 塊 ( 很快算了一下，差不多月薪 45000 、不含年終，學費: 64800 ) ，想想 10000 也可以做不少事，像是買個好的雙營幕跟好的鍵盤都還有找呢 ( ㄟ？不是 )</p>
+<p>我是想說這 10000 塊，對我來說很重要。</p>
+<blockquote>
+<p>It’s mean something to me.</p>
+</blockquote>
+<p>而且會分這兩個方案，也是因為要幫我們下定決心吧，這部分對於我 ( 或是比較自律的人 ) 好像就還好，因為選 A 或 B 課程內容都一樣，不會有差別</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>之前也在 Gather.town 小樹屋跟其他同學還有助教聊過，也有學長是選 B 方案的，他是這麼分析的 :</p>
+<blockquote>
+<p>你看選 B 方案的話，可以不用寫每日進度跟寫畢業心得 XD</p>
+</blockquote>
+<p>還有人說最佳解是選 A 然後，兩個月找不到工作，就免學費 (？？？)，真的笑死</p>
+<h2 id="決定"><a href="#決定" class="headerlink" title="決定"></a>決定</h2><p>想了很多，我在想 : 會不會這個決定，會影響之後工程師的一生 ( 才沒這麼嚴重啦 )，想了一晚，還是決定選 A 方案，如果學費越多就代表我的薪水是越多的，這樣想著想著好像就很有動力XD</p>
+<p>最後想了這麼多，還是回到原點，但不一樣，這是一種見山又是山的感覺 ( 在那邊自以為 )</p>
+<p>總之，我選 A plan</p>
+<p>_to be continued ( y&#x2F;n ) …</p>
+<p>_y</p>
+<p>_.</p>
+<p>_</p>
+<h2 id="最後"><a href="#最後" class="headerlink" title="最後"></a>最後</h2><p>分別有兩首歌送給大家，我自己也蠻常聽的，為什麼都是 <a target="_blank" rel="noopener" href="https://www.mingweekly.com/entertainment/music/content-23014.html">Marz23</a> 的歌 ( 因為我來勸大家加入 23 部隊的XDD )，可能有些人會覺得有點吵，但是有時候情緒該就是這麼的強烈，給他聽下去就對了</p>
+<p>To : 不管選 A 或 B 的同學</p>
+<p>  <a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=JfbwpUttpWs">Marz23 - Break Me Down</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=JfbwpUttpWs"><img src="http://img.youtube.com/vi/JfbwpUttpWs/0.jpg" alt="Marz23 ＆ Jesse McFaddin &quot;擊敗我 Break Me Down&quot;"></a></p>
+<blockquote>
+<p>Will you come and walk with me?</p>
+</blockquote>
+<hr>
+<p>To : 決定放棄的同學 ( 雖然不一定看得到就是了XD )</p>
+<p>  <a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=djSEDGoqUzo">Marz23 - 陪你失敗</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=djSEDGoqUzo"><img src="http://img.youtube.com/vi/djSEDGoqUzo/0.jpg" alt="Marz23 -【陪你失敗Fail With You】ft. 寺二"></a></p>
+<blockquote>
+<p>相信你有自信面對更好的事</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Benben
+  </li>
+  <li class="post-copyright-link">
+      <strong>文章連結：</strong>
+      <a href="https://benben.me/2021/06/03/code-mtr05-day-of-selection/" title="決擇之日">https://benben.me/2021/06/03/code-mtr05-day-of-selection/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag"># 程式</a>
+              <a href="/tags/MOR05/" rel="tag"># MOR05</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/05/29/code-javascript-sorting/" rel="prev" title="JavaScript Sorting">
+                  <i class="fa fa-angle-left"></i> JavaScript Sorting
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/08/22/error-baker-01-article/" rel="next" title="人人都可以寫文章 - 從筆記到文章">
+                  人人都可以寫文章 - 從筆記到文章 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Benben</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"benben","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js" defer></script>
+
+</body>
+</html>
