@@ -1535,6 +1535,97 @@
       </tags>
   </entry>
   <entry>
+    <title>2021 前端領航者論壇</title>
+    <url>/2021/04/29/code-2021-front-end-discussion/</url>
+    <content><![CDATA[<h6 id="日期-Apr-28-20-10-22-20-人數-240-250-系統-Zoom"><a href="#日期-Apr-28-20-10-22-20-人數-240-250-系統-Zoom" class="headerlink" title="日期 : Apr. 28 20:10 - 22:20 | 人數 : 240 - 250 | 系統 : Zoom"></a>日期 : Apr. 28 20:10 - 22:20 | 人數 : 240 - 250 | 系統 : Zoom</h6><h4 id="議題一-解決前端知識焦慮者的所有困惑"><a href="#議題一-解決前端知識焦慮者的所有困惑" class="headerlink" title="議題一 : 解決前端知識焦慮者的所有困惑"></a>議題一 : 解決前端知識焦慮者的所有困惑</h4><ul>
+<li>為何現在前端人才搶手？</li>
+<li>非本科就比較弱勢嘛？</li>
+<li>什麼人適合當前端當工程師？</li>
+<li>不同學習方式 ( 線上、實體 ) 的差異？</li>
+<li>前端門檻低，是否容易過飽和？</li>
+</ul>
+<span id="more"></span>
+
+<h4 id="議題二-從各面向探討解決派系選擇障礙"><a href="#議題二-從各面向探討解決派系選擇障礙" class="headerlink" title="議題二 : 從各面向探討解決派系選擇障礙"></a>議題二 : 從各面向探討解決派系選擇障礙</h4><ul>
+<li>所以框架要選 Vue, React, Angular ？</li>
+<li>我應該要學 TypeScript 嗎？</li>
+<li>應該不斷的追求新技術嗎？</li>
+</ul>
+<h4 id="議題三-初階工程師想知道的答案"><a href="#議題三-初階工程師想知道的答案" class="headerlink" title="議題三 : 初階工程師想知道的答案"></a>議題三 : 初階工程師想知道的答案</h4><ul>
+<li>我的績效是怎樣算的？</li>
+<li>我改怎麼做才能加薪、升遷？</li>
+</ul>
+<h4 id="議題四-老司機的告白，告訴你真實的玩法"><a href="#議題四-老司機的告白，告訴你真實的玩法" class="headerlink" title="議題四 : 老司機的告白，告訴你真實的玩法"></a>議題四 : 老司機的告白，告訴你真實的玩法</h4><ul>
+<li>找工作該如何證明自己？</li>
+<li>業界面試有無大原則可循？</li>
+<li>產業環境對職涯發展有多大的影響？</li>
+<li>過往精進自我的方式？</li>
+</ul>
+<hr>
+<h4 id="筆記"><a href="#筆記" class="headerlink" title="筆記"></a>筆記</h4><ul>
+<li><p>議題一 :</p>
+<ul>
+<li>前端的人很多，但能打的很少。</li>
+<li>太依賴框架，基本能力、原理了解不深。</li>
+<li>薪水比較優渥，所以很有熱忱(?)。</li>
+<li><strong>要有熱忱，真的喜歡前端，假日看 code 、下班寫 code 寫到不想回家</strong>。</li>
+<li>有入門經驗之後，要盡量靠自己去學習，經驗不是單靠課程可以跟上的。</li>
+<li>大量的練習、feedback 是必要的。</li>
+<li>前端的熱忱才是重要的，非本科系、本科系 ( 約 3-5 成 ) 差別不大，解決能力才是關鍵。</li>
+<li><strong>挑 senoir 工程師看技術；挑 junior 工程師看態度</strong>。</li>
+<li>前端難民(?) : 上了 2 - 3 月的課，但是課程的範例不會修改，沒有學到精隨。</li>
+<li>建議 : 不要拿課程內容當作品集。</li>
+</ul>
+</li>
+<li><p>議題二 :</p>
+<ul>
+<li>框架比較 : Vue 簡單好上手；Recat 居多、薪水比較高(?)；Angular 被排擠QQ</li>
+<li><strong>學哪個框架都可以，現在差別不大了，只是要先學哪個的問題，主要看當前公司需求</strong>。</li>
+<li>TypeScript 越來越多公司導入，可能是未來趨勢。</li>
+<li>TypeScript 一開始用會不習慣，習慣後開發方便。</li>
+<li>如果 JavaScript 學的好， TypeScript 幫助有限，TypeScript 主要幫助    - 型別問題。</li>
+<li>最近的新玩意 : Svelte</li>
+<li>要先思考新東西哪裡可以用到，先 run 幾個小專案，團隊都 OK 就可以試試看。</li>
+</ul>
+</li>
+<li><p>議題三 :</p>
+<ul>
+<li><strong>要如何分辨 senoir、junior，如果覺得自己有到，就丟履歷，哪裡不足就去補</strong>。</li>
+<li>senoir 會考 JavaScript 核心知識、 code review …等。</li>
+<li>打開 github 看寫幾行 code 評斷 KPI (?)</li>
+<li>有沒有辦法達成任務、有沒有符合時程、…等。</li>
+<li>新人有問題不要怕問，一個人卡在那，可能會影響公司的進度。</li>
+<li><strong>記錄自己的績效、做了甚麼 ( evidence ) ，之後才可以跟主管報告，爭取加薪、升遷</strong>。</li>
+</ul>
+</li>
+<li><p>議題四 :</p>
+<ul>
+<li>你的作品集、專案，遇到什麼困難、你的思路是甚麼。</li>
+<li>身為前端工程師多或少都要有個 side project 在 github 上很重要，可以看出寫的程式碼、思路。</li>
+<li>有的公司面試資深，可能不會去考太多，因為怕會被反問。</li>
+<li>大概面試流程 : 可能會有前測，演算法、回家作業等，之後看你的 code 討論技術類問題，最後跟 HR 面試，中級主管面試等。</li>
+<li><strong>你這兩年遇到最難的問題是甚麼？可以隨手寫筆記紀錄思路</strong>。</li>
+<li>如果想拿國外 offer 推薦大家可以刷 leetcode ，至少 300 題。</li>
+<li>職涯剛開始比較辛苦， know how 很重要。</li>
+<li>要思考如何把程式跟其他產業結合  ( 傳產、接案、博藝…等 )。</li>
+<li>做產品，技術要深；做接案，技術要廣。</li>
+<li><strong>轉職完工程師，要保持著學習 Never End 的精神。(Front-End &#x3D; Never-End)</strong></li>
+<li>保持精進做好兩件事 : 1.工作上的技術要加深熟練 2.新技術要廣度的搜尋了解</li>
+<li><strong><a href="https://zh.wikipedia.org/zh-tw/%E5%B0%8F%E9%BB%84%E9%B8%AD%E8%B0%83%E8%AF%95%E6%B3%95">小黃鴨除錯法</a> : 除錯或測試過程中，操作人耐心地向小黃鴨解釋每一行程式的作用，以此來激發靈感與發現矛盾</strong>。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程式筆記</category>
+      </categories>
+      <tags>
+        <tag>框架</tag>
+        <tag>程式</tag>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>超速學習 | Ultimate Learning</title>
     <url>/2021/02/24/book-ultimate-learning/</url>
     <content><![CDATA[<blockquote>
@@ -1803,97 +1894,6 @@
       <tags>
         <tag>個人成長</tag>
         <tag>學習方法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021 前端領航者論壇</title>
-    <url>/2021/04/29/code-2021-front-end-discussion/</url>
-    <content><![CDATA[<h6 id="日期-Apr-28-20-10-22-20-人數-240-250-系統-Zoom"><a href="#日期-Apr-28-20-10-22-20-人數-240-250-系統-Zoom" class="headerlink" title="日期 : Apr. 28 20:10 - 22:20 | 人數 : 240 - 250 | 系統 : Zoom"></a>日期 : Apr. 28 20:10 - 22:20 | 人數 : 240 - 250 | 系統 : Zoom</h6><h4 id="議題一-解決前端知識焦慮者的所有困惑"><a href="#議題一-解決前端知識焦慮者的所有困惑" class="headerlink" title="議題一 : 解決前端知識焦慮者的所有困惑"></a>議題一 : 解決前端知識焦慮者的所有困惑</h4><ul>
-<li>為何現在前端人才搶手？</li>
-<li>非本科就比較弱勢嘛？</li>
-<li>什麼人適合當前端當工程師？</li>
-<li>不同學習方式 ( 線上、實體 ) 的差異？</li>
-<li>前端門檻低，是否容易過飽和？</li>
-</ul>
-<span id="more"></span>
-
-<h4 id="議題二-從各面向探討解決派系選擇障礙"><a href="#議題二-從各面向探討解決派系選擇障礙" class="headerlink" title="議題二 : 從各面向探討解決派系選擇障礙"></a>議題二 : 從各面向探討解決派系選擇障礙</h4><ul>
-<li>所以框架要選 Vue, React, Angular ？</li>
-<li>我應該要學 TypeScript 嗎？</li>
-<li>應該不斷的追求新技術嗎？</li>
-</ul>
-<h4 id="議題三-初階工程師想知道的答案"><a href="#議題三-初階工程師想知道的答案" class="headerlink" title="議題三 : 初階工程師想知道的答案"></a>議題三 : 初階工程師想知道的答案</h4><ul>
-<li>我的績效是怎樣算的？</li>
-<li>我改怎麼做才能加薪、升遷？</li>
-</ul>
-<h4 id="議題四-老司機的告白，告訴你真實的玩法"><a href="#議題四-老司機的告白，告訴你真實的玩法" class="headerlink" title="議題四 : 老司機的告白，告訴你真實的玩法"></a>議題四 : 老司機的告白，告訴你真實的玩法</h4><ul>
-<li>找工作該如何證明自己？</li>
-<li>業界面試有無大原則可循？</li>
-<li>產業環境對職涯發展有多大的影響？</li>
-<li>過往精進自我的方式？</li>
-</ul>
-<hr>
-<h4 id="筆記"><a href="#筆記" class="headerlink" title="筆記"></a>筆記</h4><ul>
-<li><p>議題一 :</p>
-<ul>
-<li>前端的人很多，但能打的很少。</li>
-<li>太依賴框架，基本能力、原理了解不深。</li>
-<li>薪水比較優渥，所以很有熱忱(?)。</li>
-<li><strong>要有熱忱，真的喜歡前端，假日看 code 、下班寫 code 寫到不想回家</strong>。</li>
-<li>有入門經驗之後，要盡量靠自己去學習，經驗不是單靠課程可以跟上的。</li>
-<li>大量的練習、feedback 是必要的。</li>
-<li>前端的熱忱才是重要的，非本科系、本科系 ( 約 3-5 成 ) 差別不大，解決能力才是關鍵。</li>
-<li><strong>挑 senoir 工程師看技術；挑 junior 工程師看態度</strong>。</li>
-<li>前端難民(?) : 上了 2 - 3 月的課，但是課程的範例不會修改，沒有學到精隨。</li>
-<li>建議 : 不要拿課程內容當作品集。</li>
-</ul>
-</li>
-<li><p>議題二 :</p>
-<ul>
-<li>框架比較 : Vue 簡單好上手；Recat 居多、薪水比較高(?)；Angular 被排擠QQ</li>
-<li><strong>學哪個框架都可以，現在差別不大了，只是要先學哪個的問題，主要看當前公司需求</strong>。</li>
-<li>TypeScript 越來越多公司導入，可能是未來趨勢。</li>
-<li>TypeScript 一開始用會不習慣，習慣後開發方便。</li>
-<li>如果 JavaScript 學的好， TypeScript 幫助有限，TypeScript 主要幫助    - 型別問題。</li>
-<li>最近的新玩意 : Svelte</li>
-<li>要先思考新東西哪裡可以用到，先 run 幾個小專案，團隊都 OK 就可以試試看。</li>
-</ul>
-</li>
-<li><p>議題三 :</p>
-<ul>
-<li><strong>要如何分辨 senoir、junior，如果覺得自己有到，就丟履歷，哪裡不足就去補</strong>。</li>
-<li>senoir 會考 JavaScript 核心知識、 code review …等。</li>
-<li>打開 github 看寫幾行 code 評斷 KPI (?)</li>
-<li>有沒有辦法達成任務、有沒有符合時程、…等。</li>
-<li>新人有問題不要怕問，一個人卡在那，可能會影響公司的進度。</li>
-<li><strong>記錄自己的績效、做了甚麼 ( evidence ) ，之後才可以跟主管報告，爭取加薪、升遷</strong>。</li>
-</ul>
-</li>
-<li><p>議題四 :</p>
-<ul>
-<li>你的作品集、專案，遇到什麼困難、你的思路是甚麼。</li>
-<li>身為前端工程師多或少都要有個 side project 在 github 上很重要，可以看出寫的程式碼、思路。</li>
-<li>有的公司面試資深，可能不會去考太多，因為怕會被反問。</li>
-<li>大概面試流程 : 可能會有前測，演算法、回家作業等，之後看你的 code 討論技術類問題，最後跟 HR 面試，中級主管面試等。</li>
-<li><strong>你這兩年遇到最難的問題是甚麼？可以隨手寫筆記紀錄思路</strong>。</li>
-<li>如果想拿國外 offer 推薦大家可以刷 leetcode ，至少 300 題。</li>
-<li>職涯剛開始比較辛苦， know how 很重要。</li>
-<li>要思考如何把程式跟其他產業結合  ( 傳產、接案、博藝…等 )。</li>
-<li>做產品，技術要深；做接案，技術要廣。</li>
-<li><strong>轉職完工程師，要保持著學習 Never End 的精神。(Front-End &#x3D; Never-End)</strong></li>
-<li>保持精進做好兩件事 : 1.工作上的技術要加深熟練 2.新技術要廣度的搜尋了解</li>
-<li><strong><a href="https://zh.wikipedia.org/zh-tw/%E5%B0%8F%E9%BB%84%E9%B8%AD%E8%B0%83%E8%AF%95%E6%B3%95">小黃鴨除錯法</a> : 除錯或測試過程中，操作人耐心地向小黃鴨解釋每一行程式的作用，以此來激發靈感與發現矛盾</strong>。</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程式筆記</category>
-      </categories>
-      <tags>
-        <tag>框架</tag>
-        <tag>程式</tag>
-        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -2258,92 +2258,6 @@
       </tags>
   </entry>
   <entry>
-    <title>微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事</title>
-    <url>/2022/11/06/code-mentor-program-01/</url>
-    <content><![CDATA[<p><img data-src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg" alt="php meme"></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大約在 2022 的六月底的時候，參加了 <code>前端引路人計劃</code>，成員都算是一起學習的夥伴，想要轉職的自學者，我算是計劃中 Mentor ，一起分享學習，幫大家 Code Review 等。</p>
-<p>這篇算是一個階段的結束，但也許也是另一個開始，為什麼會開始的計劃（當然這是免費的），可以參考上一篇：<a href="https://blog.errorbaker.tw/posts/benben/07-could-i-be-a-mentor-enough/">Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？</a></p>
-<span id="more"></span>
-
-<h2 id="成員簡介"><a href="#成員簡介" class="headerlink" title="成員簡介"></a>成員簡介</h2><p>成員在上一篇都有提到，這麼再提一下。</p>
-<p>成員有（這邊用簡寫代稱）：</p>
-<ul>
-<li><p>K，主揪，強而有力的自學者，目前在外商半導體產業，是寫 python 處理資料的，基本上他已經看到 react 了，看得差不多了，然後再刷一些 leetcode 了，我覺得根本就可以去轉職了 XD</p>
-</li>
-<li><p>S，目前還是學生，未來想往區塊鍊發展，在學 solidity 中，也用 next.js 寫了前台，但 react 的掌握度還算不高（？，她自己說的）但她主要也不是往前端發展，也可能往研究所前進。</p>
-</li>
-<li><p>A，目前在資策會上課，正在學習 PHP 後台中，也是估計今年完課完後，年底去求職，也有在看一些 PM 的課程，未來可能會往 PM 走也不一定。</p>
-</li>
-<li><p>我，廢物前端新手，看到大家都這麼認真，我真的是汗顏 QQ</p>
-</li>
-</ul>
-<p>當然隨著時間在走，也會越來越少人，怎麼說呢？我的旅程一路上也遇到了不少人，轉職路上有人成功也有人放棄，都是很正常的，這個從一開始參加前就知道了，因為人生嘛！總有更重要的事！例如：我轉職前也放棄了幾次，礙於現實、缺少自信等等，所以啊，能夠持續的自學自身就是一件不容易的事了，重點是你們都跨出第一步了，已經贏了很多人了。</p>
-<p>花開花落自有時，緣起緣減無窮盡。</p>
-<h2 id="交流案例"><a href="#交流案例" class="headerlink" title="交流案例"></a>交流案例</h2><p>跟其他的組員的交流都很棒，這邊提一個我覺得不錯的案例交流分享。</p>
-<p>以下是 A 的問題（詳細的網址並非真實網址）：</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">👻 現在的狀況：</span><br><span class="line"></span><br><span class="line">1、有兩個api,第一個api之功能是將選擇的圖片以md5亂數命名的方式存到電腦本地的資料夾，另一個api是將表單裡面所有的資料傳送到db中。若您時間允許的話可參下面兩個文件~</span><br><span class="line">第一個（圖片）：https://github.com/a/xxx.php</span><br><span class="line">第二個（傳送到db）:</span><br><span class="line">https://github.com/a/ooo/.php</span><br><span class="line"></span><br><span class="line">👀 今天做的處理：</span><br><span class="line"></span><br><span class="line">1、原本有“圖片上傳”還有&quot;資料修改&quot;兩個鍵，發現兩個按鍵功能有重疊到，都會自動連到第二個api(將檔案上傳到db中的)後來把第一個“圖片上傳”的功能重新做調整，讓他不會再跟第二個api一起跑，就只剩下存檔案到資料庫裡面的功能，並且解決了調整中產生的各種bug(例如上次問的問題又發生，但是也解決了)。</span><br><span class="line"></span><br><span class="line">🧐 今天做的研究：</span><br><span class="line"></span><br><span class="line">1.回傳的値是存在第一個api response 中的 $filename 裡面，如果能使用這個 $filename 到第二個api中應該就能一起上傳。</span><br><span class="line"></span><br><span class="line">2.上網找到一些資料，有些是用jQuery的方式寫，或者是寫一些我看不懂的寫法，可能是關鍵字下錯。今天嘗試的關鍵字組合有 “AJAX api response ”、“AJAX 回傳 js html”、“fetch response ”、“圖檔名稱 檔案上傳 資料庫”等等。</span><br><span class="line"></span><br><span class="line">3、發現了可能有關聯的關鍵字如 .then() 、bindparam 但不清楚使用方式，也不知道能不能用。</span><br><span class="line"></span><br><span class="line">4.有找到其他的寫法可能能用，但是還沒研究裡面的邏輯，但是乍看之下也許可行 https://www.codexworld.com/store-retrieve-image-from-database-mysql-php/。</span><br><span class="line"></span><br><span class="line">😂 其他：</span><br><span class="line"></span><br><span class="line">1.目前最新版php我把他放在一個叫 bup-as<span class="emphasis">_tourist_</span>spots<span class="emphasis">_edit.php 的檔案中~鏈接github一樣是公開的，若您時間有空再看即可~</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">https://github.com/a/xox.php</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">感謝您花時間看這個落落長的文~~~QQ</span></span><br></pre></td></tr></table></figure>
-
-<p>我的回應：</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">嗯嗯 我都看完了 ~</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 今天做的處理</span></span><br><span class="line"></span><br><span class="line">這邊很棒有嘗試自己處理！</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 今天做的研究</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 感覺是這樣沒錯</span><br><span class="line"><span class="bullet">2.</span> 因為這個專案主要還是寫 php ，或許可以試試 &quot;php upload img&quot; 之類的</span><br><span class="line"><span class="bullet">3.</span> .then() 是 Promise 的用法，Promise 也是一個 JS 很大的坑，或著應該是說 JS 非同步的問題都是坑，之後可以找時間補起來；blindparam 我就不確定了，但應該是 php 的用法 XD</span><br><span class="line"><span class="bullet">4.</span> 我有看完影片，蠻精華的，但感覺是妳要的功能，可以跟著他做看看，再拿去改成妳要的功能試試</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 其他</span></span><br><span class="line"></span><br><span class="line">這邊的 code 我也稍為看完了，但因為 php 是個世界最棒的程式語言（？）沒有啦，是我之前也沒有用到 php 圖片處理這一塊（圖片處理我是後來用 node.js 寫的），php 就只有寫留言版、簡易部落格這樣，可能也是很久沒碰 php 了啦 XD</span><br><span class="line"></span><br><span class="line">課程的用意應該是讓妳先體驗一下前、後端混再一起的寫法吧，這樣後面才會知道前、後端分離跟框架的好（對，我之前的課程也是這樣說）</span><br><span class="line">當然 php 還有 Laravel 等等的框架，但純 php 真的不好寫</span><br><span class="line"></span><br><span class="line">php meme：https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg</span><br><span class="line"></span><br><span class="line">（搜尋 &quot;php meme&quot; 也會看到很多的好笑的圖片，工程師笑話，不要太認真）</span><br></pre></td></tr></table></figure>
-
-<p>當然還有在很多在 Google Meet （我們主要的分享工具）上互動都很棒，S 也常主動對我提問，然當我也都很用心的回答。</p>
-<p>S 也說「很喜歡聽我分享」，聽到這句時，當下嘴角真的有微微上揚呢。</p>
-<p>每收到一個小小的感謝對我來說都是一個動力，對於我的工作都是一個肯定，原來我做的事是有價值的，也希望真的有幫助到你們。</p>
-<h2 id="第一個-Offer"><a href="#第一個-Offer" class="headerlink" title="第一個 Offer"></a>第一個 Offer</h2><p>拿到第一個 Offer 的是 A，非常替她開心。</p>
-<p>因為 A 本身就是在資策會學習中，所以也打算從資策會一畢業就馬上找工作，加上她想找得是 PM 的職缺，有工程師經驗的 PM 本來就是不可多得的 PM ，另外她的殺球就是：她是一個非常知道自己要什麼的人，能這麼快就拿到 Offer 也是很不意外的，我甚至還沒開始分享面試的經驗、技巧。</p>
-<p>這時候正值 2022 的八、九月吧，天氣正悶熱，可以感覺得出大家都有點浮燥，當然我也不意外，分享的內容比得稍為少一點。但人生嘛，總有更重要的事。這時候的 A 拿到 Offer 的好稍息有如即時雨，也確實幫大家提升不少士氣。</p>
-<p>當然這時候 A 因為上班比較忙，告知大家後，也變得比較少參加分享會，但還記得嗎？她是很知道自己在幹嘛的人，PM 的工作只有少部分跟工程師有相關，所以這個讀書會對她來說，可以說不是這麼重要。</p>
-<p>不過 K 也跟 A 說沒關係的，我們會繼續分享會，歡迎 A 隨時回來聊聊！</p>
-<p>後來分享會也繼續了一段時間，也考慮要找其他人進來之類的，我們跟說給 K 決定就好，但能找到程度差不多又合得來的人，本身也不容易，所以後來也沒有再特別找人 。</p>
-<p>不過這時候，也差不多換 S 跟 K 要求職了，我也陸續分享一些面試的技巧、注意事項之類的，能教給他們的，我想我都不會保留。</p>
-<p>也鼓厲 K 跟 S 不要只投想去的，多投幾間搞不好會有不一樣的想法，也許一開始想去的公司聊完後，就沒這麼想去了，沒這麼想去的公司聊完後，看到不一樣的東西就想去了，沒有最好的公司，只有適不適合你的公司。</p>
-<p>後來 S 也成功拿到 Offer 也順利的進到區塊鍵相關的工作，也替她開心。</p>
-<p>當然 K 也投了不少間，也陸續有在面試，隨著時間過去，也感覺出 K 的壓力很大，但我也沒有多說什麼，也不該多說什麼。因為這是一個過程，很多人也包含我都是這樣來的，慢慢看清現實、找到自己的動力，然後決定該往哪走。</p>
-<p>所以能做的只有多陪伴了，幫他打聽一些職缺、看一下履歷，並而相信他。</p>
-<p>也差不多在 2022 的十一月初，收到 K 在學習群組的稍息，大意是說他想先休息了，對於現狀他還拿不到理想中的前端 Offer ，甚至考慮是不是應該走後端，所以這個讀書會，應該也差不多到尾聲了，我想。</p>
-<h2 id="各奔東西"><a href="#各奔東西" class="headerlink" title="各奔東西"></a>各奔東西</h2><p>「成長總在夜深人靜的異鄉」。</p>
-<p>不知道什麼時候讀到的一段話，依稀記得是在當兵時，在中山室的圖書櫃中讀到的書之一，蠻喜歡的一句話，出自於 <a href="https://www.books.com.tw/products/0010548551">有些事，這些年我才懂：小野的人生思考</a> ，不知道為什麼就想起這句來了。</p>
-<p>因為 K 的訊息是在平日的凌晨兩點半送出的，可想而知他一定思考了很久很久才做出這個決定，平常他就是下班後會繼續 Coding 到半夜三四點的那種人，我也很怕哪天他身體會吃不消的。</p>
-<p>K 的文未說了一句：「然後可以罵我🥲 但別安慰我👍🏻」</p>
-<p>好，我不會安慰你的，但我要罵你的話，我要罵什麼？你組織了整個讀書會，想了一些話題跟大家一起討論（如：Dream Job, Clean Code），上班很累、有點負面的時候依然參與讀書會。我沒有什麼可以罵的啊。</p>
-<p>你知道嗎？你已經很棒了，看看這個人的拖延症：<a href="https://medium.com/hulis-blog/procrastination-ba12754ada49">致跟我一樣的拖延症患者：動力是需要刻意創造的 | Huli’s blog</a>，有哪個拖延症的人會有上百篇文章的產能？有哪個優秀的人會要別人罵他？這種要求我第一次聽到（<del>原來是抖 M 啊</del>）。</p>
-<p>嘿！K</p>
-<p>邊打這篇心得時，我終於買了你一直推薦的一本書： <a href="https://www.books.com.tw/products/0010820110">垃圾場長大的自學人生</a></p>
-<p>之前一直說要買，在收到你的暫時休息的訊息後，我就買了，而且我買的是英文版（<del>希望我真的看得下去</del>）</p>
-<img alt="book image" data-src="https://hackmd.io/_uploads/rJIUJ1NHi.jpg" width=360 />
-
-<p>我想這本書會一直在我的身邊吧，看到它，我就會想到你們。</p>
-<p>也會成為我的動力來源之一，我大概就是靠這種方法維持動力的吧，我不知道。</p>
-<h2 id="Mentor-心得"><a href="#Mentor-心得" class="headerlink" title="Mentor 心得"></a>Mentor 心得</h2><p>至於我的心得嘛 …</p>
-<p>這是我成為工程師後第一次去執行這個 Mentor 計劃，算是有完成了對老師 Huli 的交代，<a href="https://hulitw.medium.com/mentorship-program-350db93d5c9c">真正的 Mentorship program：前端引路人計畫</a> 之中的「<strong>薪火相傳</strong>」，我也心滿意足了。</p>
-<p>在最初階段的時候，老實說我也想過會不會這個讀書會一下就「倒了」畢竟，這是一個免費的活動，加上網路上什麼人都有，況且我之前的經驗也是，不管是大學有人被二一、轉職時有人被刷掉，可能就是我已經社會化了，習慣一開始就最壞的打算。但隨著時間，証明我是錯的，大家都堅持了這麼久。</p>
-<p>不知道你們相不相信緣份，但我真的很開心遇到你們，我也成長了不少，你們將來一定都要比我好！（但記得留口飯讓我混就好，不是）</p>
-<p>沒動力的時候，也可以休息一下或是出去走走，也可以看看我以前 <a href="https://github.com/Lidemy/mentor-program-5th/issues/31">轉職的心得</a>。</p>
-<p>總之呢，我會在這一直陪伴你們的。</p>
-<p>也祝大家工作順利！</p>
-<hr>
-<p>$ to be continued (y&#x2F;n) ? …</p>
-<p>$ y</p>
-<p>$ .</p>
-<p>$ _</p>
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
-<li><a href="https://blog.errorbaker.tw/posts/benben/07-could-i-be-a-mentor-enough/">Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？</a></li>
-<li><a href="https://hulitw.medium.com/mentorship-program-350db93d5c9c">真正的 Mentorship program：前端引路人計畫 | Huli</a></li>
-<li><a href="https://medium.com/hulis-blog/procrastination-ba12754ada49">致跟我一樣的拖延症患者：動力是需要刻意創造的 | Huli</a></li>
-<li><a href="https://www.books.com.tw/products/0010820110">博客來-垃圾場長大的自學人生：從社會邊緣到劍橋博士的震撼教育</a></li>
-<li><a href="https://www.books.com.tw/products/0010548551">博客來-有些事，這些年我才懂：小野的人生思考</a></li>
-<li>貼心提醒：注意 <strong>博客來重覆訂購</strong> 的詐騙電話手法</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程式筆記</category>
-      </categories>
-      <tags>
-        <tag>front-end</tag>
-        <tag>mentor</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MIT 6.006 Introduction to Algorithmic 01</title>
     <url>/2022/07/27/code-mit-alg-01/</url>
     <content><![CDATA[<blockquote>
@@ -2557,6 +2471,92 @@
         <tag>mit</tag>
         <tag>algorithm</tag>
         <tag>full-english</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微 Mentor 計劃心得 - 能夠持續學習本身就是一件不容易的事</title>
+    <url>/2022/11/06/code-mentor-program-01/</url>
+    <content><![CDATA[<p><img data-src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg" alt="php meme"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大約在 2022 的六月底的時候，參加了 <code>前端引路人計劃</code>，成員都算是一起學習的夥伴，想要轉職的自學者，我算是計劃中 Mentor ，一起分享學習，幫大家 Code Review 等。</p>
+<p>這篇算是一個階段的結束，但也許也是另一個開始，為什麼會開始的計劃（當然這是免費的），可以參考上一篇：<a href="https://blog.errorbaker.tw/posts/benben/07-could-i-be-a-mentor-enough/">Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？</a></p>
+<span id="more"></span>
+
+<h2 id="成員簡介"><a href="#成員簡介" class="headerlink" title="成員簡介"></a>成員簡介</h2><p>成員在上一篇都有提到，這麼再提一下。</p>
+<p>成員有（這邊用簡寫代稱）：</p>
+<ul>
+<li><p>K，主揪，強而有力的自學者，目前在外商半導體產業，是寫 python 處理資料的，基本上他已經看到 react 了，看得差不多了，然後再刷一些 leetcode 了，我覺得根本就可以去轉職了 XD</p>
+</li>
+<li><p>S，目前還是學生，未來想往區塊鍊發展，在學 solidity 中，也用 next.js 寫了前台，但 react 的掌握度還算不高（？，她自己說的）但她主要也不是往前端發展，也可能往研究所前進。</p>
+</li>
+<li><p>A，目前在資策會上課，正在學習 PHP 後台中，也是估計今年完課完後，年底去求職，也有在看一些 PM 的課程，未來可能會往 PM 走也不一定。</p>
+</li>
+<li><p>我，廢物前端新手，看到大家都這麼認真，我真的是汗顏 QQ</p>
+</li>
+</ul>
+<p>當然隨著時間在走，也會越來越少人，怎麼說呢？我的旅程一路上也遇到了不少人，轉職路上有人成功也有人放棄，都是很正常的，這個從一開始參加前就知道了，因為人生嘛！總有更重要的事！例如：我轉職前也放棄了幾次，礙於現實、缺少自信等等，所以啊，能夠持續的自學自身就是一件不容易的事了，重點是你們都跨出第一步了，已經贏了很多人了。</p>
+<p>花開花落自有時，緣起緣減無窮盡。</p>
+<h2 id="交流案例"><a href="#交流案例" class="headerlink" title="交流案例"></a>交流案例</h2><p>跟其他的組員的交流都很棒，這邊提一個我覺得不錯的案例交流分享。</p>
+<p>以下是 A 的問題（詳細的網址並非真實網址）：</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">👻 現在的狀況：</span><br><span class="line"></span><br><span class="line">1、有兩個api,第一個api之功能是將選擇的圖片以md5亂數命名的方式存到電腦本地的資料夾，另一個api是將表單裡面所有的資料傳送到db中。若您時間允許的話可參下面兩個文件~</span><br><span class="line">第一個（圖片）：https://github.com/a/xxx.php</span><br><span class="line">第二個（傳送到db）:</span><br><span class="line">https://github.com/a/ooo/.php</span><br><span class="line"></span><br><span class="line">👀 今天做的處理：</span><br><span class="line"></span><br><span class="line">1、原本有“圖片上傳”還有&quot;資料修改&quot;兩個鍵，發現兩個按鍵功能有重疊到，都會自動連到第二個api(將檔案上傳到db中的)後來把第一個“圖片上傳”的功能重新做調整，讓他不會再跟第二個api一起跑，就只剩下存檔案到資料庫裡面的功能，並且解決了調整中產生的各種bug(例如上次問的問題又發生，但是也解決了)。</span><br><span class="line"></span><br><span class="line">🧐 今天做的研究：</span><br><span class="line"></span><br><span class="line">1.回傳的値是存在第一個api response 中的 $filename 裡面，如果能使用這個 $filename 到第二個api中應該就能一起上傳。</span><br><span class="line"></span><br><span class="line">2.上網找到一些資料，有些是用jQuery的方式寫，或者是寫一些我看不懂的寫法，可能是關鍵字下錯。今天嘗試的關鍵字組合有 “AJAX api response ”、“AJAX 回傳 js html”、“fetch response ”、“圖檔名稱 檔案上傳 資料庫”等等。</span><br><span class="line"></span><br><span class="line">3、發現了可能有關聯的關鍵字如 .then() 、bindparam 但不清楚使用方式，也不知道能不能用。</span><br><span class="line"></span><br><span class="line">4.有找到其他的寫法可能能用，但是還沒研究裡面的邏輯，但是乍看之下也許可行 https://www.codexworld.com/store-retrieve-image-from-database-mysql-php/。</span><br><span class="line"></span><br><span class="line">😂 其他：</span><br><span class="line"></span><br><span class="line">1.目前最新版php我把他放在一個叫 bup-as<span class="emphasis">_tourist_</span>spots<span class="emphasis">_edit.php 的檔案中~鏈接github一樣是公開的，若您時間有空再看即可~</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">https://github.com/a/xox.php</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">感謝您花時間看這個落落長的文~~~QQ</span></span><br></pre></td></tr></table></figure>
+
+<p>我的回應：</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">嗯嗯 我都看完了 ~</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 今天做的處理</span></span><br><span class="line"></span><br><span class="line">這邊很棒有嘗試自己處理！</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 今天做的研究</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 感覺是這樣沒錯</span><br><span class="line"><span class="bullet">2.</span> 因為這個專案主要還是寫 php ，或許可以試試 &quot;php upload img&quot; 之類的</span><br><span class="line"><span class="bullet">3.</span> .then() 是 Promise 的用法，Promise 也是一個 JS 很大的坑，或著應該是說 JS 非同步的問題都是坑，之後可以找時間補起來；blindparam 我就不確定了，但應該是 php 的用法 XD</span><br><span class="line"><span class="bullet">4.</span> 我有看完影片，蠻精華的，但感覺是妳要的功能，可以跟著他做看看，再拿去改成妳要的功能試試</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 其他</span></span><br><span class="line"></span><br><span class="line">這邊的 code 我也稍為看完了，但因為 php 是個世界最棒的程式語言（？）沒有啦，是我之前也沒有用到 php 圖片處理這一塊（圖片處理我是後來用 node.js 寫的），php 就只有寫留言版、簡易部落格這樣，可能也是很久沒碰 php 了啦 XD</span><br><span class="line"></span><br><span class="line">課程的用意應該是讓妳先體驗一下前、後端混再一起的寫法吧，這樣後面才會知道前、後端分離跟框架的好（對，我之前的課程也是這樣說）</span><br><span class="line">當然 php 還有 Laravel 等等的框架，但純 php 真的不好寫</span><br><span class="line"></span><br><span class="line">php meme：https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nhqx7816z8smx227xqxj.jpg</span><br><span class="line"></span><br><span class="line">（搜尋 &quot;php meme&quot; 也會看到很多的好笑的圖片，工程師笑話，不要太認真）</span><br></pre></td></tr></table></figure>
+
+<p>當然還有在很多在 Google Meet （我們主要的分享工具）上互動都很棒，S 也常主動對我提問，然當我也都很用心的回答。</p>
+<p>S 也說「很喜歡聽我分享」，聽到這句時，當下嘴角真的有微微上揚呢。</p>
+<p>每收到一個小小的感謝對我來說都是一個動力，對於我的工作都是一個肯定，原來我做的事是有價值的，也希望真的有幫助到你們。</p>
+<h2 id="第一個-Offer"><a href="#第一個-Offer" class="headerlink" title="第一個 Offer"></a>第一個 Offer</h2><p>拿到第一個 Offer 的是 A，非常替她開心。</p>
+<p>因為 A 本身就是在資策會學習中，所以也打算從資策會一畢業就馬上找工作，加上她想找得是 PM 的職缺，有工程師經驗的 PM 本來就是不可多得的 PM ，另外她的殺球就是：她是一個非常知道自己要什麼的人，能這麼快就拿到 Offer 也是很不意外的，我甚至還沒開始分享面試的經驗、技巧。</p>
+<p>這時候正值 2022 的八、九月吧，天氣正悶熱，可以感覺得出大家都有點浮燥，當然我也不意外，分享的內容比得稍為少一點。但人生嘛，總有更重要的事。這時候的 A 拿到 Offer 的好稍息有如即時雨，也確實幫大家提升不少士氣。</p>
+<p>當然這時候 A 因為上班比較忙，告知大家後，也變得比較少參加分享會，但還記得嗎？她是很知道自己在幹嘛的人，PM 的工作只有少部分跟工程師有相關，所以這個讀書會對她來說，可以說不是這麼重要。</p>
+<p>不過 K 也跟 A 說沒關係的，我們會繼續分享會，歡迎 A 隨時回來聊聊！</p>
+<p>後來分享會也繼續了一段時間，也考慮要找其他人進來之類的，我們跟說給 K 決定就好，但能找到程度差不多又合得來的人，本身也不容易，所以後來也沒有再特別找人 。</p>
+<p>不過這時候，也差不多換 S 跟 K 要求職了，我也陸續分享一些面試的技巧、注意事項之類的，能教給他們的，我想我都不會保留。</p>
+<p>也鼓厲 K 跟 S 不要只投想去的，多投幾間搞不好會有不一樣的想法，也許一開始想去的公司聊完後，就沒這麼想去了，沒這麼想去的公司聊完後，看到不一樣的東西就想去了，沒有最好的公司，只有適不適合你的公司。</p>
+<p>後來 S 也成功拿到 Offer 也順利的進到區塊鍵相關的工作，也替她開心。</p>
+<p>當然 K 也投了不少間，也陸續有在面試，隨著時間過去，也感覺出 K 的壓力很大，但我也沒有多說什麼，也不該多說什麼。因為這是一個過程，很多人也包含我都是這樣來的，慢慢看清現實、找到自己的動力，然後決定該往哪走。</p>
+<p>所以能做的只有多陪伴了，幫他打聽一些職缺、看一下履歷，並而相信他。</p>
+<p>也差不多在 2022 的十一月初，收到 K 在學習群組的稍息，大意是說他想先休息了，對於現狀他還拿不到理想中的前端 Offer ，甚至考慮是不是應該走後端，所以這個讀書會，應該也差不多到尾聲了，我想。</p>
+<h2 id="各奔東西"><a href="#各奔東西" class="headerlink" title="各奔東西"></a>各奔東西</h2><p>「成長總在夜深人靜的異鄉」。</p>
+<p>不知道什麼時候讀到的一段話，依稀記得是在當兵時，在中山室的圖書櫃中讀到的書之一，蠻喜歡的一句話，出自於 <a href="https://www.books.com.tw/products/0010548551">有些事，這些年我才懂：小野的人生思考</a> ，不知道為什麼就想起這句來了。</p>
+<p>因為 K 的訊息是在平日的凌晨兩點半送出的，可想而知他一定思考了很久很久才做出這個決定，平常他就是下班後會繼續 Coding 到半夜三四點的那種人，我也很怕哪天他身體會吃不消的。</p>
+<p>K 的文未說了一句：「然後可以罵我🥲 但別安慰我👍🏻」</p>
+<p>好，我不會安慰你的，但我要罵你的話，我要罵什麼？你組織了整個讀書會，想了一些話題跟大家一起討論（如：Dream Job, Clean Code），上班很累、有點負面的時候依然參與讀書會。我沒有什麼可以罵的啊。</p>
+<p>你知道嗎？你已經很棒了，看看這個人的拖延症：<a href="https://medium.com/hulis-blog/procrastination-ba12754ada49">致跟我一樣的拖延症患者：動力是需要刻意創造的 | Huli’s blog</a>，有哪個拖延症的人會有上百篇文章的產能？有哪個優秀的人會要別人罵他？這種要求我第一次聽到（<del>原來是抖 M 啊</del>）。</p>
+<p>嘿！K</p>
+<p>邊打這篇心得時，我終於買了你一直推薦的一本書： <a href="https://www.books.com.tw/products/0010820110">垃圾場長大的自學人生</a></p>
+<p>之前一直說要買，在收到你的暫時休息的訊息後，我就買了，而且我買的是英文版（<del>希望我真的看得下去</del>）</p>
+<img alt="book image" data-src="https://hackmd.io/_uploads/rJIUJ1NHi.jpg" width=360 />
+
+<p>我想這本書會一直在我的身邊吧，看到它，我就會想到你們。</p>
+<p>也會成為我的動力來源之一，我大概就是靠這種方法維持動力的吧，我不知道。</p>
+<h2 id="Mentor-心得"><a href="#Mentor-心得" class="headerlink" title="Mentor 心得"></a>Mentor 心得</h2><p>至於我的心得嘛 …</p>
+<p>這是我成為工程師後第一次去執行這個 Mentor 計劃，算是有完成了對老師 Huli 的交代，<a href="https://hulitw.medium.com/mentorship-program-350db93d5c9c">真正的 Mentorship program：前端引路人計畫</a> 之中的「<strong>薪火相傳</strong>」，我也心滿意足了。</p>
+<p>在最初階段的時候，老實說我也想過會不會這個讀書會一下就「倒了」畢竟，這是一個免費的活動，加上網路上什麼人都有，況且我之前的經驗也是，不管是大學有人被二一、轉職時有人被刷掉，可能就是我已經社會化了，習慣一開始就最壞的打算。但隨著時間，証明我是錯的，大家都堅持了這麼久。</p>
+<p>不知道你們相不相信緣份，但我真的很開心遇到你們，我也成長了不少，你們將來一定都要比我好！（但記得留口飯讓我混就好，不是）</p>
+<p>沒動力的時候，也可以休息一下或是出去走走，也可以看看我以前 <a href="https://github.com/Lidemy/mentor-program-5th/issues/31">轉職的心得</a>。</p>
+<p>總之呢，我會在這一直陪伴你們的。</p>
+<p>也祝大家工作順利！</p>
+<hr>
+<p>$ to be continued (y&#x2F;n) ? …</p>
+<p>$ y</p>
+<p>$ .</p>
+<p>$ _</p>
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
+<li><a href="https://blog.errorbaker.tw/posts/benben/07-could-i-be-a-mentor-enough/">Error Baker 共筆部落格文章 | RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？</a></li>
+<li><a href="https://hulitw.medium.com/mentorship-program-350db93d5c9c">真正的 Mentorship program：前端引路人計畫 | Huli</a></li>
+<li><a href="https://medium.com/hulis-blog/procrastination-ba12754ada49">致跟我一樣的拖延症患者：動力是需要刻意創造的 | Huli</a></li>
+<li><a href="https://www.books.com.tw/products/0010820110">博客來-垃圾場長大的自學人生：從社會邊緣到劍橋博士的震撼教育</a></li>
+<li><a href="https://www.books.com.tw/products/0010548551">博客來-有些事，這些年我才懂：小野的人生思考</a></li>
+<li>貼心提醒：注意 <strong>博客來重覆訂購</strong> 的詐騙電話手法</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程式筆記</category>
+      </categories>
+      <tags>
+        <tag>front-end</tag>
+        <tag>mentor</tag>
       </tags>
   </entry>
   <entry>
@@ -2856,105 +2856,6 @@
       <tags>
         <tag>english</tag>
         <tag>english-speaking</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>55 Common English Phrases For Daily Conversation</title>
-    <url>/2023/07/19/english-55-common-phrases/</url>
-    <content><![CDATA[<blockquote>
-<p>This is a note from the following resourse.</p>
-</blockquote>
-<blockquote>
-<p>ref: <a href="https://www.youtube.com/watch?v=EhRtGlnxTNc">https://www.youtube.com/watch?v=EhRtGlnxTNc</a></p>
-</blockquote>
-<span id="more"></span>
-
-<ol>
-<li>How to ask ‘How are you’<ol>
-<li>How’ve you been? <code>How&#39;v ya been</code></li>
-<li>What’ve you been up to? <code>What-af-you been up to</code></li>
-<li>How are thing?</li>
-<li>How’s it going?</li>
-<li>What’s up?</li>
-</ol>
-</li>
-<li>How to respond to ‘How are you’ questions<ol>
-<li>can’t complain</li>
-<li>pretty good</li>
-<li>never been better &#x2F; could be better</li>
-<li>same old</li>
-</ol>
-</li>
-<li>How to say ‘thank you’<ol>
-<li>You’re a star!</li>
-<li>You’re the best!</li>
-<li>You’re an angel!</li>
-<li>I own you one.</li>
-<li>I appreciate it. <code>I apprecia-dit</code></li>
-<li>That’ fantastic.</li>
-<li>That’s brilliant.</li>
-<li>That’s great.</li>
-<li>(respond) It’s (a&#x2F;my) pleasure.</li>
-<li>(respond) No worries. &#x2F; Don’t worry about it.</li>
-<li>(respond) Don’t mention it. &#x2F; It’s nothing.</li>
-<li>(respond) You’re so welcome. &#x2F; Happy to help.</li>
-</ol>
-</li>
-<li>How to show agreement<ol>
-<li>Absolutely!</li>
-<li>I totally agree with you.</li>
-<li>Tell me about it! (don’t need to tell)</li>
-<li>Exactly!</li>
-<li>You hit the nail on the head.</li>
-</ol>
-</li>
-<li>How to express disagreement<ol>
-<li>Not necessarily.</li>
-<li>I don’t see it that way.</li>
-<li>That’s interesting, but …</li>
-</ol>
-</li>
-<li>How to respond to a change of plans<ol>
-<li>No worries. &#x2F; Don’t worry about it.</li>
-<li>These things happen. &#x2F; Things happens.</li>
-<li>It can’t be helped.</li>
-<li>No biggie!</li>
-</ol>
-</li>
-<li>How to respond to an invitation<ol>
-<li>Sounds good!</li>
-<li>I’d love to!</li>
-<li>Sorry, I can’t.</li>
-<li>I won’t be able to make it.</li>
-<li>Unfortunately, I won’t be able to make it.</li>
-<li>I hate to miss it, but …</li>
-<li>I think I’ll pass.</li>
-</ol>
-</li>
-<li>How to end a conversation<ol>
-<li>I must make a move.</li>
-<li>I need ot get going.</li>
-<li>I better get to move on.</li>
-<li>I’ve taken up (enough &#x2F; too much) of your time.</li>
-<li>I have another commitment.</li>
-</ol>
-</li>
-<li>How to say goodbye<ol>
-<li>See you later. &#x2F; Later!</li>
-<li>Speak soon!</li>
-<li>Talk to you later.</li>
-<li>Stay in touch.</li>
-<li>Take care!</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>英文筆記</category>
-      </categories>
-      <tags>
-        <tag>english</tag>
-        <tag>phrases</tag>
       </tags>
   </entry>
   <entry>
@@ -3321,6 +3222,105 @@
       <tags>
         <tag>english</tag>
         <tag>vocabulary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>55 Common English Phrases For Daily Conversation</title>
+    <url>/2023/07/19/english-55-common-phrases/</url>
+    <content><![CDATA[<blockquote>
+<p>This is a note from the following resourse.</p>
+</blockquote>
+<blockquote>
+<p>ref: <a href="https://www.youtube.com/watch?v=EhRtGlnxTNc">https://www.youtube.com/watch?v=EhRtGlnxTNc</a></p>
+</blockquote>
+<span id="more"></span>
+
+<ol>
+<li>How to ask ‘How are you’<ol>
+<li>How’ve you been? <code>How&#39;v ya been</code></li>
+<li>What’ve you been up to? <code>What-af-you been up to</code></li>
+<li>How are thing?</li>
+<li>How’s it going?</li>
+<li>What’s up?</li>
+</ol>
+</li>
+<li>How to respond to ‘How are you’ questions<ol>
+<li>can’t complain</li>
+<li>pretty good</li>
+<li>never been better &#x2F; could be better</li>
+<li>same old</li>
+</ol>
+</li>
+<li>How to say ‘thank you’<ol>
+<li>You’re a star!</li>
+<li>You’re the best!</li>
+<li>You’re an angel!</li>
+<li>I own you one.</li>
+<li>I appreciate it. <code>I apprecia-dit</code></li>
+<li>That’ fantastic.</li>
+<li>That’s brilliant.</li>
+<li>That’s great.</li>
+<li>(respond) It’s (a&#x2F;my) pleasure.</li>
+<li>(respond) No worries. &#x2F; Don’t worry about it.</li>
+<li>(respond) Don’t mention it. &#x2F; It’s nothing.</li>
+<li>(respond) You’re so welcome. &#x2F; Happy to help.</li>
+</ol>
+</li>
+<li>How to show agreement<ol>
+<li>Absolutely!</li>
+<li>I totally agree with you.</li>
+<li>Tell me about it! (don’t need to tell)</li>
+<li>Exactly!</li>
+<li>You hit the nail on the head.</li>
+</ol>
+</li>
+<li>How to express disagreement<ol>
+<li>Not necessarily.</li>
+<li>I don’t see it that way.</li>
+<li>That’s interesting, but …</li>
+</ol>
+</li>
+<li>How to respond to a change of plans<ol>
+<li>No worries. &#x2F; Don’t worry about it.</li>
+<li>These things happen. &#x2F; Things happens.</li>
+<li>It can’t be helped.</li>
+<li>No biggie!</li>
+</ol>
+</li>
+<li>How to respond to an invitation<ol>
+<li>Sounds good!</li>
+<li>I’d love to!</li>
+<li>Sorry, I can’t.</li>
+<li>I won’t be able to make it.</li>
+<li>Unfortunately, I won’t be able to make it.</li>
+<li>I hate to miss it, but …</li>
+<li>I think I’ll pass.</li>
+</ol>
+</li>
+<li>How to end a conversation<ol>
+<li>I must make a move.</li>
+<li>I need ot get going.</li>
+<li>I better get to move on.</li>
+<li>I’ve taken up (enough &#x2F; too much) of your time.</li>
+<li>I have another commitment.</li>
+</ol>
+</li>
+<li>How to say goodbye<ol>
+<li>See you later. &#x2F; Later!</li>
+<li>Speak soon!</li>
+<li>Talk to you later.</li>
+<li>Stay in touch.</li>
+<li>Take care!</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>英文筆記</category>
+      </categories>
+      <tags>
+        <tag>english</tag>
+        <tag>phrases</tag>
       </tags>
   </entry>
   <entry>
@@ -4514,6 +4514,479 @@
       </tags>
   </entry>
   <entry>
+    <title>After work notes</title>
+    <url>/2023/04/27/english-after-work-events/</url>
+    <content><![CDATA[<p>This a note to recording my English journey from <a href="https://afterworkenglishclub.simplybook.asia/v2/">After Work English Club</a> .</p>
+<p>Events:</p>
+<ul>
+<li>2023-04-22 English Interview lecture</li>
+<li>2022-08-16 After Work English planning</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="2023-04-English-Interview"><a href="#2023-04-English-Interview" class="headerlink" title="2023-04 English Interview"></a>2023-04 English Interview</h2><ol>
+<li>面試前的準備<ul>
+<li><p>研究公司</p>
+<ul>
+<li>網路搜尋、新聞、社群</li>
+<li>產品、文化、客戶</li>
+<li>了解職位需求技能</li>
+<li>LinkedIn</li>
+</ul>
+</li>
+<li><p>了解面試流程</p>
+</li>
+<li><p>準備問題和答案</p>
+<ul>
+<li>單向常見問題：自我介紹、為什麼想加入、為什麼離開現在的工作、可以為公司帶來什麼效應、為什麼覺得自己是適合的人選、對於未來發展的想法為何、期待能從工作中得到什麼</li>
+<li>回答技巧：準備清楚簡潔的答案、與個人經驗和公司價值觀相符合</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>常見的外商面試類型<ul>
+<li>Sourcing &#x3D;&gt; Recruiter &#x3D;&gt; Hiring Manager</li>
+<li>Full cycle Recruiting</li>
+</ul>
+<ol>
+<li>Preparing</li>
+<li>Sourcing</li>
+<li>Screening</li>
+<li>Selecting</li>
+<li>Hiring</li>
+<li>Onboarding</li>
+</ol>
+<ul>
+<li>Testing<ul>
+<li>Psychometric Aptitiude Test</li>
+<li>Numerical Reasoning Test</li>
+<li>Verbal Reasoning</li>
+<li>Logical Reasoning Test</li>
+<li>English Test</li>
+</ul>
+</li>
+<li>Behavior Interview<ul>
+<li>介紹：互相介紹</li>
+<li>設定情境：如果跟上司不合、需要的即戰力</li>
+<li>問題提出</li>
+<li>追問疑點</li>
+<li>總結和結束</li>
+<li>應對技巧</li>
+</ul>
+<ol>
+<li>避免重複敘述相同經驗，盡量真實回答</li>
+<li>綀習以邏輯思考方式，STAR</li>
+<li>提前練習行為面試，避免即興發揮和面試緊張狀況</li>
+<li>在了解問題後，設定答案是短回履或是長回履</li>
+</ol>
+<ul>
+<li>短回覆可以是重點列出</li>
+<li>長回覆為了避免聽起了失去重點、長篇大論，可以說故事，盡量控制在 2 分鐘內</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>面試服儀及肢體動作<ul>
+<li>表達能力<ul>
+<li>用簡潔的語言達清楚觀點</li>
+<li>平穩的速度，看著自信地對方</li>
+</ul>
+</li>
+<li>姿勢和肢體語言<ul>
+<li>保持輕鬆，坐直</li>
+<li>帶筆跟筆記本</li>
+<li>面試前整理服裝儀容</li>
+<li>手機靜音</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>面試問題<ul>
+<li>你的優缺點是什麼</li>
+<li>過去的職務中，最具有挑戰性或是最有成就感的是哪一個</li>
+<li>你如何解決困難或是衝突的情況？</li>
+<li>你對於工作時間和工作壓力有什麼看法？</li>
+</ul>
+</li>
+<li>薪資問題<ul>
+<li>中高階人員，薪水浮動程度大</li>
+<li>拿到 Offer 後，可以談</li>
+<li>策略方式：自信堅定、認清現實、設定底價</li>
+<li>千萬不要：予取予求、不要獅子大開口</li>
+</ul>
+</li>
+</ol>
+<p>competitive offer</p>
+<p>Q:</p>
+<ol>
+<li>If work years is short, but skills is quite well. How to convince hunter or recruiter you are qualified?</li>
+<li>It is believed that keep interviewing is good. It’s that true? If so, then how the frequency should be?</li>
+<li>I supposed most of Taiwan appliances are introverted. Is it good on the interview or not?</li>
+<li>Which is more important, accuracy of fluency, in the oral interview?</li>
+</ol>
+<p>A:</p>
+<ol>
+<li>舉例說明，你有能力做到，impact 是什麼，能為公司帶來什麼</li>
+<li>是好的，可以取得</li>
+<li>必需說內向是不好的，有的公司會議上不講話，公司就不需要你</li>
+<li>accuracy is better, how to represent list, maybe nervous,</li>
+</ol>
+<p>Resource:</p>
+<p><a href="https://www.youtube.com/watch?v=TMp3N7OndaI"><img data-src="https://img.youtube.com/vi/TMp3N7OndaI/0.jpg" alt="進一流的外商英文 | Youtube podcast"></a></p>
+<h2 id="2022-08-16-After-Work-英文規劃諮詢"><a href="#2022-08-16-After-Work-英文規劃諮詢" class="headerlink" title="2022&#x2F;08&#x2F;16 After Work 英文規劃諮詢"></a>2022&#x2F;08&#x2F;16 After Work 英文規劃諮詢</h2><p>手中的英文資源：</p>
+<ul>
+<li>After Work 3 年會員（書籍、線上線下課）</li>
+<li>VoiceTube Hero 三個月方案挑戰中（06&#x2F;24 ~ 09&#x2F;24）</li>
+<li>Udemy <a href="https://www.udemy.com/share/101Y4o3@ePjW9Z0yIJdACaknASMSUjtnXrIi_DRkclS1qOAq0zZsGD-VjeIJRTM8EwhAHdjwWQ==/">Mater English</a> （progressing 5%）</li>
+</ul>
+<p>目標：</p>
+<ol>
+<li>一年 &#x3D;&gt; 多益金色證書</li>
+<li>二年 &#x3D;&gt; 持續加強口說、寫點英文 Blog 文章</li>
+<li>三年 &#x3D;&gt; 拿到外商 Offer (Front-End Developer)</li>
+</ol>
+<p>自我評估：</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 可行性：目前嘗試寫了一篇英文技術文章，try to use English more and more</li>
+<li><input checked="" disabled="" type="checkbox"> 時間性：我願意用大部分有空的時間去達成</li>
+</ul>
+<p>2 ~ 3 個月</p>
+<ol>
+<li>3000 字多益：先看倒數 4 個主題</li>
+<li>商辦英文會話：全部</li>
+</ol>
+]]></content>
+      <categories>
+        <category>英文筆記</category>
+      </categories>
+      <tags>
+        <tag>english</tag>
+        <tag>after-work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>English Master | Grammar 01</title>
+    <url>/2022/06/25/english-master-grammer-01-verb-tenses-01/</url>
+    <content><![CDATA[<blockquote>
+<p>This is a learning note base on the course: <a href="https://www.udemy.com/share/101Y4o3@ouo4OdQQoPpXrTvjJLnq3QSbgAYl6QqCLjRJnT8XH1VzReqbHR0-YOt1xeWGeEdA7w==/">Udemy | The English Master Course: English Grammar, English Speaking</a></p>
+</blockquote>
+<h2 id="Verb-Tenses"><a href="#Verb-Tenses" class="headerlink" title="Verb Tenses"></a>Verb Tenses</h2><h3 id="Simple-Present-Verb-Tense"><a href="#Simple-Present-Verb-Tense" class="headerlink" title="Simple Present Verb Tense"></a>Simple Present Verb Tense</h3><ul>
+<li><p>usage:</p>
+<ul>
+<li>happens all the time</li>
+<li>happens repeatedly</li>
+<li>is true in general</li>
+</ul>
+</li>
+<li><p>tips:</p>
+<ul>
+<li>You can add markers such as <strong>always, often, usually sometimes, rarely, never, every day</strong> etc.</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<ul>
+<li><p>conversation:</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">Hello! What&#x27;s your name?</span><br><span class="line">Oh, hi, my name&#x27;s Sarah. And yours?</span><br><span class="line">I&#x27;m Alex. Nice to meet you, Sarah</span><br><span class="line">Nice to meet you too! So, where do you come from?</span><br><span class="line">I come from Germany. And where are you from?</span><br><span class="line">I&#x27;m from UK.</span><br><span class="line">Oh, I have a lot of friends form the UK. You probably have a great sense of humour.</span><br><span class="line">I&#x27;m not sure about that! I don&#x27;t always get our jokes.</span><br><span class="line">Your&#x27;re an exception then!</span><br><span class="line">I&#x27;ll take that as compliment.</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>question:</p>
+<ul>
+<li>What do you do for living?</li>
+<li>What your hobbies?</li>
+<li>What does your typical Sunday look like?</li>
+</ul>
+</li>
+</ul>
+<h3 id="Verb-Conjugation-1st-2nd-3rd-person"><a href="#Verb-Conjugation-1st-2nd-3rd-person" class="headerlink" title="Verb Conjugation (1st&#x2F;2nd&#x2F;3rd person)"></a>Verb Conjugation (1st&#x2F;2nd&#x2F;3rd person)</h3><ul>
+<li><p>usage:</p>
+<ul>
+<li>Verb conjugation refers to how a verb changes to indicate a different person, number, tense or mood.</li>
+</ul>
+</li>
+<li><p>conversation:</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">When I was your age, I wanted to become a nurse. I liked the idea of helping people when they need it the most.</span><br><span class="line">Why aren&#x27;t you a nurse then, grandma?</span><br><span class="line">Well, sweetie, we grow up, and sometimes our goals change. I&#x27;m a teacher now, and I have never regretted my choice.</span><br><span class="line">And you are helping people anyway!</span><br><span class="line">That&#x27;s true!</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="Subject-Verb-Agreement"><a href="#Subject-Verb-Agreement" class="headerlink" title="! Subject-Verb Agreement"></a>! Subject-Verb Agreement</h3><ul>
+<li><p>usage:</p>
+<ul>
+<li>The subject-verb agreement is the correspondence of a verb with its subject in person(first, second, or third) and number (singular or plural)</li>
+<li>Subjects and verbs must agree with on another in number (singular or plural). Thus, if a subject is singular, its verb must also be singular; if a subject is plural, its verb must also be plural.</li>
+<li>When the subject of the sentence is composed of two or more nouns or pronouns connected by the conjunction <code>and</code>, use a plural verb.</li>
+</ul>
+</li>
+<li><p>tips:</p>
+<ul>
+<li>The words <code>each, each one, either, neither, everyone, everybody, anyone, anybody, nobody, somebody, someone, and no one</code> are singular and require a singular verb.</li>
+<li>When two or more singular nouns ro pronouns are connected by <code>or</code> or <code>nor</code>, use a singular verb.</li>
+<li>! When a compound subject contains both a singular and a plural noun or pronouns joined by <code>or</code> or <code>nor</code>, the verb should agree with the part of the subject that is <strong>closer to the verb(also called the rule of proximity)</strong>.</li>
+<li>Note the subject-verb agreement with words that indicate portions(e.g. <code>a lot</code>, <code>a majority</code>, <code>some</code>, <code>all</code>): if the noun after of is singular, use a singular verb; if it is plural, use a plural verb.</li>
+<li>! Use a singular verb with distances, periods of times, sums of money, etc., when considered as a unit.</li>
+<li>! Collective nouns are words that imply more than one person but are considered singular and take a singular verb (e.g. family, group, team, committee, class etc.)</li>
+</ul>
+</li>
+<li><p>examples:</p>
+<ul>
+<li><strong>Ten dollars is</strong> high price to pay for socks.</li>
+<li><strong>My family is</strong> very big.</li>
+</ul>
+</li>
+<li><p>conservation:</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> These are a lot of people outside. Do you know what&#x27;s going on?</span><br><span class="line"><span class="bullet">-</span> These people are protesting. Maybe you&#x27;ve heard the recent news that some company wants build a huge factory right over there. And surely no one is happy about that.</span><br><span class="line"><span class="bullet">-</span> But I didn&#x27;t see any media around.</span><br><span class="line"><span class="bullet">-</span> I&#x27;m sure that some reports will come in a bit. It&#x27;s not like there are a couple of people so it&#x27;s difficult to ignore this.</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="Past-Simple-Tense"><a href="#Past-Simple-Tense" class="headerlink" title="Past Simple Tense"></a>Past Simple Tense</h3><ul>
+<li><p>usage:</p>
+<ul>
+<li>We use the past simple when we talk about an action which happened at a definite time in the past.</li>
+<li>This tense emphasizes that the action is finished.</li>
+<li>We can also use this tense to talk about how someone felt about something.</li>
+</ul>
+</li>
+<li><p>tips:</p>
+<ul>
+<li>Note that we use <code>did/did not</code> with the verb to have.</li>
+<li>But we do not use did with the verb <code>to be</code>(was&#x2F;were).</li>
+</ul>
+</li>
+<li><p>examples:</p>
+<ul>
+<li>Nick’s mother didn’t want to stay at home the whole day so she signed up for Spanish classes.</li>
+<li>I ran every day when I was a teen but I don’t do that anymore.</li>
+<li>Where were you last night? I tried calling you but you didn’t pick up the phone.</li>
+</ul>
+</li>
+<li><p>conservation:</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> Mom, do you have a minute?</span><br><span class="line"><span class="bullet">-</span> Sure, kid, what&#x27;s up?</span><br><span class="line"><span class="bullet">-</span> When was the last time you wnt to a beauty salon?</span><br><span class="line"><span class="bullet">-</span> Well, I don&#x27;t remember. Maybe it was a year age.</span><br><span class="line"><span class="bullet">-</span> And when was the last time you had a night out with Dad?</span><br><span class="line"><span class="bullet">-</span> I&#x27;m not sure. It was definitely a long time age.</span><br><span class="line"><span class="bullet">-</span> And what did you do last night?</span><br><span class="line"><span class="bullet">-</span> I stayed a home with your Dad. We fell asleep watching some boring movie on TV.</span><br><span class="line"><span class="bullet">-</span> I bought two ticket to Costa Rica. You need a vacation, Mom!</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>questions:</p>
+<ul>
+<li>Where did you grow up?</li>
+<li>What did you do last night?</li>
+<li>When was the last time you went on a trip?</li>
+</ul>
+</li>
+</ul>
+<h3 id="Simple-Future-Tense"><a href="#Simple-Future-Tense" class="headerlink" title="Simple Future Tense"></a>Simple Future Tense</h3><ul>
+<li><p>usage:</p>
+<ul>
+<li>We can refer to the future by using <code>will</code>, <code>be going to</code> or by using <code>present tenses</code>.</li>
+<li>We use the will future when we want to talk generally about future belief, opinions, hopes and predictions.</li>
+</ul>
+</li>
+<li><p>tips:</p>
+<ul>
+<li>Time markers - tomorrow, next month, in a day, etc.</li>
+<li>Probability markers - perhaps, probably, definitely, etc.</li>
+<li>Some speakers use <code>shall</code> to refer to the future in formal situation. Nowadays <code>shall</code> is used for <strong>suggestion</strong> only.</li>
+</ul>
+</li>
+<li><p>examples:</p>
+</li>
+<li><p>conservation:</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> Mike, what are your plans fro tonight?</span><br><span class="line"><span class="bullet">-</span> I don&#x27;t know really, I&#x27;ll probably play some video games after work.</span><br><span class="line"><span class="bullet">-</span> And what will you do tomorrow?</span><br><span class="line"><span class="bullet">-</span> Well, I definitely won&#x27;t go out with my friends tomorrow.</span><br><span class="line"><span class="bullet">-</span> And what will you do next week?</span><br><span class="line"><span class="bullet">-</span> I&#x27;ll most certainly start learning another language.</span><br><span class="line"><span class="bullet">-</span> Mike, how do you have an answer for everything?</span><br><span class="line"><span class="bullet">-</span> I&#x27;ts quite simple. I don&#x27;t plan anything. Things will happen on their own.</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>questions:</p>
+<ul>
+<li>What will you do tomorrow?</li>
+<li>Where will you stay during your summer vacations?</li>
+<li>Will robots take over the plant?</li>
+</ul>
+</li>
+</ul>
+<h3 id="Present-Continuous-Tense"><a href="#Present-Continuous-Tense" class="headerlink" title="Present Continuous Tense"></a>Present Continuous Tense</h3><ul>
+<li><p>usage: we use the present continuous when we talk about something happening at the time of speaking, or actions happening ‘around now’, even though not at the moment of speaking. this tense also has some future meaning.</p>
+</li>
+<li><p>tips:</p>
+<ul>
+<li>now, right new , at the moment, today, this week etc.</li>
+</ul>
+</li>
+<li><p>examples:</p>
+<ul>
+<li>Is it raining outside? No, it isn’t raining. It’s a bit cloudy but kids are playing outside anyway.</li>
+<li>The economic situation is already bad but it is getting worse.</li>
+</ul>
+</li>
+<li><p>conservation:</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> Hello, Mike! How are you doing these day?</span><br><span class="line"><span class="bullet">-</span> Hi, Sam! I&#x27;m fine, thanks! I&#x27;m doing a internship a one publishing house.</span><br><span class="line"><span class="bullet">-</span> Oh, really? Are you enjoying it?</span><br><span class="line"><span class="bullet">-</span> Yeah, I&#x27;m learning a lot of small but crucial details. How about you?</span><br><span class="line"><span class="bullet">-</span> Well, I&#x27;m not working at the moment. I&#x27;m trying to find a job in my filed. It&#x27;s a difficult staff!</span><br><span class="line"><span class="bullet">-</span> Yeah, I totally got you! Well, I have to go now. Good luck!</span><br><span class="line"><span class="bullet">-</span> Thank! Good luck to you too! See you!</span><br><span class="line"><span class="bullet">-</span> Bye!</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>questions:</p>
+<ul>
+<li>What are you doing right now?</li>
+<li>Is anything interesting happing in your country?</li>
+<li>Do you know what your family is doing now?</li>
+</ul>
+</li>
+</ul>
+<h3 id="Past-Continuous-Tense"><a href="#Past-Continuous-Tense" class="headerlink" title="Past Continuous Tense"></a>Past Continuous Tense</h3><ul>
+<li><p>usage:</p>
+<ul>
+<li>we use the past continuous when we describe a situation, or serval situations in progress, happening at the same time in the past.</li>
+<li>this is often contrasted with a sudden event in the past simple.</li>
+<li>we use the past continuous when we describe a situation, ro several situations in progress, happening at the same time in the past. This is often contrasted with a sudden event in the past simple.</li>
+</ul>
+</li>
+<li><p>tips:</p>
+<ul>
+<li>was&#x2F;were + Ving</li>
+<li>at 7 o’clock, for two hours, in January, last week, all night etc.</li>
+<li>when, while &#x3D; during the time that</li>
+<li>Non-continuous verbs (e.g. to love, hate, know, want etc.) are <strong>not used</strong> in any continuous tense! use the past simple instead.</li>
+</ul>
+</li>
+<li><p>examples:</p>
+<ul>
+<li>While Emily was cooking dinner, the phone rang.</li>
+<li>Ann broke a cup when she was washing the dishes.</li>
+<li>Tom was sleeping peacefully in his bed when his mom took a picture of him.</li>
+</ul>
+</li>
+<li><p>conservation:</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> Nate, where ware you yesterday? I was trying to reach you the whole evening.</span><br><span class="line"><span class="bullet">-</span> Sorry, Sam it was such a crazy day!</span><br><span class="line"><span class="bullet">-</span> Why so ?</span><br><span class="line"><span class="bullet">-</span> Well, my college project was due to so I was running all over the city collecting information. I needed to write an article so I was meeting up with people, I wsa even interviewing strangers in the streets.</span><br><span class="line"><span class="bullet">-</span> That sounds like a stressful day!</span><br><span class="line"><span class="bullet">-</span> You bet! While I was interviewing one old lady, a cop came up to me and wanted to see my ID. But that&#x27;s Ok.</span><br><span class="line"><span class="bullet">-</span> Did you finish your project at least?</span><br><span class="line"><span class="bullet">-</span> Thankfully, yes. I was working on ti the whole day!</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>questions:</p>
+<ul>
+<li>What were you doing at 5 p.m. last night?</li>
+<li>What were you doing when you heard a phone call?</li>
+<li>What was your family doing when you went on a vacation together?</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>英文筆記</category>
+      </categories>
+      <tags>
+        <tag>full-english</tag>
+        <tag>english</tag>
+        <tag>english-master</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>口說英語通 | English All Pass</title>
+    <url>/2020/07/19/english-pass/</url>
+    <content><![CDATA[<p><a href="https://channelplus.ner.gov.tw/viewalllang/587">國立教育廣播電臺</a></p>
+<p>30個最常見與外國友人聊天的話題，訓練並提升日常生活英語的口說能力。</p>
+<h2 id="Please-introduce-yourself"><a href="#Please-introduce-yourself" class="headerlink" title="Please introduce yourself"></a>Please introduce yourself</h2><p>Section 1:</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">Hello, my name is Kenneth. I&#x27;m form Taipei, Taiwan.</span><br><span class="line">Taipei is the biggest city, and I&#x27;ve been here for a long time now and really enjoy it.</span><br><span class="line">It&#x27;s a great place to live and work.</span><br><span class="line">As far as  my hobbies go, I really enjoy going to the movies;</span><br><span class="line">I&#x27;m a big movie buff,I try to catch all the movie when they&#x27;re out in the theater.</span><br><span class="line">Beside, I really enjoy any type of sport.</span><br><span class="line">I&#x27;m into jogging and swimming. I sometimes do marathon.</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<ul>
+<li>As far as my hobbies go, I enjoy + Ving.</li>
+<li>I’m into  + N&#x2F;Ving.</li>
+</ul>
+<h2 id="Talk-about-your-family-and-how-close-you-are"><a href="#Talk-about-your-family-and-how-close-you-are" class="headerlink" title="Talk about your family and how close you are"></a>Talk about your family and how close you are</h2><p>Section 2:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I have a great extended family with aunts and uncles and cousins spread out all over the world.</span><br><span class="line">My grandmom is the oldest of six, so she had lots of brothers and sister.</span><br><span class="line">We try to get together once in a while and keep in touch through telephone or some other Internet means.</span><br><span class="line">But the real joy of my life is my immediate family with my parents ane my brother.</span><br><span class="line">We are very close and usually spend time together on the weekend.</span><br><span class="line">We often go for a walk together, do the grocery shopping in the mall, and sometimes watch a movie in the movie theater.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>I have a big&#x2F;small extended family with + N.</li>
+<li>… is the oldest&#x2F;youngest of + N.</li>
+<li>We keep in touch over&#x2F;through …</li>
+</ul>
+<h2 id="What-do-you-usually-eat-What-are-your-eating-habits"><a href="#What-do-you-usually-eat-What-are-your-eating-habits" class="headerlink" title="What do you usually eat? What are your eating habits?"></a>What do you usually eat? What are your eating habits?</h2><p>Section 3:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I would say that I am a healthy eater. I eat lots of fruits and vegetables. I also like to eat meat.</span><br><span class="line">I &#x27;m try to get as many micronutrients as I can and is basically from the raw source of fruits and vegetables.</span><br><span class="line">But sometimes I pig out on fried chicken, and ice cream and cake. I do have a sweet tooth.</span><br><span class="line">I really love those sweet foods or the fried foods, but they can be unhealthy.</span><br><span class="line">But overall I would say I am a healthy eater.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>… as many + C.N. as one can.</li>
+<li>… as much + U.N. as possible.</li>
+<li>I love to pig out on …</li>
+<li>But overall, I would say …</li>
+</ul>
+<h2 id="Tell-us-about-your-favorite-food"><a href="#Tell-us-about-your-favorite-food" class="headerlink" title="Tell us about your favorite food."></a>Tell us about your favorite food.</h2><p>Section 4:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">My favorite food is fried chicken.</span><br><span class="line">Yes, I know, eating too much of it can be bad and unhealthy, but I really love it.</span><br><span class="line">Juicy, flavorful chicken, fried to a golden brown with a crispy coating over a tender chicken leg, wing or breast.</span><br><span class="line">My mouth just starts to water. This is, in fact, the most popular menu in our country.</span><br><span class="line">Different restaurants and vendors have their own recipes, but they are all good.</span><br><span class="line">One thing I believe we can all agree on, there is nothing better than a plate of fried chicken.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>My favorite + N + is …</li>
+<li>too much … can be …</li>
+<li>One thing I believe we can all agree on …</li>
+<li>There is nothing better than …</li>
+</ul>
+<h2 id="Do-you-eat-out-a-lot-Talk-about-some-of-your-experince"><a href="#Do-you-eat-out-a-lot-Talk-about-some-of-your-experince" class="headerlink" title="Do you eat out a lot? Talk about some of your experince."></a>Do you eat out a lot? Talk about some of your experince.</h2><p>Section 5:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">In the busy modern life, you get used to going out and eating all the time.</span><br><span class="line">I think that kind of trend has followed in my life, because eating out is so cheap, it&#x27;s really delicious, it&#x27;s effeicient.</span><br><span class="line">Sometimes I eat out three meals a day.</span><br><span class="line">I would have a bagel and a coffee in the morning on the go, have a salad or a box lunch for lunch, and have a slice of pizza for dinner,</span><br><span class="line">The outside food may not be as healthy as the home-cooked, but it&#x27;s really covenient.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>get used to + N&#x2F;Ving.</li>
+<li>Ving … is …</li>
+<li>I would + V …</li>
+</ul>
+<h2 id="What-is-your-favorite-holiday"><a href="#What-is-your-favorite-holiday" class="headerlink" title="What is your favorite holiday?"></a>What is your favorite holiday?</h2><p>Section 6:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">My favorite holiday is difinitely Chrismas. Because ... well when I was younger, it was always because of presents.</span><br><span class="line">You get so many presents from your family and friends. It also has a spiritual meaning because it&#x27;s the birthday of Jesus Christ.</span><br><span class="line">It&#x27;s always fun celebrating Christmas. People seem to be happier with holiday cheer.</span><br><span class="line">Everyone decorates Chrismas trees, and Christmas music is everywhere. So you&#x27;re difinitely in the spirit of this magical time.</span><br><span class="line">It&#x27;s a time when family and friends get together.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>My favorite + N. + is definitely …</li>
+<li>You get … from …</li>
+<li>It’s always fun + Ning …</li>
+</ul>
+<h2 id="Describe-a-trandition-festival-in-your-country"><a href="#Describe-a-trandition-festival-in-your-country" class="headerlink" title="Describe a trandition festival in your country."></a>Describe a trandition festival in your country.</h2><p>Section 7:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Chinese New Year is the most important holiday in my country, which has always been my favorite time of year.</span><br><span class="line">All of my family and extened family members gather together to celebrate the day.</span><br><span class="line">We usually eat our reunion dinner at a resturant.</span><br><span class="line">Aside from the delicious food and catching up with my relaives,children are given little red envelopes with &#x27;lucky money&#x27; inside.</span><br><span class="line">I like to watch the Lion Dance. This brings good luck. People wear btight, red clothes to bring a happy future. I always look forward to Chinese New Year.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>has&#x2F;have always been my favorite + N</li>
+<li>Aside from + N&#x2F;Ving</li>
+<li>look forward to + N&#x2F;Ving</li>
+</ul>
+<h2 id="Do-you-exercise-Talk-about-how-often-and-what-kind-of-exercise-you-do"><a href="#Do-you-exercise-Talk-about-how-often-and-what-kind-of-exercise-you-do" class="headerlink" title="Do you exercise? Talk about how often and what kind of exercise you do."></a>Do you exercise? Talk about how often and what kind of exercise you do.</h2><p>Section 8:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I love exercise. There are so many different exercises out there but personally for me, I love working out in the gym.</span><br><span class="line">I like to wake up in the morning, nice and early, hit the gym, do my weight and run on a treadmill. Exercise id great not only because I&#x27;m getting fit but I&#x27;m alse relieving stress at the same time.</span><br><span class="line">So I think, everyone should try to find the things that he or she would enjoy and keep them fit.</span><br><span class="line">After all, exercise can also keep healthy and fit.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>But personally for me, …</li>
+<li>I like to + V</li>
+<li>find the things that …</li>
+</ul>
+]]></content>
+      <categories>
+        <category>英文筆記</category>
+      </categories>
+      <tags>
+        <tag>英文</tag>
+        <tag>口說</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人人都可以寫文章 - 從筆記到文章</title>
+    <url>/2021/08/22/error-baker-01-article/</url>
+    <content><![CDATA[<p>網路上有很多寫文章教學，也有不少寫文章的好處，或許你就曾想過要寫文章？…</p>
+<blockquote>
+<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/01-article/">Error Baker 共筆部落格文章</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Error Baker 共筆部落格</category>
+      </categories>
+      <tags>
+        <tag>Error Baker 共筆部落格</tag>
+        <tag>MackMD</tag>
+        <tag>article</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>為什麼要使用框架 - 你聽過最好的答案是什麼？</title>
+    <url>/2021/09/19/error-baker-02-framework/</url>
+    <content><![CDATA[<p>大家安安！2021 的 Web 前端也是一如往常的五花八門！當然，我們也是學的落花流水的 …</p>
+<blockquote>
+<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/02-framework/">Error Baker 共筆部落格文章</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Error Baker 共筆部落格</category>
+      </categories>
+      <tags>
+        <tag>Error Baker 共筆部落格</tag>
+        <tag>framework</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>共筆中的共筆 - 以 JavaScript30 為例</title>
+    <url>/2021/10/26/error-baker-03-collaborative-writing/</url>
+    <content><![CDATA[<p>這個計畫的六個月說長不長說短不短，有些人也在期間做了很多事、研究了不一樣的東西，大家也都成長不少吧！ 這篇文章算是筆者在學習時期「發起共筆讀書會」的一個小回顧 …</p>
+<blockquote>
+<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/03-collaborative-writing/">Error Baker 共筆部落格文章</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Error Baker 共筆部落格</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>Error Baker 共筆部落格</tag>
+        <tag>HackMd</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>After work toeic vocabulary</title>
     <url>/2023/05/31/english-after-work-toeic/</url>
     <content><![CDATA[<p>This a note to recording my English journey from <a href="https://afterworkenglishclub.simplybook.asia/v2/">After Work English Club</a> .</p>
@@ -4880,462 +5353,6 @@
       </tags>
   </entry>
   <entry>
-    <title>English Master | Grammar 01</title>
-    <url>/2022/06/25/english-master-grammer-01-verb-tenses-01/</url>
-    <content><![CDATA[<blockquote>
-<p>This is a learning note base on the course: <a href="https://www.udemy.com/share/101Y4o3@ouo4OdQQoPpXrTvjJLnq3QSbgAYl6QqCLjRJnT8XH1VzReqbHR0-YOt1xeWGeEdA7w==/">Udemy | The English Master Course: English Grammar, English Speaking</a></p>
-</blockquote>
-<h2 id="Verb-Tenses"><a href="#Verb-Tenses" class="headerlink" title="Verb Tenses"></a>Verb Tenses</h2><h3 id="Simple-Present-Verb-Tense"><a href="#Simple-Present-Verb-Tense" class="headerlink" title="Simple Present Verb Tense"></a>Simple Present Verb Tense</h3><ul>
-<li><p>usage:</p>
-<ul>
-<li>happens all the time</li>
-<li>happens repeatedly</li>
-<li>is true in general</li>
-</ul>
-</li>
-<li><p>tips:</p>
-<ul>
-<li>You can add markers such as <strong>always, often, usually sometimes, rarely, never, every day</strong> etc.</li>
-</ul>
-</li>
-</ul>
-<span id="more"></span>
-
-<ul>
-<li><p>conversation:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">Hello! What&#x27;s your name?</span><br><span class="line">Oh, hi, my name&#x27;s Sarah. And yours?</span><br><span class="line">I&#x27;m Alex. Nice to meet you, Sarah</span><br><span class="line">Nice to meet you too! So, where do you come from?</span><br><span class="line">I come from Germany. And where are you from?</span><br><span class="line">I&#x27;m from UK.</span><br><span class="line">Oh, I have a lot of friends form the UK. You probably have a great sense of humour.</span><br><span class="line">I&#x27;m not sure about that! I don&#x27;t always get our jokes.</span><br><span class="line">Your&#x27;re an exception then!</span><br><span class="line">I&#x27;ll take that as compliment.</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>question:</p>
-<ul>
-<li>What do you do for living?</li>
-<li>What your hobbies?</li>
-<li>What does your typical Sunday look like?</li>
-</ul>
-</li>
-</ul>
-<h3 id="Verb-Conjugation-1st-2nd-3rd-person"><a href="#Verb-Conjugation-1st-2nd-3rd-person" class="headerlink" title="Verb Conjugation (1st&#x2F;2nd&#x2F;3rd person)"></a>Verb Conjugation (1st&#x2F;2nd&#x2F;3rd person)</h3><ul>
-<li><p>usage:</p>
-<ul>
-<li>Verb conjugation refers to how a verb changes to indicate a different person, number, tense or mood.</li>
-</ul>
-</li>
-<li><p>conversation:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">When I was your age, I wanted to become a nurse. I liked the idea of helping people when they need it the most.</span><br><span class="line">Why aren&#x27;t you a nurse then, grandma?</span><br><span class="line">Well, sweetie, we grow up, and sometimes our goals change. I&#x27;m a teacher now, and I have never regretted my choice.</span><br><span class="line">And you are helping people anyway!</span><br><span class="line">That&#x27;s true!</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="Subject-Verb-Agreement"><a href="#Subject-Verb-Agreement" class="headerlink" title="! Subject-Verb Agreement"></a>! Subject-Verb Agreement</h3><ul>
-<li><p>usage:</p>
-<ul>
-<li>The subject-verb agreement is the correspondence of a verb with its subject in person(first, second, or third) and number (singular or plural)</li>
-<li>Subjects and verbs must agree with on another in number (singular or plural). Thus, if a subject is singular, its verb must also be singular; if a subject is plural, its verb must also be plural.</li>
-<li>When the subject of the sentence is composed of two or more nouns or pronouns connected by the conjunction <code>and</code>, use a plural verb.</li>
-</ul>
-</li>
-<li><p>tips:</p>
-<ul>
-<li>The words <code>each, each one, either, neither, everyone, everybody, anyone, anybody, nobody, somebody, someone, and no one</code> are singular and require a singular verb.</li>
-<li>When two or more singular nouns ro pronouns are connected by <code>or</code> or <code>nor</code>, use a singular verb.</li>
-<li>! When a compound subject contains both a singular and a plural noun or pronouns joined by <code>or</code> or <code>nor</code>, the verb should agree with the part of the subject that is <strong>closer to the verb(also called the rule of proximity)</strong>.</li>
-<li>Note the subject-verb agreement with words that indicate portions(e.g. <code>a lot</code>, <code>a majority</code>, <code>some</code>, <code>all</code>): if the noun after of is singular, use a singular verb; if it is plural, use a plural verb.</li>
-<li>! Use a singular verb with distances, periods of times, sums of money, etc., when considered as a unit.</li>
-<li>! Collective nouns are words that imply more than one person but are considered singular and take a singular verb (e.g. family, group, team, committee, class etc.)</li>
-</ul>
-</li>
-<li><p>examples:</p>
-<ul>
-<li><strong>Ten dollars is</strong> high price to pay for socks.</li>
-<li><strong>My family is</strong> very big.</li>
-</ul>
-</li>
-<li><p>conservation:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> These are a lot of people outside. Do you know what&#x27;s going on?</span><br><span class="line"><span class="bullet">-</span> These people are protesting. Maybe you&#x27;ve heard the recent news that some company wants build a huge factory right over there. And surely no one is happy about that.</span><br><span class="line"><span class="bullet">-</span> But I didn&#x27;t see any media around.</span><br><span class="line"><span class="bullet">-</span> I&#x27;m sure that some reports will come in a bit. It&#x27;s not like there are a couple of people so it&#x27;s difficult to ignore this.</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="Past-Simple-Tense"><a href="#Past-Simple-Tense" class="headerlink" title="Past Simple Tense"></a>Past Simple Tense</h3><ul>
-<li><p>usage:</p>
-<ul>
-<li>We use the past simple when we talk about an action which happened at a definite time in the past.</li>
-<li>This tense emphasizes that the action is finished.</li>
-<li>We can also use this tense to talk about how someone felt about something.</li>
-</ul>
-</li>
-<li><p>tips:</p>
-<ul>
-<li>Note that we use <code>did/did not</code> with the verb to have.</li>
-<li>But we do not use did with the verb <code>to be</code>(was&#x2F;were).</li>
-</ul>
-</li>
-<li><p>examples:</p>
-<ul>
-<li>Nick’s mother didn’t want to stay at home the whole day so she signed up for Spanish classes.</li>
-<li>I ran every day when I was a teen but I don’t do that anymore.</li>
-<li>Where were you last night? I tried calling you but you didn’t pick up the phone.</li>
-</ul>
-</li>
-<li><p>conservation:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> Mom, do you have a minute?</span><br><span class="line"><span class="bullet">-</span> Sure, kid, what&#x27;s up?</span><br><span class="line"><span class="bullet">-</span> When was the last time you wnt to a beauty salon?</span><br><span class="line"><span class="bullet">-</span> Well, I don&#x27;t remember. Maybe it was a year age.</span><br><span class="line"><span class="bullet">-</span> And when was the last time you had a night out with Dad?</span><br><span class="line"><span class="bullet">-</span> I&#x27;m not sure. It was definitely a long time age.</span><br><span class="line"><span class="bullet">-</span> And what did you do last night?</span><br><span class="line"><span class="bullet">-</span> I stayed a home with your Dad. We fell asleep watching some boring movie on TV.</span><br><span class="line"><span class="bullet">-</span> I bought two ticket to Costa Rica. You need a vacation, Mom!</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>questions:</p>
-<ul>
-<li>Where did you grow up?</li>
-<li>What did you do last night?</li>
-<li>When was the last time you went on a trip?</li>
-</ul>
-</li>
-</ul>
-<h3 id="Simple-Future-Tense"><a href="#Simple-Future-Tense" class="headerlink" title="Simple Future Tense"></a>Simple Future Tense</h3><ul>
-<li><p>usage:</p>
-<ul>
-<li>We can refer to the future by using <code>will</code>, <code>be going to</code> or by using <code>present tenses</code>.</li>
-<li>We use the will future when we want to talk generally about future belief, opinions, hopes and predictions.</li>
-</ul>
-</li>
-<li><p>tips:</p>
-<ul>
-<li>Time markers - tomorrow, next month, in a day, etc.</li>
-<li>Probability markers - perhaps, probably, definitely, etc.</li>
-<li>Some speakers use <code>shall</code> to refer to the future in formal situation. Nowadays <code>shall</code> is used for <strong>suggestion</strong> only.</li>
-</ul>
-</li>
-<li><p>examples:</p>
-</li>
-<li><p>conservation:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> Mike, what are your plans fro tonight?</span><br><span class="line"><span class="bullet">-</span> I don&#x27;t know really, I&#x27;ll probably play some video games after work.</span><br><span class="line"><span class="bullet">-</span> And what will you do tomorrow?</span><br><span class="line"><span class="bullet">-</span> Well, I definitely won&#x27;t go out with my friends tomorrow.</span><br><span class="line"><span class="bullet">-</span> And what will you do next week?</span><br><span class="line"><span class="bullet">-</span> I&#x27;ll most certainly start learning another language.</span><br><span class="line"><span class="bullet">-</span> Mike, how do you have an answer for everything?</span><br><span class="line"><span class="bullet">-</span> I&#x27;ts quite simple. I don&#x27;t plan anything. Things will happen on their own.</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>questions:</p>
-<ul>
-<li>What will you do tomorrow?</li>
-<li>Where will you stay during your summer vacations?</li>
-<li>Will robots take over the plant?</li>
-</ul>
-</li>
-</ul>
-<h3 id="Present-Continuous-Tense"><a href="#Present-Continuous-Tense" class="headerlink" title="Present Continuous Tense"></a>Present Continuous Tense</h3><ul>
-<li><p>usage: we use the present continuous when we talk about something happening at the time of speaking, or actions happening ‘around now’, even though not at the moment of speaking. this tense also has some future meaning.</p>
-</li>
-<li><p>tips:</p>
-<ul>
-<li>now, right new , at the moment, today, this week etc.</li>
-</ul>
-</li>
-<li><p>examples:</p>
-<ul>
-<li>Is it raining outside? No, it isn’t raining. It’s a bit cloudy but kids are playing outside anyway.</li>
-<li>The economic situation is already bad but it is getting worse.</li>
-</ul>
-</li>
-<li><p>conservation:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> Hello, Mike! How are you doing these day?</span><br><span class="line"><span class="bullet">-</span> Hi, Sam! I&#x27;m fine, thanks! I&#x27;m doing a internship a one publishing house.</span><br><span class="line"><span class="bullet">-</span> Oh, really? Are you enjoying it?</span><br><span class="line"><span class="bullet">-</span> Yeah, I&#x27;m learning a lot of small but crucial details. How about you?</span><br><span class="line"><span class="bullet">-</span> Well, I&#x27;m not working at the moment. I&#x27;m trying to find a job in my filed. It&#x27;s a difficult staff!</span><br><span class="line"><span class="bullet">-</span> Yeah, I totally got you! Well, I have to go now. Good luck!</span><br><span class="line"><span class="bullet">-</span> Thank! Good luck to you too! See you!</span><br><span class="line"><span class="bullet">-</span> Bye!</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>questions:</p>
-<ul>
-<li>What are you doing right now?</li>
-<li>Is anything interesting happing in your country?</li>
-<li>Do you know what your family is doing now?</li>
-</ul>
-</li>
-</ul>
-<h3 id="Past-Continuous-Tense"><a href="#Past-Continuous-Tense" class="headerlink" title="Past Continuous Tense"></a>Past Continuous Tense</h3><ul>
-<li><p>usage:</p>
-<ul>
-<li>we use the past continuous when we describe a situation, or serval situations in progress, happening at the same time in the past.</li>
-<li>this is often contrasted with a sudden event in the past simple.</li>
-<li>we use the past continuous when we describe a situation, ro several situations in progress, happening at the same time in the past. This is often contrasted with a sudden event in the past simple.</li>
-</ul>
-</li>
-<li><p>tips:</p>
-<ul>
-<li>was&#x2F;were + Ving</li>
-<li>at 7 o’clock, for two hours, in January, last week, all night etc.</li>
-<li>when, while &#x3D; during the time that</li>
-<li>Non-continuous verbs (e.g. to love, hate, know, want etc.) are <strong>not used</strong> in any continuous tense! use the past simple instead.</li>
-</ul>
-</li>
-<li><p>examples:</p>
-<ul>
-<li>While Emily was cooking dinner, the phone rang.</li>
-<li>Ann broke a cup when she was washing the dishes.</li>
-<li>Tom was sleeping peacefully in his bed when his mom took a picture of him.</li>
-</ul>
-</li>
-<li><p>conservation:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> Nate, where ware you yesterday? I was trying to reach you the whole evening.</span><br><span class="line"><span class="bullet">-</span> Sorry, Sam it was such a crazy day!</span><br><span class="line"><span class="bullet">-</span> Why so ?</span><br><span class="line"><span class="bullet">-</span> Well, my college project was due to so I was running all over the city collecting information. I needed to write an article so I was meeting up with people, I wsa even interviewing strangers in the streets.</span><br><span class="line"><span class="bullet">-</span> That sounds like a stressful day!</span><br><span class="line"><span class="bullet">-</span> You bet! While I was interviewing one old lady, a cop came up to me and wanted to see my ID. But that&#x27;s Ok.</span><br><span class="line"><span class="bullet">-</span> Did you finish your project at least?</span><br><span class="line"><span class="bullet">-</span> Thankfully, yes. I was working on ti the whole day!</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>questions:</p>
-<ul>
-<li>What were you doing at 5 p.m. last night?</li>
-<li>What were you doing when you heard a phone call?</li>
-<li>What was your family doing when you went on a vacation together?</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>英文筆記</category>
-      </categories>
-      <tags>
-        <tag>full-english</tag>
-        <tag>english</tag>
-        <tag>english-master</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>After work notes</title>
-    <url>/2023/04/27/english-after-work-events/</url>
-    <content><![CDATA[<p>This a note to recording my English journey from <a href="https://afterworkenglishclub.simplybook.asia/v2/">After Work English Club</a> .</p>
-<p>Events:</p>
-<ul>
-<li>2023-04-22 English Interview lecture</li>
-<li>2022-08-16 After Work English planning</li>
-</ul>
-<span id="more"></span>
-
-<h2 id="2023-04-English-Interview"><a href="#2023-04-English-Interview" class="headerlink" title="2023-04 English Interview"></a>2023-04 English Interview</h2><ol>
-<li>面試前的準備<ul>
-<li><p>研究公司</p>
-<ul>
-<li>網路搜尋、新聞、社群</li>
-<li>產品、文化、客戶</li>
-<li>了解職位需求技能</li>
-<li>LinkedIn</li>
-</ul>
-</li>
-<li><p>了解面試流程</p>
-</li>
-<li><p>準備問題和答案</p>
-<ul>
-<li>單向常見問題：自我介紹、為什麼想加入、為什麼離開現在的工作、可以為公司帶來什麼效應、為什麼覺得自己是適合的人選、對於未來發展的想法為何、期待能從工作中得到什麼</li>
-<li>回答技巧：準備清楚簡潔的答案、與個人經驗和公司價值觀相符合</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>常見的外商面試類型<ul>
-<li>Sourcing &#x3D;&gt; Recruiter &#x3D;&gt; Hiring Manager</li>
-<li>Full cycle Recruiting</li>
-</ul>
-<ol>
-<li>Preparing</li>
-<li>Sourcing</li>
-<li>Screening</li>
-<li>Selecting</li>
-<li>Hiring</li>
-<li>Onboarding</li>
-</ol>
-<ul>
-<li>Testing<ul>
-<li>Psychometric Aptitiude Test</li>
-<li>Numerical Reasoning Test</li>
-<li>Verbal Reasoning</li>
-<li>Logical Reasoning Test</li>
-<li>English Test</li>
-</ul>
-</li>
-<li>Behavior Interview<ul>
-<li>介紹：互相介紹</li>
-<li>設定情境：如果跟上司不合、需要的即戰力</li>
-<li>問題提出</li>
-<li>追問疑點</li>
-<li>總結和結束</li>
-<li>應對技巧</li>
-</ul>
-<ol>
-<li>避免重複敘述相同經驗，盡量真實回答</li>
-<li>綀習以邏輯思考方式，STAR</li>
-<li>提前練習行為面試，避免即興發揮和面試緊張狀況</li>
-<li>在了解問題後，設定答案是短回履或是長回履</li>
-</ol>
-<ul>
-<li>短回覆可以是重點列出</li>
-<li>長回覆為了避免聽起了失去重點、長篇大論，可以說故事，盡量控制在 2 分鐘內</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>面試服儀及肢體動作<ul>
-<li>表達能力<ul>
-<li>用簡潔的語言達清楚觀點</li>
-<li>平穩的速度，看著自信地對方</li>
-</ul>
-</li>
-<li>姿勢和肢體語言<ul>
-<li>保持輕鬆，坐直</li>
-<li>帶筆跟筆記本</li>
-<li>面試前整理服裝儀容</li>
-<li>手機靜音</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>面試問題<ul>
-<li>你的優缺點是什麼</li>
-<li>過去的職務中，最具有挑戰性或是最有成就感的是哪一個</li>
-<li>你如何解決困難或是衝突的情況？</li>
-<li>你對於工作時間和工作壓力有什麼看法？</li>
-</ul>
-</li>
-<li>薪資問題<ul>
-<li>中高階人員，薪水浮動程度大</li>
-<li>拿到 Offer 後，可以談</li>
-<li>策略方式：自信堅定、認清現實、設定底價</li>
-<li>千萬不要：予取予求、不要獅子大開口</li>
-</ul>
-</li>
-</ol>
-<p>competitive offer</p>
-<p>Q:</p>
-<ol>
-<li>If work years is short, but skills is quite well. How to convince hunter or recruiter you are qualified?</li>
-<li>It is believed that keep interviewing is good. It’s that true? If so, then how the frequency should be?</li>
-<li>I supposed most of Taiwan appliances are introverted. Is it good on the interview or not?</li>
-<li>Which is more important, accuracy of fluency, in the oral interview?</li>
-</ol>
-<p>A:</p>
-<ol>
-<li>舉例說明，你有能力做到，impact 是什麼，能為公司帶來什麼</li>
-<li>是好的，可以取得</li>
-<li>必需說內向是不好的，有的公司會議上不講話，公司就不需要你</li>
-<li>accuracy is better, how to represent list, maybe nervous,</li>
-</ol>
-<p>Resource:</p>
-<p><a href="https://www.youtube.com/watch?v=TMp3N7OndaI"><img data-src="https://img.youtube.com/vi/TMp3N7OndaI/0.jpg" alt="進一流的外商英文 | Youtube podcast"></a></p>
-<h2 id="2022-08-16-After-Work-英文規劃諮詢"><a href="#2022-08-16-After-Work-英文規劃諮詢" class="headerlink" title="2022&#x2F;08&#x2F;16 After Work 英文規劃諮詢"></a>2022&#x2F;08&#x2F;16 After Work 英文規劃諮詢</h2><p>手中的英文資源：</p>
-<ul>
-<li>After Work 3 年會員（書籍、線上線下課）</li>
-<li>VoiceTube Hero 三個月方案挑戰中（06&#x2F;24 ~ 09&#x2F;24）</li>
-<li>Udemy <a href="https://www.udemy.com/share/101Y4o3@ePjW9Z0yIJdACaknASMSUjtnXrIi_DRkclS1qOAq0zZsGD-VjeIJRTM8EwhAHdjwWQ==/">Mater English</a> （progressing 5%）</li>
-</ul>
-<p>目標：</p>
-<ol>
-<li>一年 &#x3D;&gt; 多益金色證書</li>
-<li>二年 &#x3D;&gt; 持續加強口說、寫點英文 Blog 文章</li>
-<li>三年 &#x3D;&gt; 拿到外商 Offer (Front-End Developer)</li>
-</ol>
-<p>自我評估：</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 可行性：目前嘗試寫了一篇英文技術文章，try to use English more and more</li>
-<li><input checked="" disabled="" type="checkbox"> 時間性：我願意用大部分有空的時間去達成</li>
-</ul>
-<p>2 ~ 3 個月</p>
-<ol>
-<li>3000 字多益：先看倒數 4 個主題</li>
-<li>商辦英文會話：全部</li>
-</ol>
-]]></content>
-      <categories>
-        <category>英文筆記</category>
-      </categories>
-      <tags>
-        <tag>english</tag>
-        <tag>after-work</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>口說英語通 | English All Pass</title>
-    <url>/2020/07/19/english-pass/</url>
-    <content><![CDATA[<p><a href="https://channelplus.ner.gov.tw/viewalllang/587">國立教育廣播電臺</a></p>
-<p>30個最常見與外國友人聊天的話題，訓練並提升日常生活英語的口說能力。</p>
-<h2 id="Please-introduce-yourself"><a href="#Please-introduce-yourself" class="headerlink" title="Please introduce yourself"></a>Please introduce yourself</h2><p>Section 1:</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">Hello, my name is Kenneth. I&#x27;m form Taipei, Taiwan.</span><br><span class="line">Taipei is the biggest city, and I&#x27;ve been here for a long time now and really enjoy it.</span><br><span class="line">It&#x27;s a great place to live and work.</span><br><span class="line">As far as  my hobbies go, I really enjoy going to the movies;</span><br><span class="line">I&#x27;m a big movie buff,I try to catch all the movie when they&#x27;re out in the theater.</span><br><span class="line">Beside, I really enjoy any type of sport.</span><br><span class="line">I&#x27;m into jogging and swimming. I sometimes do marathon.</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<ul>
-<li>As far as my hobbies go, I enjoy + Ving.</li>
-<li>I’m into  + N&#x2F;Ving.</li>
-</ul>
-<h2 id="Talk-about-your-family-and-how-close-you-are"><a href="#Talk-about-your-family-and-how-close-you-are" class="headerlink" title="Talk about your family and how close you are"></a>Talk about your family and how close you are</h2><p>Section 2:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I have a great extended family with aunts and uncles and cousins spread out all over the world.</span><br><span class="line">My grandmom is the oldest of six, so she had lots of brothers and sister.</span><br><span class="line">We try to get together once in a while and keep in touch through telephone or some other Internet means.</span><br><span class="line">But the real joy of my life is my immediate family with my parents ane my brother.</span><br><span class="line">We are very close and usually spend time together on the weekend.</span><br><span class="line">We often go for a walk together, do the grocery shopping in the mall, and sometimes watch a movie in the movie theater.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>I have a big&#x2F;small extended family with + N.</li>
-<li>… is the oldest&#x2F;youngest of + N.</li>
-<li>We keep in touch over&#x2F;through …</li>
-</ul>
-<h2 id="What-do-you-usually-eat-What-are-your-eating-habits"><a href="#What-do-you-usually-eat-What-are-your-eating-habits" class="headerlink" title="What do you usually eat? What are your eating habits?"></a>What do you usually eat? What are your eating habits?</h2><p>Section 3:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I would say that I am a healthy eater. I eat lots of fruits and vegetables. I also like to eat meat.</span><br><span class="line">I &#x27;m try to get as many micronutrients as I can and is basically from the raw source of fruits and vegetables.</span><br><span class="line">But sometimes I pig out on fried chicken, and ice cream and cake. I do have a sweet tooth.</span><br><span class="line">I really love those sweet foods or the fried foods, but they can be unhealthy.</span><br><span class="line">But overall I would say I am a healthy eater.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>… as many + C.N. as one can.</li>
-<li>… as much + U.N. as possible.</li>
-<li>I love to pig out on …</li>
-<li>But overall, I would say …</li>
-</ul>
-<h2 id="Tell-us-about-your-favorite-food"><a href="#Tell-us-about-your-favorite-food" class="headerlink" title="Tell us about your favorite food."></a>Tell us about your favorite food.</h2><p>Section 4:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">My favorite food is fried chicken.</span><br><span class="line">Yes, I know, eating too much of it can be bad and unhealthy, but I really love it.</span><br><span class="line">Juicy, flavorful chicken, fried to a golden brown with a crispy coating over a tender chicken leg, wing or breast.</span><br><span class="line">My mouth just starts to water. This is, in fact, the most popular menu in our country.</span><br><span class="line">Different restaurants and vendors have their own recipes, but they are all good.</span><br><span class="line">One thing I believe we can all agree on, there is nothing better than a plate of fried chicken.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>My favorite + N + is …</li>
-<li>too much … can be …</li>
-<li>One thing I believe we can all agree on …</li>
-<li>There is nothing better than …</li>
-</ul>
-<h2 id="Do-you-eat-out-a-lot-Talk-about-some-of-your-experince"><a href="#Do-you-eat-out-a-lot-Talk-about-some-of-your-experince" class="headerlink" title="Do you eat out a lot? Talk about some of your experince."></a>Do you eat out a lot? Talk about some of your experince.</h2><p>Section 5:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">In the busy modern life, you get used to going out and eating all the time.</span><br><span class="line">I think that kind of trend has followed in my life, because eating out is so cheap, it&#x27;s really delicious, it&#x27;s effeicient.</span><br><span class="line">Sometimes I eat out three meals a day.</span><br><span class="line">I would have a bagel and a coffee in the morning on the go, have a salad or a box lunch for lunch, and have a slice of pizza for dinner,</span><br><span class="line">The outside food may not be as healthy as the home-cooked, but it&#x27;s really covenient.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>get used to + N&#x2F;Ving.</li>
-<li>Ving … is …</li>
-<li>I would + V …</li>
-</ul>
-<h2 id="What-is-your-favorite-holiday"><a href="#What-is-your-favorite-holiday" class="headerlink" title="What is your favorite holiday?"></a>What is your favorite holiday?</h2><p>Section 6:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">My favorite holiday is difinitely Chrismas. Because ... well when I was younger, it was always because of presents.</span><br><span class="line">You get so many presents from your family and friends. It also has a spiritual meaning because it&#x27;s the birthday of Jesus Christ.</span><br><span class="line">It&#x27;s always fun celebrating Christmas. People seem to be happier with holiday cheer.</span><br><span class="line">Everyone decorates Chrismas trees, and Christmas music is everywhere. So you&#x27;re difinitely in the spirit of this magical time.</span><br><span class="line">It&#x27;s a time when family and friends get together.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>My favorite + N. + is definitely …</li>
-<li>You get … from …</li>
-<li>It’s always fun + Ning …</li>
-</ul>
-<h2 id="Describe-a-trandition-festival-in-your-country"><a href="#Describe-a-trandition-festival-in-your-country" class="headerlink" title="Describe a trandition festival in your country."></a>Describe a trandition festival in your country.</h2><p>Section 7:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Chinese New Year is the most important holiday in my country, which has always been my favorite time of year.</span><br><span class="line">All of my family and extened family members gather together to celebrate the day.</span><br><span class="line">We usually eat our reunion dinner at a resturant.</span><br><span class="line">Aside from the delicious food and catching up with my relaives,children are given little red envelopes with &#x27;lucky money&#x27; inside.</span><br><span class="line">I like to watch the Lion Dance. This brings good luck. People wear btight, red clothes to bring a happy future. I always look forward to Chinese New Year.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>has&#x2F;have always been my favorite + N</li>
-<li>Aside from + N&#x2F;Ving</li>
-<li>look forward to + N&#x2F;Ving</li>
-</ul>
-<h2 id="Do-you-exercise-Talk-about-how-often-and-what-kind-of-exercise-you-do"><a href="#Do-you-exercise-Talk-about-how-often-and-what-kind-of-exercise-you-do" class="headerlink" title="Do you exercise? Talk about how often and what kind of exercise you do."></a>Do you exercise? Talk about how often and what kind of exercise you do.</h2><p>Section 8:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I love exercise. There are so many different exercises out there but personally for me, I love working out in the gym.</span><br><span class="line">I like to wake up in the morning, nice and early, hit the gym, do my weight and run on a treadmill. Exercise id great not only because I&#x27;m getting fit but I&#x27;m alse relieving stress at the same time.</span><br><span class="line">So I think, everyone should try to find the things that he or she would enjoy and keep them fit.</span><br><span class="line">After all, exercise can also keep healthy and fit.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>But personally for me, …</li>
-<li>I like to + V</li>
-<li>find the things that …</li>
-</ul>
-]]></content>
-      <categories>
-        <category>英文筆記</category>
-      </categories>
-      <tags>
-        <tag>英文</tag>
-        <tag>口說</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人人都可以寫文章 - 從筆記到文章</title>
-    <url>/2021/08/22/error-baker-01-article/</url>
-    <content><![CDATA[<p>網路上有很多寫文章教學，也有不少寫文章的好處，或許你就曾想過要寫文章？…</p>
-<blockquote>
-<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/01-article/">Error Baker 共筆部落格文章</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Error Baker 共筆部落格</category>
-      </categories>
-      <tags>
-        <tag>Error Baker 共筆部落格</tag>
-        <tag>MackMD</tag>
-        <tag>article</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>為什麼要使用框架 - 你聽過最好的答案是什麼？</title>
-    <url>/2021/09/19/error-baker-02-framework/</url>
-    <content><![CDATA[<p>大家安安！2021 的 Web 前端也是一如往常的五花八門！當然，我們也是學的落花流水的 …</p>
-<blockquote>
-<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/02-framework/">Error Baker 共筆部落格文章</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Error Baker 共筆部落格</category>
-      </categories>
-      <tags>
-        <tag>Error Baker 共筆部落格</tag>
-        <tag>framework</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>等等我還想學 CLI - 微進階的 CLI</title>
     <url>/2022/01/02/error-baker-04-cli/</url>
     <content><![CDATA[<p>一開始，會接觸 CLI （Command-Line interface）應該是在 Lidemy 的中，最初的 week1，當中老師簡單的介紹 CLI 的操作，原來只用鍵盤就可以做這邊多事！我對此深深著迷 …</p>
@@ -5352,20 +5369,19 @@
       </tags>
   </entry>
   <entry>
-    <title>共筆中的共筆 - 以 JavaScript30 為例</title>
-    <url>/2021/10/26/error-baker-03-collaborative-writing/</url>
-    <content><![CDATA[<p>這個計畫的六個月說長不長說短不短，有些人也在期間做了很多事、研究了不一樣的東西，大家也都成長不少吧！ 這篇文章算是筆者在學習時期「發起共筆讀書會」的一個小回顧 …</p>
+    <title>來畫個圖吧 - P5.js 入門</title>
+    <url>/2022/05/03/error-baker-05-p5-js/</url>
+    <content><![CDATA[<p>如果說論實用性，筆者絕對推薦去學 D3.js ，有的公司面試時還會加分，因為可以製作很多的圖表、圓餅圖 … 等，P5.js 的話真的就是學來藝術創作的（修身養性？） …</p>
 <blockquote>
-<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/03-collaborative-writing/">Error Baker 共筆部落格文章</a></p>
+<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/05-p5-js/">Error Baker 共筆部落格文章</a></p>
 </blockquote>
 ]]></content>
       <categories>
         <category>Error Baker 共筆部落格</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
         <tag>Error Baker 共筆部落格</tag>
-        <tag>HackMd</tag>
+        <tag>p5-js</tag>
       </tags>
   </entry>
   <entry>
@@ -5382,22 +5398,6 @@
       <tags>
         <tag>Error Baker 共筆部落格</tag>
         <tag>css</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>來畫個圖吧 - P5.js 入門</title>
-    <url>/2022/05/03/error-baker-05-p5-js/</url>
-    <content><![CDATA[<p>如果說論實用性，筆者絕對推薦去學 D3.js ，有的公司面試時還會加分，因為可以製作很多的圖表、圓餅圖 … 等，P5.js 的話真的就是學來藝術創作的（修身養性？） …</p>
-<blockquote>
-<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/05-p5-js/">Error Baker 共筆部落格文章</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Error Baker 共筆部落格</category>
-      </categories>
-      <tags>
-        <tag>Error Baker 共筆部落格</tag>
-        <tag>p5-js</tag>
       </tags>
   </entry>
   <entry>
@@ -5419,6 +5419,23 @@
       </tags>
   </entry>
   <entry>
+    <title>如何提升打字速度 - 從初心者轉職超級初心者</title>
+    <url>/2022/10/16/error-baker-09-how-to-speed-up-typing/</url>
+    <content><![CDATA[<p>「打字快速」絕對是一門值得投資的技術，尤其是是做為長時間使用盤輸入的人，如：開發者、文字工作者，甚至仍至於 速錄師 等，如果你的打字速度非常快 …</p>
+<blockquote>
+<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/09-how-to-speed-up-typing/">Error Baker 共筆部落格文章</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Error Baker 共筆部落格</category>
+      </categories>
+      <tags>
+        <tag>Error Baker 共筆部落格</tag>
+        <tag>Typing</tag>
+        <tag>VScode Plugin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue3 Composition API &amp; React hooks</title>
     <url>/2022/07/30/error-baker-08-vue-compostion-api-and-react-hook/</url>
     <content><![CDATA[<p>I think React and Vue are like friend and enemy, the <strong>React hooks do inspired Vue’s Composition API</strong> which mention it in Vue’s document and admitted it.</p>
@@ -5436,23 +5453,6 @@
         <tag>React</tag>
         <tag>Vue</tag>
         <tag>Full English</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何提升打字速度 - 從初心者轉職超級初心者</title>
-    <url>/2022/10/16/error-baker-09-how-to-speed-up-typing/</url>
-    <content><![CDATA[<p>「打字快速」絕對是一門值得投資的技術，尤其是是做為長時間使用盤輸入的人，如：開發者、文字工作者，甚至仍至於 速錄師 等，如果你的打字速度非常快 …</p>
-<blockquote>
-<p>這邊只是記錄一下，詳細文章請參閱：<a href="https://blog.errorbaker.tw/posts/benben/09-how-to-speed-up-typing/">Error Baker 共筆部落格文章</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Error Baker 共筆部落格</category>
-      </categories>
-      <tags>
-        <tag>Error Baker 共筆部落格</tag>
-        <tag>Typing</tag>
-        <tag>VScode Plugin</tag>
       </tags>
   </entry>
   <entry>
