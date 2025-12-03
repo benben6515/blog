@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/benben-logo-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=-apple-system:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=BlinkMacSystemFont:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Segoe+UI:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+TC:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Georgia:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fira+Code:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Monaco:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Consolas:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=monospace:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"benben.me","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12,"width":300},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-tomorrow"},"copy_button":{"enable":true,"style":"flat","show_result":true},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInRight"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":5,"unescape":false,"preload":true,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="面試動機是在 FB 上看到這個徵才文的： https:&#x2F;&#x2F;www.facebook.com&#x2F;share&#x2F;p&#x2F;1DsBGHdzUu&#x2F; 我覺得算是 Job Description 寫得很棒的～  最好是那些已經對現有工作感到不滿的，可以立即到職。或是在待業進修中，正在等待一個全遠端、文化很年輕、非常注重賦能和意義的公司的人。  工作內容感覺得出來很繁重，很考驗 AI 應用能力，基本上是 要找全端人員，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[水球軟體學院 - 技術駭客] 面試心得感想">
+<meta property="og:url" content="https://benben.me/2025/12/03/code-interview-wall-ball/index.html">
+<meta property="og:site_name" content="Benben 的小宇宙">
+<meta property="og:description" content="面試動機是在 FB 上看到這個徵才文的： https:&#x2F;&#x2F;www.facebook.com&#x2F;share&#x2F;p&#x2F;1DsBGHdzUu&#x2F; 我覺得算是 Job Description 寫得很棒的～  最好是那些已經對現有工作感到不滿的，可以立即到職。或是在待業進修中，正在等待一個全遠端、文化很年輕、非常注重賦能和意義的公司的人。  工作內容感覺得出來很繁重，很考驗 AI 應用能力，基本上是 要找全端人員，">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://benben.me/images/posts/code-interview-water-ball.png">
+<meta property="article:published_time" content="2025-12-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-12-02T16:00:00.000Z">
+<meta property="article:author" content="Benben">
+<meta property="article:tag" content="front-end">
+<meta property="article:tag" content="interview">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://benben.me/images/posts/code-interview-water-ball.png">
+
+
+<link rel="canonical" href="https://benben.me/2025/12/03/code-interview-wall-ball/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://benben.me/2025/12/03/code-interview-wall-ball/","path":"2025/12/03/code-interview-wall-ball/","title":"[水球軟體學院 - 技術駭客] 面試心得感想"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>[水球軟體學院 - 技術駭客] 面試心得感想 | Benben 的小宇宙</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script><script src="/js/pjax.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js" defer></script>
+
+
+
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/3.0.1/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://benben.me/2025/12/03/code-interview-wall-ball/"}</script>
+  <script src="/js/third-party/quicklink.js" defer></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Benben 的小宇宙</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">喜歡寫程式，也喜歡寫文字。</p>
+      <img class="custom-logo-image" src="/images/benben-logo-2.svg" alt="Benben 的小宇宙">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">51</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">48</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜尋..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E8%A9%A6%E5%8B%95%E6%A9%9F"><span class="nav-number">1.</span> <span class="nav-text">面試動機</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%96%E6%8D%A8"><span class="nav-number">2.</span> <span class="nav-text">取捨</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%86%E9%83%BD%E4%BE%86%E4%BA%86"><span class="nav-number">3.</span> <span class="nav-text">來都來了</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%8C%E7%BA%8C"><span class="nav-number">4.</span> <span class="nav-text">後續</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E4%B8%80%E6%AD%A5"><span class="nav-number">5.</span> <span class="nav-text">下一步</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Benben"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Benben</p>
+  <div class="site-description" itemprop="description">Always Be Coding.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">48</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/benben6515" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;benben6515" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:z2266109@gmail.com" title="E-Mail → mailto:z2266109@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/benben_6515/?hl=zh-tw" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;benben_6515&#x2F;?hl&#x3D;zh-tw" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/profile.php?id=100022467427793" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;profile.php?id&#x3D;100022467427793" rel="noopener me" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://benben.me/2025/12/03/code-interview-wall-ball/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Benben">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Benben 的小宇宙">
+      <meta itemprop="description" content="Always Be Coding.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="[水球軟體學院 - 技術駭客] 面試心得感想 | Benben 的小宇宙">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          [水球軟體學院 - 技術駭客] 面試心得感想
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2025-12-03 00:00:00" itemprop="dateCreated datePublished" datetime="2025-12-03T00:00:00+08:00">2025-12-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">程式筆記</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2025/12/03/code-interview-wall-ball/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2025/12/03/code-interview-wall-ball/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="面試動機"><a href="#面試動機" class="headerlink" title="面試動機"></a>面試動機</h2><p>是在 FB 上看到這個徵才文的： <a target="_blank" rel="noopener" href="https://www.facebook.com/share/p/1DsBGHdzUu/">https://www.facebook.com/share/p/1DsBGHdzUu/</a></p>
+<p>我覺得算是 Job Description 寫得很棒的～</p>
+<blockquote>
+<p>最好是那些已經對現有工作感到不滿的，可以立即到職。或是在待業進修中，正在等待一個全遠端、文化很年輕、非常注重賦能和意義的公司的人。</p>
+</blockquote>
+<p>工作內容感覺得出來很繁重，很考驗 AI 應用能力，基本上是 <strong>要找全端人員，最好是一條龍那種</strong>，對，這個也有寫出來。</p>
+<p>非常的 Real ，我喜歡，我目前算是 TA 中的後者「待業進修中」的人。</p>
+<span id="more"></span>
+
+<h2 id="取捨"><a href="#取捨" class="headerlink" title="取捨"></a>取捨</h2><p>收到第一關的信了，任務量非常旁大，一定要用 AI 才能完成，甚至是全職地做也不一定能做完，勢必要「取捨」。</p>
+<p>花了一天研究水球軟體學院，包含註冊、登入，把「軟體設計模式之旅課程」的試看內容看完，但發現不少功能是「需要購買課程」才看得到的，像是：經驗系統、買課才有的頁面 … 等等。</p>
+<blockquote>
+<p>看完了才發現，哇！這是給有上過課的人，才能面試的吧（稱讚之意）</p>
+</blockquote>
+<p>當中提到的 Force, Problem 我都沒聽過 🤣 。然後設計模式大概只知道四人幫的 23 種 Patters，也沒有太多的實際經驗，完全不能跟其他有上過課的面試者比。</p>
+<blockquote>
+<p>雖然非常鼓勵你發問，但原來我的取捨包括了「要不要放棄這個面試機會」</p>
+</blockquote>
+<p>我想了一下，我的優勢是什麼？</p>
+<ul>
+<li>我目前有比較多的時間</li>
+<li>前端的部分</li>
+<li>沒了。</li>
+</ul>
+<p>是的，現在 AI 的衝擊下，很多東西變得沒這麼重要了，也是很現實的部分。大廠栽員，高階工程師往下跟中階工程師競爭、有經驗跟剛畢業的競爭，一層一層下來。</p>
+<p>那我還要繼續嗎？</p>
+<blockquote>
+<p>信中有提到，可以隨時放棄，也不用特別交代原因。</p>
+</blockquote>
+<p>但看了其他面試者的提問：</p>
+<p><em>面試者A</em>：<br>「面試官您好！我雖然不懂程式開發，但我有用老師說的 DDD（領域驅動設計）的開發方法。<br>如果我能夠順利執行專案，這樣的情況會不會影響我的錄取機會呢？<br>感謝 面試官＾＾～」</p>
+<p><em>水球</em>：<br>「 你好！你說的是我課程中教的 DDD 對嗎？<br>學以致用都是好事！不過競爭對手都有一定程度的程式背景，所以競爭比較激烈，如果沒有程式背景的話是非常難以錄取的（機率非常非常低）。</p>
+<p>但是如果你願意踏上這個挑戰，那麼我也會多多給你回饋，請你以學習和累積自己的作品為目標在挑戰，而不是為了面試而挑戰。 」</p>
+<p><em>面試者B</em>：<br>「我只會一點 Excel VBA 就來參加了…」</p>
+<p><em>水球</em>：<br>「其實資工的人也不會這些，甚至更沒動力去學這些、老師們也都不會這些。<br>然後資工生他們在乎的都在學歷及出路的互相比較上，而不是去學實戰的東西上。<br>會主動來精通軟體工程方法論的人，在我的社群和課程中，90% 都是轉職生。」</p>
+<blockquote>
+<p>看到了這，又沉思了一下</p>
+</blockquote>
+<p>後來我也有去留言，是說我也只會前端，大家一起努力，看看能走到哪～</p>
+<h2 id="來都來了"><a href="#來都來了" class="headerlink" title="來都來了"></a>來都來了</h2><p>既然決定繼續參加一下，就要把它做好！</p>
+<p>前端的部分我可以 cover 沒問題，也許時間上也沒有太多可以展現的地方，但還是可以把握個基本，其他部分交給我最愛的大哥 <code>Claude Code</code>。</p>
+<p>加上最近很紅的 SDD (Spec-Driven Development) 套件 <code>spec-kit</code>，老實說之前也是只看介紹，也是第一次使用，但沒時間管這麼多了！</p>
+<p>然後登勒～整個專案架構長這樣，看起來有模有樣，很好的開始！</p>
+<p><img data-src="/images/posts/code-interview-water-ball.png" alt="demo-img"></p>
+<blockquote>
+<p>但我只熟前端，就是整個專案流程圖中 3000 的那一個小方塊</p>
+</blockquote>
+<p>目前能做的都做了，剩下的就是開發、開發再開發！</p>
+<p>如果有用過 <code>Claude Code</code> ，並而只有買基本的 pro 方案，就會知道 token 會有一個 5 小時的 CD 時間，加上 weekly limit。所以我那一周基本上是 <strong>每 5 個小時一個 loop 之中，先弄個 3 ~ 4 小時，剩下的時間吃飯、休息</strong>，大概是這樣的循環。</p>
+<p>並且我每天會主動在 Discord 上的 thread 回報進度，就算沒有 release 也回報，可能今天建了 CI&#x2F;CD 流程、署部等等，都簡單回報一下。</p>
+<p>就這樣慢慢地把產品做出來了，大方向是對了，但自動化測試我的部分，我也是請 AI 大概幫我加上，沒有特別去看，這部分也是個硬傷，但也沒太多時間了。</p>
+<p>最後還要留一點時間錄 demo。</p>
+<p>做完的心得，大概是 <strong>要一個人完成期未專案的感覺</strong>，以前轉職的時候是 3 ~ 4 人一組，大概一個月左右完成。現在是只有一個人、只有一周半的時間，要做到從零開始包含：User story, 規格書, 流程圖, 前端, 後端, 資料庫, 部署 … 等。你真的就是那條龍 🐉，不過才 3 ~ 5 年之間，現在在 AI 時代下，是非常有可能的成為那條龍的。</p>
+<p>總之到目前為止，應該算是在時間內完成了。</p>
+<p><strong>送出吧！</strong></p>
+<hr>
+<p>隔幾天有在 discord 的社群裡看到稍息，大意是「第一階段完成，有收到信的表示你進入下一關了，沒有收到信的也不要別氣餒」</p>
+<p>看一下信箱，嗯！沒收到信！</p>
+<p>哎呀～看來我的旅程就到這邊了。</p>
+<h2 id="後續"><a href="#後續" class="headerlink" title="後續"></a>後續</h2><p>又過了幾天收到 Coomy （水球的技術主管 &amp; PM）的私訊，他們還在審核「技術駭客」的部分，有一些資料要跟我確認。</p>
+<p>原來上次我看到的是「成長駭客」對應的是「行銷」的部分。</p>
+<p>再過幾天又收到信了！我通過了第一關了！可以往下一關前進了。很開心第一關通過了，馬上手刀預約第二關線上面試，我是想早點面完早點往下前進了。</p>
+<p>就約了日歷上最早的時間，禮拜一晚上 20:00，就算多個幾天、幾小時，後端能力也不可能惡補到突飛猛進，我趕緊看個大方向，很快就到了面試當天。</p>
+<p>準備好設備、打開作業、作品，等待時間的到來 …</p>
+<p>進來面試間，水球大概快速講解一下過程，會請我簡單自介一下，先由他這邊問後端的問題，再來由另一位技術主管 Coomy 問前端的問題。</p>
+<p>我這邊記一下我覺得我需要改進或是加強的：</p>
+<ol>
+<li>Java 中的 mvnw 是做什麼的？</li>
+<li>Java 的 @transaction 是什麼用的？decorator 是做什麼用的？</li>
+<li>Dockerfile 中的運作細節？CI&#x2F;CD 程程</li>
+<li>後端登入流程的細節，套件&#x2F;程式底層做了什麼才可以讓你登入</li>
+</ol>
+<p>以我目前有限的後端知識，顯然答得很不好，面試有一個大忌就是不要不懂裝懂、亂回答，不知道的請直說不知道，當中也有一些細節我是說我不知道。</p>
+<p>水球潘也知道我的後端知識有限，但不囉嗦馬上跳下一題，問題會一直來，然後問題也會一直 follow up 下去，簡單說，就是要一直回答問題，思考的時間不多。</p>
+<p>聊完之後，馬上告訴我結果：<strong>「沒有入取」！</strong></p>
+<blockquote>
+<p>心中也算是鬆了一口氣，因為不意外也沒有懸念。</p>
+</blockquote>
+<p>但我 <strong>努力過了、滿足了</strong>。</p>
+<h2 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h2><p>水球潘給的 feedback 也很足夠，對他來說沒辨法入取我的原因，就是 <strong>後端技術不足</strong>，會期望人選有後端強力的 troubleshooting 能力，但對於我的其他方面沒有太大的問題，甚至覺得我的人格特質跟公司的文化很合。</p>
+<p>未來如果有再開缺的話，會再邀請我面試，但可以跳過第一關，直接約第二關，再看看我那時候的後端能力如何。雖然我不確定是不是場面話，但我也是蠻開心的，感謝這次的機會，也感謝自己願意試試看。</p>
+<blockquote>
+<p>我覺得我大概不會上，他們應該也覺得我大概不會上，但他們還是找我去面試了。</p>
+</blockquote>
+<p>之前應該會繼續慢慢面其他間，剩下的時間就是繼續進修，補足後端、刷刷 leetcode、唸唸英文 … 等等。</p>
+<p>時間總是不夠用呢。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Benben
+  </li>
+  <li class="post-copyright-link">
+      <strong>文章連結：</strong>
+      <a href="https://benben.me/2025/12/03/code-interview-wall-ball/" title="[水球軟體學院 - 技術駭客] 面試心得感想">https://benben.me/2025/12/03/code-interview-wall-ball/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/front-end/" rel="tag"># front-end</a>
+              <a href="/tags/interview/" rel="tag"># interview</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/07/31/error-baker-15-raycast-101/" rel="prev" title="Raycast | 不完全手冊">
+                  <i class="fa fa-angle-left"></i> Raycast | 不完全手冊
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Benben</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"benben","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js" defer></script>
+
+</body>
+</html>
