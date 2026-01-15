@@ -285,20 +285,6 @@
     </span>
 
   
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/2022/11/06/code-mentor-program-01/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/11/06/code-mentor-program-01/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
 </div>
 
         </div>
@@ -434,11 +420,6 @@
 
 
 
-    
-  <div class="comments" id="disqus_thread">
-    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-  </div>
-  
 </div>
   </main>
 
@@ -447,7 +428,7 @@
 
   <div class="copyright">
     &copy; 2020 – 
-    <span itemprop="copyrightYear">2025</span>
+    <span itemprop="copyrightYear">2026</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>
@@ -473,8 +454,36 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"benben","count":true,"i18n":{"disqus":"disqus"}}</script>
-<script src="/js/third-party/comments/disqus.js" defer></script>
+
+
+<div id="giscus-container" class="comments" style="padding: 20px 0; width: 100%;">
+  <script src="https://giscus.app/client.js"
+    data-repo="benben6515/blog"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkyNTAxMjIzMTQ="
+    data-category="Announcements"
+    data-category-id="DIC_kwDODuiQSs4C0_k0"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+<script>
+(function() {
+  var giscus = document.getElementById('giscus-container');
+  var mainInner = document.querySelector('.main-inner');
+  if (giscus && mainInner) {
+    mainInner.appendChild(giscus);
+  }
+})();
+</script>
+
 
 </body>
 </html>
