@@ -21,12 +21,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"benben.me","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12,"width":300},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-tomorrow"},"copy_button":{"enable":true,"style":"flat","show_result":true},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInRight"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":5,"unescape":false,"preload":true,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="! This is a note from MIT 6.006 Introduction to Algorithmic - YouTube  Lecture 01: Algorithmic Thinking, Peek Finding find a peek in a Array  find a peek in a 2D Array">
+    <meta name="description" content="! This is a note from MIT 6.006 Introduction to Algorithmic - YouTube  Lecture 01: Algorithmic Thinking, Peak Finding find a peak in an Array  find a peak in a 2D Array">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MIT 6.006 Introduction to Algorithmic 01">
 <meta property="og:url" content="https://benben.me/2022/07/27/mit-alg-01/index.html">
 <meta property="og:site_name" content="Benben 的小宇宙">
-<meta property="og:description" content="! This is a note from MIT 6.006 Introduction to Algorithmic - YouTube  Lecture 01: Algorithmic Thinking, Peek Finding find a peek in a Array  find a peek in a 2D Array">
+<meta property="og:description" content="! This is a note from MIT 6.006 Introduction to Algorithmic - YouTube  Lecture 01: Algorithmic Thinking, Peak Finding find a peak in an Array  find a peak in a 2D Array">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://hackmd.io/_uploads/rkbO6LCfi.png">
 <meta property="article:published_time" content="2022-07-26T16:00:00.000Z">
@@ -172,7 +172,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-01-Algorithmic-Thinking-Peek-Finding"><span class="nav-number">1.</span> <span class="nav-text">Lecture 01: Algorithmic Thinking, Peek Finding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-02-Models-of-Computation-Document-Distance"><span class="nav-number">2.</span> <span class="nav-text">Lecture 02: Models of Computation, Document Distance</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-03-Insertion-Sort-Merge-Sort"><span class="nav-number">3.</span> <span class="nav-text">Lecture 03: Insertion Sort, Merge Sort</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-04-Heaps-and-Heap-Sort"><span class="nav-number">4.</span> <span class="nav-text">Lecture 04: Heaps and Heap Sort</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-05-Binary-Search-Tree-BST-Sort"><span class="nav-number">5.</span> <span class="nav-text">Lecture 05: Binary Search Tree, BST Sort</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ref"><span class="nav-number">6.</span> <span class="nav-text">Ref</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-01-Algorithmic-Thinking-Peak-Finding"><span class="nav-number">1.</span> <span class="nav-text">Lecture 01: Algorithmic Thinking, Peak Finding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-02-Models-of-Computation-Document-Distance"><span class="nav-number">2.</span> <span class="nav-text">Lecture 02: Models of Computation, Document Distance</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-03-Insertion-Sort-Merge-Sort"><span class="nav-number">3.</span> <span class="nav-text">Lecture 03: Insertion Sort, Merge Sort</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-04-Heaps-and-Heap-Sort"><span class="nav-number">4.</span> <span class="nav-text">Lecture 04: Heaps and Heap Sort</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture-05-Binary-Search-Tree-BST-Sort"><span class="nav-number">5.</span> <span class="nav-text">Lecture 05: Binary Search Tree, BST Sort</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ref"><span class="nav-number">6.</span> <span class="nav-text">Ref</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -295,10 +295,10 @@
     <div class="post-body" itemprop="articleBody"><blockquote>
 <p>! This is a note from <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Zc54gFhdpLA&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">MIT 6.006 Introduction to Algorithmic - YouTube</a></p>
 </blockquote>
-<h2 id="Lecture-01-Algorithmic-Thinking-Peek-Finding"><a href="#Lecture-01-Algorithmic-Thinking-Peek-Finding" class="headerlink" title="Lecture 01: Algorithmic Thinking, Peek Finding"></a>Lecture 01: Algorithmic Thinking, Peek Finding</h2><ul>
-<li><p>find a peek in a Array</p>
+<h2 id="Lecture-01-Algorithmic-Thinking-Peak-Finding"><a href="#Lecture-01-Algorithmic-Thinking-Peak-Finding" class="headerlink" title="Lecture 01: Algorithmic Thinking, Peak Finding"></a>Lecture 01: Algorithmic Thinking, Peak Finding</h2><ul>
+<li><p>find a peak in an Array</p>
 </li>
-<li><p>find a peek in a 2D Array</p>
+<li><p>find a peak in a 2D Array</p>
 </li>
 </ul>
 <span id="more"></span>
@@ -309,9 +309,9 @@
 <h2 id="Lecture-02-Models-of-Computation-Document-Distance"><a href="#Lecture-02-Models-of-Computation-Document-Distance" class="headerlink" title="Lecture 02: Models of Computation, Document Distance"></a>Lecture 02: Models of Computation, Document Distance</h2><ul>
 <li><p><strong>algorithm</strong> term from “al-Khwarizmi”</p>
 </li>
-<li><p>What’s a algorithm?</p>
+<li><p>What’s an algorithm?</p>
 <ul>
-<li>computational procedure from solving a problem.</li>
+<li>computational procedure for solving a problem.</li>
 <li><code>input</code> -&gt; <code>alg</code> -&gt; <code>output</code></li>
 </ul>
 </li>
@@ -340,7 +340,7 @@
 </ol>
 <ul>
 <li>dynamically allocated objects</li>
-<li>object has O(1) fields (# filed &#x3D; word e.g. int or pointer)</li>
+<li>object has O(1) fields (# field &#x3D; word e.g. int or pointer)</li>
 </ul>
 </li>
 <li><p>Python model:</p>
@@ -358,7 +358,7 @@
 <li>document &#x3D; sequence of words</li>
 <li>word &#x3D; string of alphanumeric characters</li>
 <li><strong>idea</strong>: shared words</li>
-<li>think of document as a <strong>vector</strong>, D[w] &#x3D; number of occurrent of w in D</li>
+<li>think of document as a <strong>vector</strong>, D[w] &#x3D; number of occurrences of w in D</li>
 <li>inner product, D1.D2 &#x2F; |D1||D2|</li>
 <li>Algorithm:<ol>
 <li>split doc. to words</li>
@@ -374,7 +374,7 @@
 </blockquote>
 <h2 id="Lecture-03-Insertion-Sort-Merge-Sort"><a href="#Lecture-03-Insertion-Sort-Merge-Sort" class="headerlink" title="Lecture 03: Insertion Sort, Merge Sort"></a>Lecture 03: Insertion Sort, Merge Sort</h2><ul>
 <li>why sorting?<ul>
-<li>obverse: phone, book</li>
+<li>obvious: phone, book</li>
 <li>problem that become easy once items are sorted</li>
 <li>Finding a median<ul>
 <li>array A [0:n] -&gt; B[0:n]</li>
@@ -396,13 +396,13 @@
 </li>
 <li>Merge sort (Divide &amp; Conquer)<ul>
 <li>split arrayA to arrayL and arrayR</li>
-<li>Merge: Two sorted arrays an input</li>
+<li>Merge: Two sorted arrays as input</li>
 <li>complexity: <strong>Theta(n * log(n))</strong>, Space: <strong>Theta(n)</strong></li>
 <li>In-place merge sort (good to read paper but beyond of MIT6.006)</li>
 <li>Implement in others language:<ul>
 <li>Merge sort in Python &#x3D; 2.2 * n * log(n) ms</li>
 <li>Insertion sort in Python  &#x3D; 0.2 * n^2 ms</li>
-<li>Merge sort in C &#x3D; 0.0.1 * n * log(n) ms</li>
+<li>Merge sort in C &#x3D; 0.01 * n * log(n) ms</li>
 <li>so if n more than 4,000 then choose use Merge sort rather than Insertion sort</li>
 </ul>
 </li>
@@ -415,7 +415,7 @@
 <h2 id="Lecture-04-Heaps-and-Heap-Sort"><a href="#Lecture-04-Heaps-and-Heap-Sort" class="headerlink" title="Lecture 04: Heaps and Heap Sort"></a>Lecture 04: Heaps and Heap Sort</h2><ul>
 <li><p>Heap</p>
 </li>
-<li><p>insert(S, x): in  sort element x into set S</p>
+<li><p>insert(S, x): insert element x into set S</p>
 <ul>
 <li>max(S): return element of S with the largest key</li>
 <li>extract-max(S): return element of S with the largest key and remove it from S</li>
@@ -437,12 +437,12 @@
 <li><p>Heap operations</p>
 <ul>
 <li>build_max_heap: produce a max heap from an unordered array</li>
-<li>max_heapify: correct a single violation of the heap property is a subtree’s root</li>
+<li>max_heapify: correct a single violation of the heap property in a subtree’s root</li>
 </ul>
 </li>
 <li><p>Max Heapify</p>
 <ul>
-<li>Assume that the heap rooted at left(i) and right(j) are max heaps<br><img data-src="https://hackmd.io/_uploads/rkbO6LCfi.png" alt="heapify example"></li>
+<li>Assume that the heap rooted at left(i) and right(i) are max heaps<br><img data-src="https://hackmd.io/_uploads/rkbO6LCfi.png" alt="heapify example"></li>
 <li>ex:<ul>
 <li>MAX_HEAPIFY(A, 2), heap-size(A) &#x3D; 10</li>
 <li>exchange A[2] with A[4]</li>
@@ -472,7 +472,7 @@
 <li>Build_max_heap from unordered array</li>
 <li>Find max element A[i]</li>
 <li>Swap elements  A[n] with A[i], now max element is at the end of array</li>
-<li>Discord node n from heap. decrementing heap size.</li>
+<li>Discard node n from heap. decrementing heap size.</li>
 <li>New root may violate max-heap, but children are max heaps, max_heapify</li>
 </ul>
 </li>
@@ -521,16 +521,16 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/mit/" rel="tag"># mit</a>
-              <a href="/tags/algorithm/" rel="tag"># algorithm</a>
               <a href="/tags/english/" rel="tag"># english</a>
+              <a href="/tags/algorithm/" rel="tag"># algorithm</a>
+              <a href="/tags/mit/" rel="tag"># mit</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/07/01/07-could-i-be-a-mentor-enough/" rel="prev" title="RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？">
+                <a href="/2022/06/30/07-could-i-be-a-mentor-enough/" rel="prev" title="RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？">
                   <i class="fa fa-angle-left"></i> RE [前端引路人計劃] - 我也能夠當個 mentor 嗎？
                 </a>
             </div>

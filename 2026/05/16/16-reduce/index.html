@@ -21,12 +21,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"benben.me","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12,"width":300},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-tomorrow"},"copy_button":{"enable":true,"style":"flat","show_result":true},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInRight"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":5,"unescape":false,"preload":true,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="！ 本篇文章將會介紹筆者 JavaScript 的 Array methods: Reduce，老樣子參考對你有幫助的就行了 ：D  話說 ES6(2015) 已經是10 年前 的語法了 👴🏼  筆者認為大部分剛學習 JavaScript 的人，除了 Array 常用的 push, pop, shift, unshift 之外，對於其他 methods 應該比較陌生一點，其中又以 reduce">
+    <meta name="description" content="！ 本篇文章將會介紹 JavaScript 的 Array methods: Reduce，老樣子參考對你有幫助的就行了 ：D  話說 ES6(2015) 已經是 10 年前的語法了 👴🏼  筆者認為大部分剛學習 JavaScript 的人，除了 Array 常用的 push, pop, shift, unshift 之外，對於其他 methods 應該比較陌生一點，其中又以 reduce 最">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Reduce | 完全手冊">
 <meta property="og:url" content="https://benben.me/2026/05/16/16-reduce/index.html">
 <meta property="og:site_name" content="Benben 的小宇宙">
-<meta property="og:description" content="！ 本篇文章將會介紹筆者 JavaScript 的 Array methods: Reduce，老樣子參考對你有幫助的就行了 ：D  話說 ES6(2015) 已經是10 年前 的語法了 👴🏼  筆者認為大部分剛學習 JavaScript 的人，除了 Array 常用的 push, pop, shift, unshift 之外，對於其他 methods 應該比較陌生一點，其中又以 reduce">
+<meta property="og:description" content="！ 本篇文章將會介紹 JavaScript 的 Array methods: Reduce，老樣子參考對你有幫助的就行了 ：D  話說 ES6(2015) 已經是 10 年前的語法了 👴🏼  筆者認為大部分剛學習 JavaScript 的人，除了 Array 常用的 push, pop, shift, unshift 之外，對於其他 methods 應該比較陌生一點，其中又以 reduce 最">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-05-15T16:00:00.000Z">
 <meta property="article:modified_time" content="2026-05-15T16:00:00.000Z">
@@ -288,9 +288,9 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>！ 本篇文章將會介紹筆者 JavaScript 的 Array methods: Reduce，老樣子參考對你有幫助的就行了 ：D</p>
+    <div class="post-body" itemprop="articleBody"><p>！ 本篇文章將會介紹 JavaScript 的 Array methods: Reduce，老樣子參考對你有幫助的就行了 ：D</p>
 <blockquote>
-<p>話說 ES6(2015) 已經是10 年前 的語法了 👴🏼</p>
+<p>話說 ES6(2015) 已經是 10 年前的語法了 👴🏼</p>
 </blockquote>
 <p>筆者認為大部分剛學習 JavaScript 的人，除了 Array 常用的 push, pop, shift, unshift 之外，對於其他 methods 應該比較陌生一點，其中又以 reduce 最為陌生，其他常用的如 find, forEach 可能還蠻直觀的，可能大多人覺得有用到 reduce 再去查就好了，但什麼時候會用到呢？甚至也說不清楚。</p>
 <ol>

@@ -306,15 +306,15 @@
 </blockquote>
 <p>對，都不用管就對了</p>
 <ol>
-<li>開一個資料夾 ( 這沒問題吧，用 CLI <code>mk dir</code> 也可以 )</li>
-<li>然後再資料夾裡面點 <code>右鍵</code> &rArr; <code>Git Bash Here</code> ( 就是在這個路徑開 Git Bash )，如下圖 :<br><img data-src="https://i.imgur.com/KjQkczj.png"></li>
-<li>再來使用 <code>touch</code> 創建兩個檔案 <code>code.js</code> ( 寫 code 用的 ) &amp; <code>input.txt</code> ( 放輸入的存文字檔 )<br><img data-src="https://i.imgur.com/x1RkR7H.png"></li>
+<li>開一個資料夾 ( 這沒問題吧，用 CLI <code>mkdir</code> 也可以 )</li>
+<li>然後在資料夾裡面點 <code>右鍵</code> &rArr; <code>Git Bash Here</code> ( 就是在這個路徑開 Git Bash )，如下圖 :<br><img data-src="https://i.imgur.com/KjQkczj.png"></li>
+<li>再來使用 <code>touch</code> 創建兩個檔案 <code>code.js</code> ( 寫 code 用的 ) &amp; <code>input.txt</code> ( 放輸入的純文字檔 )<br><img data-src="https://i.imgur.com/x1RkR7H.png"></li>
 <li>把模板貼到 <code>code.js</code> ( 我使用 VS code ) 裡，如下圖 :<br><img data-src="https://i.imgur.com/hxcRBHw.png"><br><strong>注意 : lines 是一個 Array、裡面的元素是 String</strong></li>
 <li>把題目的輸入貼到 <code>input.txt</code> 裡 ( 以 LIOJ 1001 為例 )，如下圖 :<br><img data-src="https://i.imgur.com/n27o3dM.png"></li>
 </ol>
 <h4 id="先看看-lines-是甚麼東東吧"><a href="#先看看-lines-是甚麼東東吧" class="headerlink" title="先看看 lines 是甚麼東東吧"></a>先看看 lines 是甚麼東東吧</h4><ol>
-<li>先在模板裡加一行 <code>conole.log(lines)</code> ，如上圖的第 4 點，<code>// debug 用</code> 那邊，如果還不熟悉，就每一題都先加 <code>conole.log(lines)</code></li>
-<li>先再 git bash 輸入 <code>bash</code> ，之後才可以執行後面的命令，不要管為什麼</li>
+<li>先在模板裡加一行 <code>console.log(lines)</code> ，如上圖的第 4 點，<code>// debug 用</code> 那邊，如果還不熟悉，就每一題都先加 <code>console.log(lines)</code></li>
+<li>先在 git bash 輸入 <code>bash</code> ，之後才可以執行後面的命令，不要管為什麼</li>
 <li>再來輸入 <code>cat input.txt | node code.js</code> ，使用 node 執行 code.js 檔 ( 這就是標準輸入的動作 )，如下圖 :<br><img data-src="https://i.imgur.com/VjDhn1L.png"><br><strong>原來這 94 lines</strong></li>
 <li>再來就是怎麼處理 lines 的問題啦</li>
 <li>例如 : 可以用 let arr &#x3D; lines[0].split(‘ ‘)，注意要使用 lines<code>[0]</code> 喔，不能直接用 lines ，因為要記得 lines 是一個 Array</li>
@@ -326,7 +326,7 @@
 <li>LIOJ 上也 AC ( accepted ) 後，就可以複製到 homework 了 ( <del>然後 進入 ESlint 的地獄</del> )</li>
 <li>如果錯誤，建議 <strong>複製一份回本地端修改好</strong> 再重複上面兩個步驟，比較不會亂掉，這裡改改、那裏改改，然後就從零開始了 ( 就是我 )</li>
 </ol>
-<p>這邊就不贅述，自己試試看囉，有問題不好意思問發問，<br>也可以 PM 我 👇</p>
+<p>這邊就不贅述，自己試試看囉，有問題不好意思發問，<br>也可以 PM 我 👇</p>
 <p>  <a target="_blank" rel="noopener" href="https://chat.lidemy.com/lidemy/messages/@benben6515"  style="display:inline-block;border:none"><img data-src='https://img.shields.io/static/v1?label=mattermost&message=benben6515&style=flat&branch=6.x&logo=mattermost&colorA=037fc6&colorB=b45' /></a></p>
 <h4 id="同場加映-我常用的處理-lines-的方法"><a href="#同場加映-我常用的處理-lines-的方法" class="headerlink" title="同場加映 : 我常用的處理 lines 的方法"></a>同場加映 : 我常用的處理 lines 的方法</h4><ul>
 <li>如果 input 是一行，但是很長 :</li>
@@ -365,7 +365,7 @@
 <blockquote>
 <p>code.js</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">solve</span>(<span class="params">lines</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> arr = []</span><br><span class="line">    <span class="comment">// 這個比較複雜一點，可以想一下，但其實就是上面兩種加起來XD</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; lines.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        arr.<span class="title function_">push</span>(lines[i].<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>))</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(arr)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// [</span></span><br><span class="line"><span class="comment">//   [&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;]</span></span><br><span class="line"><span class="comment">//   [&#x27;4&#x27;, &#x27;5&#x27;, &#x27;6&#x27;]</span></span><br><span class="line"><span class="comment">//   [&#x27;7&#x27;, &#x27;8&#x27;, &#x27;9&#x27;]</span></span><br><span class="line"><span class="comment">// ]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 這時候 arr 是一個二為陣列</span></span><br><span class="line"><span class="comment">// console.log(arr[0][0]) =&gt; 1</span></span><br><span class="line"><span class="comment">// 如果我要取得 5 這個數字</span></span><br><span class="line"><span class="comment">// 使用 console.log(arr[1][1]) 吧</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">solve</span>(<span class="params">lines</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> arr = []</span><br><span class="line">    <span class="comment">// 這個比較複雜一點，可以想一下，但其實就是上面兩種加起來XD</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; lines.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        arr.<span class="title function_">push</span>(lines[i].<span class="title function_">split</span>(<span class="string">&#x27; &#x27;</span>))</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(arr)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// [</span></span><br><span class="line"><span class="comment">//   [&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;]</span></span><br><span class="line"><span class="comment">//   [&#x27;4&#x27;, &#x27;5&#x27;, &#x27;6&#x27;]</span></span><br><span class="line"><span class="comment">//   [&#x27;7&#x27;, &#x27;8&#x27;, &#x27;9&#x27;]</span></span><br><span class="line"><span class="comment">// ]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 這時候 arr 是一個二維陣列</span></span><br><span class="line"><span class="comment">// console.log(arr[0][0]) =&gt; 1</span></span><br><span class="line"><span class="comment">// 如果我要取得 5 這個數字</span></span><br><span class="line"><span class="comment">// 使用 console.log(arr[1][1]) 吧</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
