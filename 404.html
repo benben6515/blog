@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>404 | Benben 的小宇宙</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --fg: #3c4a5e;
+      --muted: #8a97a8;
+      --accent: #5a7fd4;
+      --card: #ffffff;
+    }
+    html[data-theme='dark'] {
+      --bg: #1b1e27;
+      --fg: #d5dae2;
+      --muted: #7a828f;
+      --accent: #8AA7F9;
+      --card: #252933;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      text-align: center;
+      padding: 24px;
+    }
+    main {
+      max-width: 420px;
+      background: var(--card);
+      border-radius: 12px;
+      padding: 48px 32px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    }
+    .code {
+      font-size: 88px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 4px;
+      color: var(--accent);
+    }
+    h1 {
+      font-family: 'Noto Serif TC', Georgia, serif;
+      font-size: 22px;
+      margin: 20px 0 10px;
+    }
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    a {
+      display: inline-block;
+      padding: 10px 28px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      transition: opacity 0.2s;
+    }
+    a:hover { opacity: 0.85; }
+  </style>
+  <script>
+    // Match the site's theme system: saved preference > system preference.
+    (function () {
+      var theme = 'light';
+      try {
+        theme = localStorage.getItem('theme')
+          || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (e) {}
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+</head>
+<body>
+  <main>
+    <div class="code">404</div>
+    <h1>這個座標不存在於小宇宙中</h1>
+    <p>你找的頁面可能被搬走了，或是從來沒存在過。<br>不過沒關係，宇宙還很大。</p>
+    <a href="/">回首頁</a>
+  </main>
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/benben-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/benben-logo-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+TC:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fira+Code:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"benben.me","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12,"width":300},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-tomorrow"},"copy_button":{"enable":true,"style":"flat","show_result":true},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInRight"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":5,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="回顧 ZCode 未經同意上傳工作區與 Git 歷史事件十天後的後續：道歉、修復、開源與補償之外，檢視哪些主張能自己驗證，反省模型能力與信任該分開評估，並提出五條選工具心得。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ZCode 出大事了，後來呢？">
+<meta property="og:url" content="https://benben.me/2026/09/30/zcode-aftermath/index.html">
+<meta property="og:site_name" content="Benben 的小宇宙">
+<meta property="og:description" content="回顧 ZCode 未經同意上傳工作區與 Git 歷史事件十天後的後續：道歉、修復、開源與補償之外，檢視哪些主張能自己驗證，反省模型能力與信任該分開評估，並提出五條選工具心得。">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2026-09-30T00:00:00.000Z">
+<meta property="article:modified_time" content="2026-09-30T00:00:00.000Z">
+<meta property="article:author" content="Benben">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="ai-assisted">
+<meta property="article:tag" content="security">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://benben.me/2026/09/30/zcode-aftermath/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://benben.me/2026/09/30/zcode-aftermath/","path":"2026/09/30/zcode-aftermath/","title":"ZCode 出大事了，後來呢？"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>ZCode 出大事了，後來呢？ | Benben 的小宇宙</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script><script src="/js/pjax.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/3.0.1/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://benben.me/2026/09/30/zcode-aftermath/"}</script>
+  <script src="/js/third-party/quicklink.js" defer></script>
+
+<script>
+(function() {
+  var theme = 'light';
+  try {
+    theme = localStorage.getItem('theme')
+      || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  } catch (e) {
+    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  document.documentElement.dataset.theme = theme;
+})();
+</script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Benben 的小宇宙" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Benben 的小宇宙</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">喜歡寫程式，也喜歡寫文字。</p>
+      <img class="custom-logo-image" src="/images/benben-logo-2.svg" alt="Benben 的小宇宙">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">12</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">50</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜尋..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E6%87%B6%E4%BA%BA%E5%8C%85"><span class="nav-number">1.</span> <span class="nav-text">事件懶人包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BA%E5%A4%A7%E4%BA%8B%E6%98%AF%E6%80%8E%E9%BA%BC%E8%A2%AB%E7%99%BC%E7%8F%BE%E7%9A%84"><span class="nav-number">2.</span> <span class="nav-text">出大事是怎麼被發現的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E5%A4%A9%EF%BC%8C%E4%B8%89%E5%BA%A6%E5%9B%9E%E6%87%89"><span class="nav-number">3.</span> <span class="nav-text">十天，三度回應</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%96%AE%E6%96%B9%E6%95%98%E4%BA%8B"><span class="nav-number">4.</span> <span class="nav-text">單方敘事</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%99%BA%E8%AD%9C%E8%AA%AA%EF%BC%8C%E4%BF%A1%E9%80%9A%E9%99%A2%E8%AA%AA"><span class="nav-number">5.</span> <span class="nav-text">智譜說，信通院說</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%96%80%E6%AA%BB%E6%B1%BA%E5%AE%9A%E8%A1%8C%E7%82%BA"><span class="nav-number">6.</span> <span class="nav-text">門檻決定行為</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%BD%E5%8A%9B%E5%92%8C%E4%BF%A1%E4%BB%BB%E6%98%AF%E5%85%A9%E6%A2%9D%E8%BB%B8"><span class="nav-number">7.</span> <span class="nav-text">能力和信任是兩條軸</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%B0%E4%BB%8A%E5%A4%A9%E9%82%84%E6%B2%92%E7%99%BC%E7%94%9F%E7%9A%84%E4%BA%8B"><span class="nav-number">8.</span> <span class="nav-text">到今天還沒發生的事</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%BD%E5%B8%B6%E8%B5%B0%E7%9A%84%E4%BA%94%E6%A2%9D"><span class="nav-number">9.</span> <span class="nav-text">能帶走的五條</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Benben"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Benben</p>
+  <div class="site-description" itemprop="description">Always Be Coding.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">50</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/benben6515" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;benben6515" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:z2266109@gmail.com" title="E-Mail → mailto:z2266109@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/benben_6515/?hl=zh-tw" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;benben_6515&#x2F;?hl&#x3D;zh-tw" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/profile.php?id=100022467427793" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;profile.php?id&#x3D;100022467427793" rel="noopener me" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://benben.me/2026/09/30/zcode-aftermath/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Benben">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Benben 的小宇宙">
+      <meta itemprop="description" content="Always Be Coding.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="ZCode 出大事了，後來呢？ | Benben 的小宇宙">
+      <meta itemprop="description" content="回顧 ZCode 未經同意上傳工作區與 Git 歷史事件十天後的後續：道歉、修復、開源與補償之外，檢視哪些主張能自己驗證，反省模型能力與信任該分開評估，並提出五條選工具心得。">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ZCode 出大事了，後來呢？
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2026-09-30 00:00:00" itemprop="dateCreated datePublished" datetime="2026-09-30T00:00:00+00:00">2026-09-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%9B%9C%E8%AB%87/" itemprop="url" rel="index"><span itemprop="name">雜談</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">回顧 ZCode 未經同意上傳工作區與 Git 歷史事件十天後的後續：道歉、修復、開源與補償之外，檢視哪些主張能自己驗證，反省模型能力與信任該分開評估，並提出五條選工具心得。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>！ 本篇文章算是筆者的事件觀察筆記加雜談：前半場整理事件，後半場是自己給自己做的檢討報告。老樣子，參考對你有幫助的就行了 :D</p>
+<blockquote>
+<p>「信任不能一鍵重置。我們會用每一次改進，慢慢贏回來。」——ZCode 官方補償公告，2026 年 9 月 28 日</p>
+</blockquote>
+<p>寫得很誠懇。同一份公告往下看，內容是：付費用戶每人 8 張額度重置卡，十天內每天發十萬份「1 億 GLM token」。一家公司一邊說信任要慢慢贏回，一邊用免費額度把人留下來——兩件事都是真的，也都不必假裝是另一件事。</p>
+<p>「出大事」是半個月前的事。</p>
+<span id="more"></span>
+
+<p>智譜——做 GLM 模型那家，港股 2513——的官方程式開發客戶端 ZCode，被開發者發現會在使用者登入時把整個工作區打包、加密、上傳到雲端，包括完整的 Git 歷史。預設開啟，沒有開關，隱私政策對快照隻字未提。媒體把「出大事」寫了幾百篇；十天之內，道歉、修復、第三方查核、開源、補償，全部做完了。</p>
+<p>這篇想寫的是後面那半句：後來呢？</p>
+<h2 id="事件懶人包"><a href="#事件懶人包" class="headerlink" title="事件懶人包"></a>事件懶人包</h2><p>照顧一下沒跟上事件的朋友，先上 30 秒時間軸：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>事件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>7&#x2F;1</td>
+<td>ZCode 上線。高層被問「會不會有 spyware」，答：不會做網站上沒列的東西（工作區快照：不在網站上 🤔）</td>
+</tr>
+<tr>
+<td><strong>9&#x2F;17</strong></td>
+<td>ferstar 清磁碟，發現 <code>~/.zcode</code> 佔 700 多 MB：一個 313MB 加密檔，上傳失敗 564 次</td>
+</tr>
+<tr>
+<td>9&#x2F;18</td>
+<td>逆向報告出爐（42,411 個檔案、86.6% 是 <code>.git</code>、15KB 已成功外傳）；晚間智譜致歉，歸因 Repo Wiki 預設開啟</td>
+</tr>
+<tr>
+<td>9&#x2F;19</td>
+<td>v3.14.0 移除上傳鏈路；同日承明科技發函，12 項要求、10&#x2F;10 答覆期限</td>
+</tr>
+<tr>
+<td>9&#x2F;20</td>
+<td>MaaS 平台宣布「資料不留存」；承明科技撤回主張（稱舉證有誤）</td>
+</tr>
+<tr>
+<td><strong>9&#x2F;21</strong></td>
+<td><strong>ZCode 開源</strong>（Apache 2.0）；信通院＋綠盟公布結論摘要；股價盤中 -6%、收 +1.8%</td>
+</tr>
+<tr>
+<td>9&#x2F;26</td>
+<td>開源倉庫 6,795 stars；安裝檔更新到 v3.14.3</td>
+</tr>
+<tr>
+<td>9&#x2F;28</td>
+<td>補償方案：付費用戶 8 張重置卡＋每日 10 萬份「1 億 token」(9&#x2F;28 – 10&#x2F;7)</td>
+</tr>
+<tr>
+<td>9&#x2F;30</td>
+<td>完整稽核報告仍未公開、跨境問題沒人答、沒有獨立 retest</td>
+</tr>
+</tbody></table>
+<p>以下的「後來呢」，就是從這張表的 9&#x2F;21 之後講起。</p>
+<h2 id="出大事是怎麼被發現的"><a href="#出大事是怎麼被發現的" class="headerlink" title="出大事是怎麼被發現的"></a>出大事是怎麼被發現的</h2><p>發現的方式一點都不戲劇化。開發者 ferstar 只是清磁碟，發現 ZCode 的資料夾佔了 700 多 MB，裡面一個 313MB 的加密檔，附帶的狀態檔記錄著：上傳，失敗，重試了 564 次。網路斷了，它就等著重試，鍥而不捨。清單裡列了 42,411 個檔案，86.6% 是 <code>.git</code> 目錄——不是他正在寫的程式碼，是這個專案幾年來的完整修改歷史。誤 commit 過的 key、內網位址、刪掉了就以為消失的舊版本，全在裡面。另有一個 15KB 的小檔，已經成功出去了。</p>
+<p>更髒的是加密的方式。檔案本身用 AES 加密，加密用的那把金鑰，再拿伺服器下發的 RSA 公鑰包上一層——對應的私鑰只在智譜手上。換句話說，這份加密檔連使用者自己都打不開，全世界只有智譜能讀。他們把檔案造得只有自己能讀，也就只有自己能報告它的下落。這個不對稱會在後面一直回來（先記住它，後面會考）。</p>
+<p>ferstar 把逆向過程貼上網，13 小時 27 萬次瀏覽。ZCode 團隊相關帳號在那則貼文下回了一句：「hey I am sorry to let you find it。」不是否認，是道歉被抓到。當時官方帳號反而沒反應。</p>
+<h2 id="十天，三度回應"><a href="#十天，三度回應" class="headerlink" title="十天，三度回應"></a>十天，三度回應</h2><p>官方的反應半天後就來了，而且快得驚人。9 月 18 日晚間，智譜在官方使用者群組致歉，把上傳歸因於「代碼庫索引」功能裡的 Repo Wiki——一個自動為倉庫生成知識庫頁面的功能，預設開啟，聲稱資料在頁面生成後立即銷毀、從未用於模型訓練。9 月 19 日，v3.14.0 推出，Repo Wiki 整個移除，快照上傳鏈路連根拔掉——後來有人逐行核對過開源的程式碼，這是真的。9 月 21 日，ZCode 以 Apache 2.0 開源，同時公布兩家機構的查核結論：中國信通院確認涉事的阿里雲儲存桶「零資料」，綠盟科技確認儲存桶和裡面的對象都已刪除。三天，三度回應。股價當天盤中跌了 6%，收盤漲回 1.8%。資本市場三天就消化完了。</p>
+<p>同一週還有一條比較安靜的線。企業用戶太原承明科技公開發函：8 月底到 9 月中，公司有 6 個工作區被上傳，最大一個 391MB，內容包括資料庫密碼、雲端服務憑證和員工個人資料；發函列了 12 項要求，限期 10 月 10 日書面答覆，並且點出一個媒體最初沒追的問題——ZCode 英文版隱私政策寫資料由新加坡子公司處理，中文版卻寫「儲存於中國境內、不跨境」。到底是哪一個？（承明科技後來撤回了主張，說舉證有誤、措辭過度；但跨境那題，到今天沒有人答。）</p>
+<p>修，是真的修得快。「後來呢」要問的不是速度，是另一件事：這一連串漂亮的動作裡，哪些主張我能自己驗證，哪些永遠只能聽他們說。</p>
+<h2 id="單方敘事"><a href="#單方敘事" class="headerlink" title="單方敘事"></a>單方敘事</h2><p>把這十天裡的關鍵主張排開：「資料已立即銷毀」「從未用於模型訓練」「上傳鏈路已移除」「儲存桶零資料」。每一條出廠時都是同一種東西：廠商的<strong>單方敘事</strong>——只有他們能講、也只有他們能證的話。十天下來，這些主張的命運開始分岔，而分岔的方式，才是「後來呢」真正的答案。</p>
+<p>「上傳鏈路已移除」變成了可驗證的。程式碼開源之後，有人逐行核對：舊版裡的上傳端點、觸發器、加密函式，新版裡一個不剩。這條主張從「聽他們說」變成了「我自己看了」。</p>
+<p>「資料已銷毀」沒有。私鑰在他們手上，儲存桶在他們的帳號裡，查核機構看的也是他們端出來的東西——信通院和綠盟的完整報告，到今天沒有公開。</p>
+<p>還有個細節：開源的是修復後的版本。出事那個版本的程式碼被 squash 成兩個 commit 抹平了，倉庫鎖 PR、關 issue。你看得到修好的樣子，看不到出事的現場——想確認「修掉的到底是什麼」，對照組不存在。開放的是結果，不是過程。</p>
+<p>所以選工具的新量尺，不是「廠商聲明寫得誠不誠懇」，是一個更笨的問題，拿來問每一句話：<strong>這句話，我能自己驗嗎？</strong></p>
+<h2 id="智譜說，信通院說"><a href="#智譜說，信通院說" class="headerlink" title="智譜說，信通院說"></a>智譜說，信通院說</h2><p>這個量尺我自己用過一次，成績不太好。事情爆發那天，我看到 ferstar 的說明，當場做了一件事：把 <code>~/.zcode</code> 的 checkpoints 目錄設成不可寫——出問題的就是這條快照鏈路，鎖住它，客戶端就寫不進去、也傳不出去。這是網路上流傳的土炮解法，複製貼上就能做。我一直鎖到 v3.14.0 出來，才把目錄恢復原狀。</p>
+<p>解鎖的依據是什麼？老實排開：官方說修好了；官方說送了兩家資安機構檢測；官方把程式碼開源了。三條拆開看——「修好了」是單方敘事；「送驗兩家」是<strong>轉述的</strong>第三方，我信的不是信通院和綠盟，是智譜說信通院和綠盟說，而完整報告沒人看過；開源是真的，但開的是修復後的版本。所以我的證據鏈，壓縮到底就是一句話：<strong>智譜說，信通院說。</strong></p>
+<p>我和那些相信「資料已銷毀」的人，做的是同一件事，只是中間多隔了一層機構的名字。單方敘事不只廠商會講，讀完幾萬字技術分析、覺得自己做了功課的用戶，最後一步照樣踩在同一個地方。</p>
+<h2 id="門檻決定行為"><a href="#門檻決定行為" class="headerlink" title="門檻決定行為"></a>門檻決定行為</h2><p>為什麼驗證這一步我連試都沒試？老實說：我能想到的辦法只有開 Wireshark 看封包，而且不確定自己看得懂。這就是單方敘事暢通無阻的真正原因——不是使用者懶，是驗證的門檻本來就擋掉了幾乎所有人。要看見 ZCode 在傳什麼，你得會逆向 <code>app.asar</code>、讀加密過的流量。ferstar 們是例外，不是防線。</p>
+<p>防守剛好相反：它有一步棋可以直接下。把目錄鎖住，是複製貼上；把 ferstar 原文轉給有在用的朋友、叫他們小心 <code>.git</code> 歷史，也是複製貼上。鎖自己、喊別人——個人能做的就這兩個動作，我都做了。整個事件裡社群的真實防線，不是哪家資安機構，是幾十萬次這樣的轉發，一個人傳給下一個人。</p>
+<p>門檻決定行為，不是意願。</p>
+<h2 id="能力和信任是兩條軸"><a href="#能力和信任是兩條軸" class="headerlink" title="能力和信任是兩條軸"></a>能力和信任是兩條軸</h2><p>把時間倒回起點：我當初為什麼會用上這套工具？答案俗氣得很實在——便宜。GLM Coding Plan 的價格大概只有同級訂閱的幾分之一，而且我長期看 Artificial Analysis 排行榜，GLM 常常是開源模型第一名。能力、排名、價格，三個理由全部落在模型這條軸上。至於客戶端會怎麼對待我的硬碟——排行榜沒有這個欄位。它量得到 tokens per second，量不到背景行程。</p>
+<p>事件之後才發現，把這兩條軸搞混的人不止我一個。ferstar 貼文底下好幾個留言都以為 GLM 開源、所以 ZCode 也開源——類別錯誤，但很常見。模型開放的是權重，自己下載、自己跑，那是你的；但讀你硬碟的是客戶端，客戶端是廠商寫的、編譯好的、你看不到內部。開放的是權重，封閉的是讀硬碟的那隻手。跑「本地模型」，包在一個會打電話回家的殼裡，就不是本地。</p>
+<p>排行榜沒有錯，它把模型這條軸量得很好。錯的是我拿單軸的分數，做了雙軸的決定。</p>
+<h2 id="到今天還沒發生的事"><a href="#到今天還沒發生的事" class="headerlink" title="到今天還沒發生的事"></a>到今天還沒發生的事</h2><p>把「後來呢」問到今天，答案裡還有幾個洞。這些事，到這篇寫完的此刻都沒有發生：</p>
+<ul>
+<li>信通院和綠盟的完整稽核報告沒有公開。9 月 21 日智譜說「近期發布」，十天過去，外界拿到的仍只是兩家機構的結論摘要。而且兩項查核都是智譜自己委託的，看的也是修復後的版本和儲存桶的當下狀態——回答不了「修復之前傳上去的資料後來怎麼了」。</li>
+<li>跨境那一題——資料到底在哪裡處理——沒有答覆。</li>
+<li>沒有一次獨立的 retest：找一台裝過舊版的機器，實測上傳真的停了。</li>
+<li>官方發行的安裝檔和開源倉庫的程式碼是否一致，沒有驗證——沒有可重現建置，也沒有可對照的簽章。</li>
+</ul>
+<p>四個洞的共同點：補上它們需要的不是善意，是可重複的驗證。這種事有先例可以抄作業。兩個多月前，xAI 的 Grok Build 被抓到把整個 Git 倉庫傳上 Google Cloud——馬斯克確認、刪除既有資料、上線零留存政策。關鍵是後面那步：之後有人在同樣的環境獨立重測，確認上傳真的停了。那一測，才把「我們修好了」從一句聲明變成一個事實。ZCode 案到目前為止，停在聲明。</p>
+<p>但也有一條新的東西，值得記下：智譜承諾之後每月定期公布程式碼安全審計報告，並建立漏洞回報獎勵機制。這是全案唯一一條把「以後可驗證」寫進機制的承諾。有沒有跳票，下個月就能查。</p>
+<h2 id="能帶走的五條"><a href="#能帶走的五條" class="headerlink" title="能帶走的五條"></a>能帶走的五條</h2><p>寫到這裡，把能帶走的壓縮成五條。不深刻，但每條都有人花過代價：</p>
+<ol>
+<li>模型和客戶端分開評估。排行榜只回答前一半。</li>
+<li>隱私政策搜「快照」「索引」「上傳」。沒寫的比寫了的更該擔心——ZCode 的政策對快照隻字未提。</li>
+<li>開關不等於保證。兩個開關都關了照樣傳。設定面板是 UI，不是合約。</li>
+<li>把 repo 交給任何工具之前，先想 <code>.git</code> 歷史裡有什麼：誤 commit 的 key、內網位址、以為刪掉的版本。想不清楚就先別給。</li>
+<li>廠商的每句聲明問一句：這句話我能自己驗嗎？不能，就等可重複的第三方驗證。</li>
+</ol>
+<p>至於我，把該查的都查完，結論是繼續用。低風險用戶算完帳繼續用，是理性，不是健忘。</p>
+<p>信任不能一鍵重置。還好在 Open Source 文化中，信任可以慢慢 build。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Benben
+  </li>
+  <li class="post-copyright-link">
+      <strong>文章連結：</strong>
+      <a href="https://benben.me/2026/09/30/zcode-aftermath/" title="ZCode 出大事了，後來呢？">https://benben.me/2026/09/30/zcode-aftermath/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/security/" rel="tag"># security</a>
+              <a href="/tags/ai-assisted/" rel="tag"># ai-assisted</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/05/16/16-reduce/" rel="prev" title="Reduce | 完全手冊">
+                  <i class="fa fa-angle-left"></i> Reduce | 完全手冊
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Benben</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+<script>
+(function() {
+  var GISCUS_ATTRS = [
+    ['data-repo', 'benben6515/blog'],
+    ['data-repo-id', 'MDEwOlJlcG9zaXRvcnkyNTAxMjIzMTQ='],
+    ['data-category', 'General'],
+    ['data-category-id', 'DIC_kwDODuiQSs4C0_k0'],
+    ['data-mapping', 'pathname'],
+    ['data-strict', '0'],
+    ['data-reactions-enabled', '1'],
+    ['data-emit-metadata', '0'],
+    ['data-input-position', 'top'],
+    ['data-theme', 'preferred_color_scheme'],
+    ['data-lang', 'en'],
+    ['data-loading', 'lazy']
+  ];
+
+  // The giscus iframe loads async — queue theme postMessage until it
+  // fires load, otherwise postMessage hits a same-origin window and warns.
+  var giscusReady = false;
+  document.addEventListener('load', function(e) {
+    if (e.target && e.target.classList && e.target.classList.contains('giscus-frame')) {
+      giscusReady = true;
+    }
+  }, true);
+
+  function mountGiscus() {
+    var mainInner = document.querySelector('.main-inner');
+    if (!mainInner || document.getElementById('giscus-container')) return;
+    giscusReady = false;
+    var container = document.createElement('div');
+    container.id = 'giscus-container';
+    container.className = 'comments';
+    container.style.cssText = 'padding: 20px 0; width: 100%;';
+    var script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    GISCUS_ATTRS.forEach(function(attr) {
+      script.setAttribute(attr[0], attr[1]);
+    });
+    script.setAttribute('crossorigin', 'anonymous');
+    script.async = true;
+    container.appendChild(script);
+    mainInner.appendChild(container);
+  }
+
+  mountGiscus();
+  document.addEventListener('pjax:success', mountGiscus);
+
+  // Theme toggle: light/dark switch with localStorage persistence.
+  // Initial theme already set by head.njk (saved pref > system pref).
+  var root = document.documentElement;
+  var btn = document.getElementById('theme-toggle');
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.id = 'theme-toggle';
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'Toggle light/dark mode');
+    btn.setAttribute('title', '切換亮暗模式');
+    btn.innerHTML =
+      '<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>' +
+      '<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';
+    document.body.appendChild(btn);
+  }
+
+  function reflect() {
+    btn.dataset.mode = root.dataset.theme || 'light';
+  }
+  reflect();
+
+  function syncGiscus(theme) {
+    var iframe = document.querySelector('iframe.giscus-frame');
+    if (!iframe) return;
+    var send = function() {
+      try {
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } }, 'https://giscus.app');
+      } catch (e) { /* not ready yet */ }
+    };
+    if (giscusReady) {
+      send();
+    } else {
+      iframe.addEventListener('load', send, { once: true });
+    }
+  }
+
+  btn.addEventListener('click', function() {
+    var next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    reflect();
+    syncGiscus(next);
+  });
+})();
+</script>
+
+
+</body>
+</html>
